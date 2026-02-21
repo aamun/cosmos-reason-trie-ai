@@ -1,0 +1,18 @@
+Metadata-Version: 2.4
+Name: trie-ai
+Version: 0.1.0
+Summary: Traffic Incident Evidence Agent (CLI + Streamlit) using Cosmos Reason 2
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Cosmos Reason 2: Traffic Incident Evidence Agent (TRiE-AI)
+
+A reproducible Physical AI project for **traffic incident understanding** and **evidence-style reporting** using **NVIDIA Cosmos Reason 2**.
+
+**What it does**
+
+* Takes a traffic video clip (dashcam/CCTV)
+* Produces a **structured evidence report** (JSON) with:
+
+  * actors, event timeline, causal chain, and risk assessment
+* Includes **evaluation** on a public research dataset (WTS Environment VQA subset)

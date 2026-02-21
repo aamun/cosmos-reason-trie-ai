@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/trie_ai/cli.py
+src/trie_ai/prompts.py
+src/trie_ai/report.py
+src/trie_ai/video_io.py
+src/trie_ai.egg-info/PKG-INFO
+src/trie_ai.egg-info/SOURCES.txt
+src/trie_ai.egg-info/dependency_links.txt
+src/trie_ai.egg-info/entry_points.txt
+src/trie_ai.egg-info/top_level.txt
