@@ -1,0 +1,62 @@
+{
+  "title": "TrafficIncidentEvidenceReport",
+  "type": "object",
+  "required": ["video_id", "summary", "actors", "timeline", "risk_assessment", "causal_chain", "metadata"],
+  "properties": {
+    "video_id": { "type": "string" },
+    "summary": { "type": "string" },
+    "actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string", "enum": ["car", "truck", "motorcycle", "bus", "bicycle", "pedestrian", "unknown"] },
+          "notes": { "type": "string" }
+        }
+      }
+    },
+    "timeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["t_start", "t_end", "event", "evidence"],
+        "properties": {
+          "t_start": { "type": "number" },
+          "t_end": { "type": "number" },
+          "event": { "type": "string" },
+          "evidence": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "risk_assessment": {
+      "type": "object",
+      "required": ["level", "why"],
+      "properties": {
+        "level": { "type": "string", "enum": ["low", "medium", "high"] },
+        "why": { "type": "string" }
+      }
+    },
+    "causal_chain": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["cause", "effect"],
+        "properties": {
+          "cause": { "type": "string" },
+          "effect": { "type": "string" }
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "required": ["model", "frame_sampling", "generated_at"],
+      "properties": {
+        "model": { "type": "string" },
+        "frame_sampling": { "type": "object" },
+        "generated_at": { "type": "string" }
+      }
+    }
+  }
+}
