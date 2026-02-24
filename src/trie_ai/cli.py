@@ -21,6 +21,7 @@ def report(
     backend: str = typer.Option("stub", help="Backend: stub | vllm_openai | vllm_inprocess"),
     model_size: str = typer.Option("2b", help="Model size selector: 2b | 8b"),
     model_id: str = typer.Option(None, help="Override model id, e.g. nvidia/Cosmos-Reason2-2B"),
+    max_model_len: int = typer.Option(4096, help="Max model input length (vLLM in-process only)"),
     endpoint: str = typer.Option(None, help="vLLM endpoint host:port (or set env VLLM_ENDPOINT)"),
     api_key: str = typer.Option(None, help="vLLM API key (or set env VLLM_API_KEY)"),
     max_tokens: int = typer.Option(768, help="Max tokens"),
@@ -52,6 +53,7 @@ def report(
         endpoint=endpoint,
         api_key=api_key,
         max_tokens=max_tokens,
+        max_model_len=max_model_len,
         temperature=temperature,
     )
 
