@@ -10,7 +10,7 @@ class CosmosReason2Inference:
         nframes=8,
         max_tokens=256,
         # perf/stability knobs
-        max_model_len=2048,
+        max_model_len=4096,
         dtype="half",              # T4 -> half
         enforce_eager=True,        # fast startup, avoids cudagraph/compile surprises
         gpu_memory_utilization=0.90,
@@ -33,6 +33,7 @@ class CosmosReason2Inference:
         self.top_p = top_p
         self.repetition_penalty = repetition_penalty
         self.seed = seed
+        self.attention_backend = "TRITON_ATTN"
 
         self.llm = None
         self.processor = None
@@ -65,6 +66,7 @@ class CosmosReason2Inference:
                 limit_mm_per_prompt={"video": 1, "image": 0},
                 gpu_memory_utilization=self.gpu_memory_utilization,
                 seed=self.seed,
+                attention_backend=self.attention_backend,
             )
 
             # Processor for chat template (Qwen3-VL style)
