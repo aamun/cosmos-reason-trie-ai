@@ -9,10 +9,16 @@ system: |
 
 report_prompt: |
   TASK:
+
+  VQA QUESTIONS (must exist; exact choices; answer must be exactly one choice):
+  - q_day_night: "Is it Day or Night?" choices=["Day","Night","Unknown"]
+  - q_weather: "What is the weather?" choices=["Normal","Rainy","Snowy","Unknown"]
+  - q_ego_involved: "Is the ego-vehicle involved in the accident?" choices=["Yes","No","Unknown"]
+  If not visible or insufficient frames: answer "Unknown", set low confidence, and add a note in uncertainties.
+
   Analyze the traffic scene and produce a JSON report following this schema:
 
   {{
-    "video_id": string,
     "summary": string,
     "actors": [{{"id": string, "type": "car"|"truck"|"bus"|"motorcycle"|"bicycle"|"pedestrian"|"unknown"}}],
     "timeline": [{{
@@ -21,49 +27,28 @@ report_prompt: |
       "event": string,
       "confidence": number,
       "evidence": {{
-        "frame_indices": [integer],
-        "time_range": [number, number],
-        "notes": string
+        "frame_indices": [integer]
       }}
     }}],
     "risk_assessment": {{
       "level": "Low"|"Medium"|"High"|"Critical"|"Unknown",
       "why": string,
-      "confidence": number,
-      "evidence": {{
-        "frame_indices": [integer],
-        "time_range": [number, number],
-        "notes": string
-      }}
+      "confidence": number
     }},
     "causal_graph": [{{
-      "from": string,
-      "to": string,
-      "relation": "precedes"|"causes"|"contributes_to"|"unknown",
-      "confidence": number,
-      "evidence": {{
-        "frame_indices": [integer],
-        "time_range": [number, number],
-        "notes": string
-      }}
+      "cuase": string,
+      "effect": string,
     }}],
     "vqa": [{{
-      "qid": string,
       "question": string,
       "choices": [string],
       "answer": string,
       "confidence": number,
       "evidence": {{
-        "frame_indices": [integer],
-        "time_range": [number, number],
-        "notes": string
+        "frame_indices": [integer]
       }}
     }}],
-    "uncertainties": [string],
-    "metadata": {{
-      "model": string,
-      "frame_sampling": {{"strategy": string, "count": integer, "fps": number}}
-    }}
+    "uncertainties": [string]
   }}
 
   RULES:
@@ -75,12 +60,6 @@ report_prompt: |
   - Section-level confidence is required in timeline items, risk_assessment, causal_graph edges, and vqa.
   - Use unique actor ids (e.g., car_1, bus_1). Do NOT list duplicate unknown actors; keep actors minimal and observed.
   - Ensure JSON is syntactically valid: no trailing commas, no comments, no ellipses.
-
-  VQA QUESTIONS (must exist; exact choices; answer must be exactly one choice):
-  - q_day_night: "Is it Day or Night?" choices=["Day","Night","Unknown"]
-  - q_weather: "What is the weather?" choices=["Normal","Rainy","Snowy","Unknown"]
-  - q_ego_involved: "Is the ego-vehicle involved in the accident?" choices=["Yes","No","Unknown"]
-  If not visible or insufficient frames: answer "Unknown", set low confidence, and add a note in uncertainties.
 
   INPUT:
   - video_id: $video_id
