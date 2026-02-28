@@ -10,7 +10,7 @@ system: |
 report_prompt: |
   TASK:
 
-  VQA QUESTIONS (must exist; exact choices; answer must be exactly one choice):
+  QUESTIONS (must exist; exact choices; answer must be exactly one choice):
   - q_day_night: "Is it Day or Night?" choices=["Day","Night","Unknown"]
   - q_weather: "What is the weather?" choices=["Normal","Rainy","Snowy","Unknown"]
   - q_ego_involved: "Is the ego-vehicle involved in the accident?" choices=["Yes","No","Unknown"]
@@ -20,6 +20,9 @@ report_prompt: |
 
   {{
     "summary": string,
+    "q_day_night": string,
+    "q_weather": string,
+    "q_ego_involved": string,
     "actors": [{{"id": string, "type": "car"|"truck"|"bus"|"motorcycle"|"bicycle"|"pedestrian"|"unknown"}}],
     "timeline": [{{
       "t_start": number,
@@ -38,15 +41,6 @@ report_prompt: |
     "causal_graph": [{{
       "cuase": string,
       "effect": string,
-    }}],
-    "vqa": [{{
-      "question": string,
-      "choices": [string],
-      "answer": string,
-      "confidence": number,
-      "evidence": {{
-        "frame_indices": [integer]
-      }}
     }}],
     "uncertainties": [string]
   }}
