@@ -240,6 +240,7 @@ def run_reason2_report_vllm_inprocess(
             question=full_user_text,
             system_prompt=system_prompt,
         )
+        print(f"Raw model output:\n{text}\n{'-'*40}")
         if text is None:
             raise RuntimeError("Inference returned no text response.")
         rep = _extract_json(text)
