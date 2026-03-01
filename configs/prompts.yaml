@@ -20,28 +20,22 @@ report_prompt: |
 
   {{
     "summary": string,
-    "q_day_night": string,
-    "q_weather": string,
-    "q_ego_involved": string,
-    "actors": [{{"id": string, "type": "car"|"truck"|"bus"|"motorcycle"|"bicycle"|"pedestrian"|"unknown"}}],
-    "timeline": [{{
+    "q_day_night": "Day"|"Night"|"Unknown",
+    "q_weather": "Normal"|"Rainy"|"Snowy"|"Unknown",
+    "q_ego_involved": "Yes"|"No"|"Unknown",
+    "actors_list": [{{"id": string, "type": "car"|"truck"|"bus"|"motorcycle"|"bicycle"|"pedestrian"|"unknown"}}],
+    "events_timeline": [{{
       "t_start": number,
       "t_end": number,
       "event": string,
       "confidence": number,
-      "evidence": {{
-        "frame_indices": [integer]
-      }}
+      "frame_indices": [integer]
     }}],
     "risk_assessment": {{
       "level": "Low"|"Medium"|"High"|"Critical"|"Unknown",
       "why": string,
       "confidence": number
     }},
-    "causal_graph": [{{
-      "cuase": string,
-      "effect": string,
-    }}],
     "uncertainties": [string]
   }}
 
@@ -50,8 +44,7 @@ report_prompt: |
   - Do NOT invent details. Only state actions, actors, and conditions that are clearly visible.
   - Use conservative language and confidence. If unsure, use "Unknown" or low confidence and add an uncertainty.
   - Every non-trivial claim must have evidence with frame_indices and time_range.
-  - Causal graph must be explicit edges only (no narrative).
-  - Section-level confidence is required in timeline items, risk_assessment, causal_graph edges, and vqa.
+  - Section-level confidence is required in timeline items, risk_assessment.
   - Use unique actor ids (e.g., car_1, bus_1). Do NOT list duplicate unknown actors; keep actors minimal and observed.
   - Ensure JSON is syntactically valid: no trailing commas, no comments, no ellipses.
 
