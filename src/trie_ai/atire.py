@@ -139,7 +139,7 @@ class Atire:
             f"Context:\nvideo_id={video_id}\nvideo_fps={fps}\nSampled frames:\n{frame_index_block}\n\n"
             "Return ONLY valid JSON."
         )
-        text = self._inference.query(
+        text = self.query(
             video_path=str(video_path) if video_path else "",
             question=full_user_text,
             system_prompt=system_prompt,
