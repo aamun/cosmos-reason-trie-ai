@@ -29,7 +29,13 @@ def _extract_json(text: str) -> dict[str, Any]:
     m = re.search(r"\{.*\}", text, flags=re.DOTALL)
     if not m:
         raise ValueError("Model output was not JSON and no JSON object could be extracted.")
-    return json.loads(m.group(0))
+    
+    try:
+        return json.loads(m.group(0))
+    except Exception:
+        pass
+
+    return {"error": "Model output was not valid JSON, and JSON extraction failed.", "raw_output": text}
 
 @dataclass
 class AtireConfig:
