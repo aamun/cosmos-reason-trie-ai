@@ -148,7 +148,7 @@ class Atire:
             raise RuntimeError("Inference returned no response.")
         # Parse out JSON from the model's text response, being defensive about formatting issues.
         rep = _extract_json(text)
-        rep["metadata"] = self._metadata(model=self.config.model_id or self.config.model_size, video_id=video_id, frame_desc=frame_desc, fps=fps)["metadata"]
+        rep["metadata"] = self._metadata(model=self.config.model_path or self.config.model_size, video_id=video_id, frame_desc=frame_desc, fps=fps)["metadata"]
         return rep
 
     def generate_report(
