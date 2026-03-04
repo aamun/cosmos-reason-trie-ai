@@ -13,15 +13,13 @@ report_prompt: |
   Analyze the traffic scene and determine whether it corresponds to a traffic incident.
 
   First, assess if a collision, near-miss, loss of control, or clearly hazardous interaction is visible in the provided frames.
-  If no clear incident is visible, state that explicitly and use conservative confidence.
 
   Then generate a structured and evidence-grounded report strictly following the required JSON schema.
   The report must include:
-  - A concise summary
+  - A descriptive summary
   - Answers to all required questions (exact choices only)
-  - Identified actors
-  - A chronological events timeline from each frames
-  - A simple causal chain (2-5 ordered steps)
+  - Identified involved actors
+  - A descriptive chronological events timeline
   - Risk assessment
   - Explicit uncertainties when evidence is insufficient
 
@@ -30,21 +28,6 @@ report_prompt: |
   - q_weather: "What is the weather?" choices=["Normal","Rainy","Snowy","Unknown"]
   - q_ego_involved: "Is the ego-vehicle involved in the accident?" choices=["Yes","No","Unknown"]
   If not visible or insufficient frames: answer "Unknown", use low confidence in reasoning, and explain in uncertainties.
-
-  CAUSAL CHAIN REQUIREMENTS:
-  - You MUST output a causal_chain array.
-  - The chain must contain 2-5 ordered steps.
-  - Steps must follow temporal order (earliest -> latest).
-  - Each step must describe a visible state, action, or event.
-  - Do NOT speculate about intentions or future actions.
-  - If causality is weak or unclear, still produce a minimal chain and use low confidence.
-  - Each step MUST reference frame_indices supporting that step.
-
-  HOW TO BUILD THE CAUSAL CHAIN:
-  1) Identify key visible events from events_timeline.
-  2) Order them chronologically.
-  3) Convert them into a simple cause → effect sequence.
-  4) Use conservative language (e.g., "may contribute", "appears to precede") if uncertain.
 
   RULES:
   - Output MUST be ONLY valid JSON (no markdown, no code fences, no extra text).
@@ -61,15 +44,12 @@ report_prompt: |
   OUTPUT:
   {{
     "summary": string,
-
     "q_day_night": "Day"|"Night"|"Unknown",
     "q_weather": "Normal"|"Rainy"|"Snowy"|"Unknown",
     "q_ego_involved": "Yes"|"No"|"Unknown",
-
     "actors_list": [
       {{"id": string, "type": "car"|"truck"|"bus"|"motorcycle"|"bicycle"|"pedestrian"|"unknown"}}
     ],
-
     "events_timeline": [
       {{
         "t_start": number,
@@ -79,23 +59,12 @@ report_prompt: |
         "frame_indices": [integer]
       }}
     ],
-
-    "causal_chain": [
-      {{
-        "step": integer,
-        "description": string,
-        "confidence": number,
-        "frame_indices": [integer]
-      }}
-    ],
-
+    "uncertainties": [string],
     "risk_assessment": {{
       "level": "Low"|"Medium"|"High"|"Critical"|"Unknown",
       "why": string,
       "confidence": number
-    }},
-
-    "uncertainties": [string]
+    }}
   }}
 
 fallback_prompt: |

@@ -10,7 +10,7 @@ class CosmosReason2Inference:
         nframes=8,
         max_tokens=256,
         # perf/stability knobs
-        max_model_len=4096,
+        max_model_len=8192,
         dtype="half",              # T4 -> half
         enforce_eager=True,        # fast startup, avoids cudagraph/compile surprises
         gpu_memory_utilization=0.90,
