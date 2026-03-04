@@ -20,10 +20,13 @@ report_prompt: |
 
   {{
     "summary": string,
+
     "q_day_night": "Day"|"Night"|"Unknown",
     "q_weather": "Normal"|"Rainy"|"Snowy"|"Unknown",
     "q_ego_involved": "Yes"|"No"|"Unknown",
+
     "actors_list": [{{"id": string, "type": "car"|"truck"|"bus"|"motorcycle"|"bicycle"|"pedestrian"|"unknown"}}],
+
     "events_timeline": [{{
       "t_start": number,
       "t_end": number,
@@ -31,20 +34,60 @@ report_prompt: |
       "confidence": number,
       "frame_indices": [integer]
     }}],
+
+    "causal_nodes": [{{
+      "id": string,
+      "type": "state"|"action"|"event"|"outcome"|"unknown",
+      "label": string,
+      "t_window": [number, number],
+      "frame_indices": [integer]
+    }}],
+
+    "causal_graph": {{
+      "is_dag": true,
+      "ordering": [string],
+      "edges": [{{
+        "from": string,
+        "to": string,
+        "relation": "precedes"|"causes"|"contributes_to"|"unknown",
+        "confidence": number,
+        "frame_indices": [integer]
+      }}]
+    }},
+
     "risk_assessment": {{
       "level": "Low"|"Medium"|"High"|"Critical"|"Unknown",
       "why": string,
       "confidence": number
     }},
+
     "uncertainties": [string]
   }}
+
+  DAG REQUIREMENTS (MUST FOLLOW):
+  - You MUST output causal_nodes and causal_graph, even if uncertain.
+  - causal_graph.is_dag MUST be true.
+  - causal_graph.ordering MUST include every causal_nodes[].id exactly once.
+  - Edges MUST NOT form cycles. Enforce this by only creating edges from earlier->later in causal_graph.ordering.
+  - If evidence is weak, still create a minimal DAG with 2-4 nodes and use relation="unknown" with confidence<=0.3.
+  - Every edge MUST reference at least one frame index (can be the same as its node frames).
+
+  HOW TO BUILD THE DAG (step-by-step internally):
+  1) Create 2-6 causal_nodes from visible facts only (states/actions/events/outcome).
+     Examples:
+       - "ego_stationary" (state)
+       - "vehicle_A_lane_change" (action)
+       - "near_miss" (event)
+       - "collision" (outcome)
+  2) Sort them into causal_graph.ordering by time (earliest -> latest) using events_timeline timestamps.
+  3) Add 1-6 edges only forward in time (from earlier to later).
+  4) Keep nodes/edges conservative: do not claim causes unless visually supported; otherwise use "contributes_to" or "unknown".
 
   RULES:
   - Output MUST be ONLY valid JSON that exactly matches the schema (no markdown, no code fences, no extra text).
   - Do NOT invent details. Only state actions, actors, and conditions that are clearly visible.
   - Use conservative language and confidence. If unsure, use "Unknown" or low confidence and add an uncertainty.
-  - Every non-trivial claim must have evidence with frame_indices and time_range.
-  - Section-level confidence is required in timeline items, risk_assessment.
+  - Section-level confidence is required in timeline items, risk_assessment, and causal_graph edges.
   - Use unique actor ids (e.g., car_1, bus_1). Do NOT list duplicate unknown actors; keep actors minimal and observed.
   - Ensure JSON is syntactically valid: no trailing commas, no comments, no ellipses.
 
