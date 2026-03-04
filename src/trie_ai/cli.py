@@ -32,14 +32,11 @@ def report(
     if not video_path.exists():
         raise typer.BadParameter(f"Video not found: {video}")
 
+    # Load prompts and prepare frame descriptions
     prompts = load_prompts(prompts_path)
     system_prompt = prompts["system"]
     # Keep your report prompt; it will be appended after the images.
-    user_prompt = Template(prompts["report_prompt"]).safe_substitute(
-        video_id=video_path.stem,
-        fps="auto",
-        frame_descriptions="(frames provided as images + indices/timestamps)"
-    )
+    user_prompt = prompts["report_prompt"]
 
     fps = get_video_fps(str(video_path))
     samples = sample_frames_uniform(str(video_path), workdir, num_frames=frames)

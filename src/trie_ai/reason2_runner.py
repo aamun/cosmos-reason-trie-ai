@@ -10,7 +10,6 @@ from typing import Any, Iterable
 
 import requests
 
-
 @dataclass
 class Reason2Config:
     """
