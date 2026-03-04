@@ -19,7 +19,7 @@ report_prompt: |
   - A descriptive summary
   - Answers to all required questions (exact choices only)
   - Identified involved actors
-  - A descriptive chronological events timeline
+  - An events timeline describing each move of actors in scene.
   - Risk assessment
   - Explicit uncertainties when evidence is insufficient
 
