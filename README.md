@@ -40,11 +40,11 @@ The system:
 
 The ATIRE consists of five stages.
 
-* 1. Video Ingestion
-* 2. Frame Sampling
-* 3. Vision-Language Reasoning
-* 4. Structured Evidence Report
-* 5. VQA Evaluation
+1. Video Ingestion
+2. Frame Sampling
+3. Vision-Language Reasoning
+4. Structured Evidence Report
+5. VQA Evaluation
 
 ## 2.1 Solution Diagram
 ```mermaid
@@ -203,7 +203,7 @@ Future work could include:
 - CUDA 12+
 - Python 3.10
 
-## 3.2. Installation & Setup env
+## 3.2. Setup environment
 
 1. Clone repository:
 ```bash
@@ -211,7 +211,7 @@ git clone git@github.com:aamun/cosmos-reason-trie-ai.git
 cd cosmos-reason-trie-ai
 ```
 
-2. Setup environment and install dependencies:
+2. Setup venv environment and install dependencies:
 ```bash
 ./scripts/00_setup_env.sh
 ```
@@ -221,13 +221,32 @@ pip install -r requirements.txt
 ```
 
 ## 3.3. Running the pipeline
+Run command line:
+```bash
+trie --video "filepath" --out "output_filepath" --frames "nframes" --backend [stub|vllm_inprocess]
+```
 Example:
 ```bash
-trie --video data/CarCrash/Crash-1500/000001.mp4 --out results/reports/sample.json --frames 8 --backend stub
-````
+trie --video data/CarCrash/Crash-1500/000001.mp4 --out results/reports/000001.json --frames 8 --backend stub
+```
 or:
 ```bash
-./scripts/50_generate_report.sh <video.mp4> [outdir] [frames] [stub|vllm_inprocess]
+./scripts/40_generate_report.sh <video.mp4> [outdir] [frames] [stub|vllm_inprocess]
+```
+Also you can run the Streamlit App:
+```bash
+./scripts/50_run_demo_ui.sh
+```
+
+## 3.4. Run evaluation
+
+Evaluation script:
+```bash
+python src/trie_ai/eval_vqa_ccd.py \                          
+    --crash1500 ./data/CarCrash/Crash-1500.txt \
+    --pred_dir ./docs/reports \
+    --out ./docs/metrics/vqa_metrics.json \
+    --strict_mcq
 ```
 
 # 4. Evaluation
