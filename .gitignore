@@ -7,4 +7,4 @@ results/*
 !results/metrics/.keep
 data/demo_clips/*
 .env
-docs
+context
