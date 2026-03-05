@@ -1,0 +1,1458 @@
+{
+  "overall": {
+    "num_videos": 1500,
+    "fields_per_video": 3,
+    "macro_accuracy": 0.660222,
+    "micro_accuracy": 0.660222,
+    "macro_unknown_rate": 0.161778,
+    "micro_unknown_rate": 0.161778,
+    "micro_missing_file": 0,
+    "micro_missing_field": 522,
+    "micro_invalid": 10,
+    "strict_mcq": true
+  },
+  "per_field": {
+    "q_day_night": {
+      "total": 1500,
+      "correct": 1292,
+      "accuracy": 0.861333,
+      "unknown": 174,
+      "unknown_rate": 0.116,
+      "invalid": 0,
+      "invalid_rate": 0.0,
+      "missing_file": 0,
+      "missing_file_rate": 0.0,
+      "missing_field": 174,
+      "missing_field_rate": 0.116
+    },
+    "q_weather": {
+      "total": 1500,
+      "correct": 1088,
+      "accuracy": 0.725333,
+      "unknown": 263,
+      "unknown_rate": 0.175333,
+      "invalid": 10,
+      "invalid_rate": 0.006667,
+      "missing_file": 0,
+      "missing_file_rate": 0.0,
+      "missing_field": 174,
+      "missing_field_rate": 0.116
+    },
+    "q_ego_involved": {
+      "total": 1500,
+      "correct": 591,
+      "accuracy": 0.394,
+      "unknown": 291,
+      "unknown_rate": 0.194,
+      "invalid": 0,
+      "invalid_rate": 0.0,
+      "missing_file": 0,
+      "missing_file_rate": 0.0,
+      "missing_field": 174,
+      "missing_field_rate": 0.116
+    }
+  },
+  "debug_samples": [
+    {
+      "video_id": "000001",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000001.json"
+    },
+    {
+      "video_id": "000002",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000002.json"
+    },
+    {
+      "video_id": "000003",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000003.json"
+    },
+    {
+      "video_id": "000004",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000004.json"
+    },
+    {
+      "video_id": "000005",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000005.json"
+    },
+    {
+      "video_id": "000008",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000008.json"
+    },
+    {
+      "video_id": "000008",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000008.json"
+    },
+    {
+      "video_id": "000009",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000009.json"
+    },
+    {
+      "video_id": "000009",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000009.json"
+    },
+    {
+      "video_id": "000010",
+      "field": "q_weather",
+      "gt": "Rainy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000010.json"
+    },
+    {
+      "video_id": "000010",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000010.json"
+    },
+    {
+      "video_id": "000011",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000011.json"
+    },
+    {
+      "video_id": "000011",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000011.json"
+    },
+    {
+      "video_id": "000012",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Night",
+      "path": "results/reports_v2/000012.json"
+    },
+    {
+      "video_id": "000012",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000012.json"
+    },
+    {
+      "video_id": "000013",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000013.json"
+    },
+    {
+      "video_id": "000014",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000014.json"
+    },
+    {
+      "video_id": "000014",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000014.json"
+    },
+    {
+      "video_id": "000014",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000014.json"
+    },
+    {
+      "video_id": "000015",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000015.json"
+    },
+    {
+      "video_id": "000015",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000015.json"
+    },
+    {
+      "video_id": "000015",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000015.json"
+    },
+    {
+      "video_id": "000017",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000017.json"
+    },
+    {
+      "video_id": "000018",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000018.json"
+    },
+    {
+      "video_id": "000019",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000019.json"
+    },
+    {
+      "video_id": "000020",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000020.json"
+    },
+    {
+      "video_id": "000022",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000022.json"
+    },
+    {
+      "video_id": "000023",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000023.json"
+    },
+    {
+      "video_id": "000024",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000024.json"
+    },
+    {
+      "video_id": "000025",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000025.json"
+    },
+    {
+      "video_id": "000026",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000026.json"
+    },
+    {
+      "video_id": "000026",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000026.json"
+    },
+    {
+      "video_id": "000027",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000027.json"
+    },
+    {
+      "video_id": "000027",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000027.json"
+    },
+    {
+      "video_id": "000028",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000028.json"
+    },
+    {
+      "video_id": "000028",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000028.json"
+    },
+    {
+      "video_id": "000028",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000028.json"
+    },
+    {
+      "video_id": "000029",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000029.json"
+    },
+    {
+      "video_id": "000030",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000030.json"
+    },
+    {
+      "video_id": "000031",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000031.json"
+    },
+    {
+      "video_id": "000032",
+      "field": "q_day_night",
+      "gt": "Night",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000032.json"
+    },
+    {
+      "video_id": "000032",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000032.json"
+    },
+    {
+      "video_id": "000032",
+      "field": "q_ego_involved",
+      "gt": "No",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000032.json"
+    },
+    {
+      "video_id": "000034",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Normal",
+      "path": "results/reports_v2/000034.json"
+    },
+    {
+      "video_id": "000034",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000034.json"
+    },
+    {
+      "video_id": "000035",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000035.json"
+    },
+    {
+      "video_id": "000035",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000035.json"
+    },
+    {
+      "video_id": "000036",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000036.json"
+    },
+    {
+      "video_id": "000036",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000036.json"
+    },
+    {
+      "video_id": "000036",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000036.json"
+    },
+    {
+      "video_id": "000037",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000037.json"
+    },
+    {
+      "video_id": "000038",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000038.json"
+    },
+    {
+      "video_id": "000039",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000039.json"
+    },
+    {
+      "video_id": "000040",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Rainy",
+      "path": "results/reports_v2/000040.json"
+    },
+    {
+      "video_id": "000040",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000040.json"
+    },
+    {
+      "video_id": "000041",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000041.json"
+    },
+    {
+      "video_id": "000041",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000041.json"
+    },
+    {
+      "video_id": "000042",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000042.json"
+    },
+    {
+      "video_id": "000042",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000042.json"
+    },
+    {
+      "video_id": "000042",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000042.json"
+    },
+    {
+      "video_id": "000043",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000043.json"
+    },
+    {
+      "video_id": "000043",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000043.json"
+    },
+    {
+      "video_id": "000044",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000044.json"
+    },
+    {
+      "video_id": "000044",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000044.json"
+    },
+    {
+      "video_id": "000045",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000045.json"
+    },
+    {
+      "video_id": "000046",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000046.json"
+    },
+    {
+      "video_id": "000047",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000047.json"
+    },
+    {
+      "video_id": "000048",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000048.json"
+    },
+    {
+      "video_id": "000048",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000048.json"
+    },
+    {
+      "video_id": "000048",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000048.json"
+    },
+    {
+      "video_id": "000049",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000049.json"
+    },
+    {
+      "video_id": "000049",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000049.json"
+    },
+    {
+      "video_id": "000050",
+      "field": "q_weather",
+      "gt": "Rainy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000050.json"
+    },
+    {
+      "video_id": "000050",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000050.json"
+    },
+    {
+      "video_id": "000052",
+      "field": "q_day_night",
+      "gt": "Night",
+      "pred": "Day",
+      "path": "results/reports_v2/000052.json"
+    },
+    {
+      "video_id": "000052",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Normal",
+      "path": "results/reports_v2/000052.json"
+    },
+    {
+      "video_id": "000052",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000052.json"
+    },
+    {
+      "video_id": "000053",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000053.json"
+    },
+    {
+      "video_id": "000055",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000055.json"
+    },
+    {
+      "video_id": "000056",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000056.json"
+    },
+    {
+      "video_id": "000059",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000059.json"
+    },
+    {
+      "video_id": "000059",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000059.json"
+    },
+    {
+      "video_id": "000059",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000059.json"
+    },
+    {
+      "video_id": "000060",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000060.json"
+    },
+    {
+      "video_id": "000061",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000061.json"
+    },
+    {
+      "video_id": "000062",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000062.json"
+    },
+    {
+      "video_id": "000062",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000062.json"
+    },
+    {
+      "video_id": "000064",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000064.json"
+    },
+    {
+      "video_id": "000065",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000065.json"
+    },
+    {
+      "video_id": "000066",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000066.json"
+    },
+    {
+      "video_id": "000066",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000066.json"
+    },
+    {
+      "video_id": "000066",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000066.json"
+    },
+    {
+      "video_id": "000067",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000067.json"
+    },
+    {
+      "video_id": "000068",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000068.json"
+    },
+    {
+      "video_id": "000069",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000069.json"
+    },
+    {
+      "video_id": "000069",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000069.json"
+    },
+    {
+      "video_id": "000070",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000070.json"
+    },
+    {
+      "video_id": "000072",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000072.json"
+    },
+    {
+      "video_id": "000073",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000073.json"
+    },
+    {
+      "video_id": "000074",
+      "field": "q_ego_involved",
+      "gt": "No",
+      "pred": "Yes",
+      "path": "results/reports_v2/000074.json"
+    },
+    {
+      "video_id": "000076",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000076.json"
+    },
+    {
+      "video_id": "000076",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000076.json"
+    },
+    {
+      "video_id": "000080",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000080.json"
+    },
+    {
+      "video_id": "000081",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000081.json"
+    },
+    {
+      "video_id": "000081",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000081.json"
+    },
+    {
+      "video_id": "000082",
+      "field": "q_day_night",
+      "gt": "Night",
+      "pred": "Day",
+      "path": "results/reports_v2/000082.json"
+    },
+    {
+      "video_id": "000082",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000082.json"
+    },
+    {
+      "video_id": "000082",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000082.json"
+    },
+    {
+      "video_id": "000084",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000084.json"
+    },
+    {
+      "video_id": "000085",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Night",
+      "path": "results/reports_v2/000085.json"
+    },
+    {
+      "video_id": "000085",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000085.json"
+    },
+    {
+      "video_id": "000085",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000085.json"
+    },
+    {
+      "video_id": "000087",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000087.json"
+    },
+    {
+      "video_id": "000087",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000087.json"
+    },
+    {
+      "video_id": "000087",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000087.json"
+    },
+    {
+      "video_id": "000088",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Night",
+      "path": "results/reports_v2/000088.json"
+    },
+    {
+      "video_id": "000088",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000088.json"
+    },
+    {
+      "video_id": "000091",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000091.json"
+    },
+    {
+      "video_id": "000092",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000092.json"
+    },
+    {
+      "video_id": "000093",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000093.json"
+    },
+    {
+      "video_id": "000094",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000094.json"
+    },
+    {
+      "video_id": "000094",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000094.json"
+    },
+    {
+      "video_id": "000094",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000094.json"
+    },
+    {
+      "video_id": "000096",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000096.json"
+    },
+    {
+      "video_id": "000098",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000098.json"
+    },
+    {
+      "video_id": "000099",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000099.json"
+    },
+    {
+      "video_id": "000100",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000100.json"
+    },
+    {
+      "video_id": "000101",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000101.json"
+    },
+    {
+      "video_id": "000101",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000101.json"
+    },
+    {
+      "video_id": "000102",
+      "field": "q_weather",
+      "gt": "Rainy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000102.json"
+    },
+    {
+      "video_id": "000102",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000102.json"
+    },
+    {
+      "video_id": "000103",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000103.json"
+    },
+    {
+      "video_id": "000104",
+      "field": "q_day_night",
+      "gt": "Night",
+      "pred": "Day",
+      "path": "results/reports_v2/000104.json"
+    },
+    {
+      "video_id": "000104",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000104.json"
+    },
+    {
+      "video_id": "000105",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000105.json"
+    },
+    {
+      "video_id": "000106",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000106.json"
+    },
+    {
+      "video_id": "000107",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000107.json"
+    },
+    {
+      "video_id": "000107",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000107.json"
+    },
+    {
+      "video_id": "000108",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000108.json"
+    },
+    {
+      "video_id": "000109",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000109.json"
+    },
+    {
+      "video_id": "000112",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000112.json"
+    },
+    {
+      "video_id": "000112",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000112.json"
+    },
+    {
+      "video_id": "000115",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000115.json"
+    },
+    {
+      "video_id": "000117",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000117.json"
+    },
+    {
+      "video_id": "000118",
+      "field": "q_ego_involved",
+      "gt": "No",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000118.json"
+    },
+    {
+      "video_id": "000120",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000120.json"
+    },
+    {
+      "video_id": "000121",
+      "field": "q_weather",
+      "gt": "Rainy",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000121.json"
+    },
+    {
+      "video_id": "000121",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000121.json"
+    },
+    {
+      "video_id": "000123",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000123.json"
+    },
+    {
+      "video_id": "000125",
+      "field": "q_weather",
+      "gt": "Rainy",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000125.json"
+    },
+    {
+      "video_id": "000126",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000126.json"
+    },
+    {
+      "video_id": "000126",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000126.json"
+    },
+    {
+      "video_id": "000127",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000127.json"
+    },
+    {
+      "video_id": "000128",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000128.json"
+    },
+    {
+      "video_id": "000128",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000128.json"
+    },
+    {
+      "video_id": "000129",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000129.json"
+    },
+    {
+      "video_id": "000130",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000130.json"
+    },
+    {
+      "video_id": "000131",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000131.json"
+    },
+    {
+      "video_id": "000132",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000132.json"
+    },
+    {
+      "video_id": "000132",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000132.json"
+    },
+    {
+      "video_id": "000132",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000132.json"
+    },
+    {
+      "video_id": "000133",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000133.json"
+    },
+    {
+      "video_id": "000134",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000134.json"
+    },
+    {
+      "video_id": "000136",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000136.json"
+    },
+    {
+      "video_id": "000137",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000137.json"
+    },
+    {
+      "video_id": "000137",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000137.json"
+    },
+    {
+      "video_id": "000137",
+      "field": "q_ego_involved",
+      "gt": "No",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000137.json"
+    },
+    {
+      "video_id": "000139",
+      "field": "q_weather",
+      "gt": "Rainy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000139.json"
+    },
+    {
+      "video_id": "000139",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000139.json"
+    },
+    {
+      "video_id": "000140",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Rainy",
+      "path": "results/reports_v2/000140.json"
+    },
+    {
+      "video_id": "000140",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000140.json"
+    },
+    {
+      "video_id": "000141",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Snowy",
+      "path": "results/reports_v2/000141.json"
+    },
+    {
+      "video_id": "000141",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000141.json"
+    },
+    {
+      "video_id": "000143",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000143.json"
+    },
+    {
+      "video_id": "000145",
+      "field": "q_day_night",
+      "gt": "Night",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000145.json"
+    },
+    {
+      "video_id": "000145",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000145.json"
+    },
+    {
+      "video_id": "000145",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000145.json"
+    },
+    {
+      "video_id": "000148",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000148.json"
+    },
+    {
+      "video_id": "000148",
+      "field": "q_weather",
+      "gt": "Rainy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000148.json"
+    },
+    {
+      "video_id": "000148",
+      "field": "q_ego_involved",
+      "gt": "No",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000148.json"
+    },
+    {
+      "video_id": "000149",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Rainy",
+      "path": "results/reports_v2/000149.json"
+    },
+    {
+      "video_id": "000150",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000150.json"
+    },
+    {
+      "video_id": "000152",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000152.json"
+    },
+    {
+      "video_id": "000154",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000154.json"
+    },
+    {
+      "video_id": "000155",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000155.json"
+    },
+    {
+      "video_id": "000155",
+      "field": "q_weather",
+      "gt": "Snowy",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000155.json"
+    },
+    {
+      "video_id": "000155",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000155.json"
+    },
+    {
+      "video_id": "000156",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000156.json"
+    },
+    {
+      "video_id": "000158",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000158.json"
+    },
+    {
+      "video_id": "000158",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000158.json"
+    },
+    {
+      "video_id": "000158",
+      "field": "q_ego_involved",
+      "gt": "No",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000158.json"
+    },
+    {
+      "video_id": "000160",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000160.json"
+    },
+    {
+      "video_id": "000162",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000162.json"
+    },
+    {
+      "video_id": "000163",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000163.json"
+    },
+    {
+      "video_id": "000164",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000164.json"
+    },
+    {
+      "video_id": "000169",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000169.json"
+    },
+    {
+      "video_id": "000171",
+      "field": "q_day_night",
+      "gt": "Day",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000171.json"
+    },
+    {
+      "video_id": "000171",
+      "field": "q_weather",
+      "gt": "Normal",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000171.json"
+    },
+    {
+      "video_id": "000171",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "Unknown",
+      "path": "results/reports_v2/000171.json"
+    },
+    {
+      "video_id": "000173",
+      "field": "q_ego_involved",
+      "gt": "Yes",
+      "pred": "No",
+      "path": "results/reports_v2/000173.json"
+    }
+  ],
+  "pred_dir": "results/reports_v2"
+}
