@@ -9,17 +9,17 @@ from trie_ai.reason2_runner import Reason2Config, describe_frames_basic, generat
 from trie_ai.report import now_iso
 from trie_ai.prompts import load_prompts
 
-st.set_page_config(page_title="TRiE-AI", layout="wide")
+st.set_page_config(page_title="ATIRE", layout="wide")
 
-st.title("Cosmos Reason 2 — Traffic Incident Evidence Agent (TRiE-AI)")
-st.caption("Upload a traffic video → get an evidence-style JSON report (timeline + causal chain + risk).")
+st.title("ATIRE - Autonomous Traffic Incident Reasoning Engine - Powered by NVIDIA Cosmos Reason 2")
+st.caption("Upload a traffic video → get an evidence-style JSON report (summary + actor list + events timeline + risk).")
 
 col1, col2 = st.columns([1, 1], gap="large")
 
 with col1:
     uploaded = st.file_uploader("Upload MP4", type=["mp4", "mov", "m4v"])
     frames = st.slider("Sample frames (uniform)", min_value=4, max_value=20, value=8, step=1)
-    mode = st.selectbox("Reason2 mode", ["stub", "vllm_inprocess", "vllm_openai"], index=0)
+    mode = st.selectbox("ATIRE mode", ["stub", "vllm_inprocess", "vllm_openai"], index=0)
 
     run = st.button("Generate report", type="primary", disabled=(uploaded is None))
 

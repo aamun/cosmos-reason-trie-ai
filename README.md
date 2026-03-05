@@ -51,17 +51,17 @@ The ATIRE consists of five stages.
 flowchart TD
 
 A[Traffic Video Input <br> MP4] --> B[Frame Sampling<br>Uniform Sampling<br>N frames]
-B --> C[Frame Encoding<br>Frame Index<br>Timestamp<br>Visual Description]
-C --> D[Cosmos Reason 2<br>Vision-Language Reasoning Model]
-D --> E[Prompt Template<br>Traffic Incident Analyst]
-E --> F[Structured JSON Report]
+B --> C[Prompt Template<br>Frame Encoding<br>Frame Index<br>Timestamp]
+C --> D[Visual Reasoning with Cosmos Reason 2<br>VLM]
+D --> E[Traffic Incident Report Generation]
+E --> F[Structured JSON Incident Report]
 
 F --> G1[Summary]
 F --> G2[VQA Answers<br>Day/Night<br>Weather<br>Ego Involved]
 F --> G3[Actors List]
 F --> G4[Events Timeline]
-F --> G5[Risk Assessment]
-F --> G6[Uncertainties]
+F --> G5[Uncertainties]
+F --> G6[Risk Assessment]
 F --> H[Stored Reports<br>1 JSON per Video]
 H --> I[Evaluation Pipeline]
 I --> J[Crash-1500 Parser<br>Ground Truth Labels]
