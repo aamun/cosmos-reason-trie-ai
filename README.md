@@ -46,7 +46,7 @@ The ATIRE consists of five stages.
 4. Structured Evidence Report
 5. VQA Evaluation
 
-## 2.1 Solution Diagram
+## 2.1. Solution Diagram
 ```mermaid
 flowchart TD
 
@@ -72,12 +72,16 @@ L --> M[Metrics Output]
 M --> N[Accuracy<br>Unknown Rate<br>Consistency Metrics]
 ```
 
-## 2.2. Solution Pipeline
+## 2.2. Solution Architecture
 
-### 2.2.1. Video Ingestion
+[Architecture diagram]
+
+## 2.3. Solution Pipeline
+
+### 2.3.1. Video Ingestion
 Traffic videos are loaded and decoded from a dashcam or dataset sources such as CarCrashDataset.
 
-### 2.2.2. Frame Sampling
+### 2.3.2. Frame Sampling
 
 Frames are uniformly sampled to reduce compute while preserving temporal context.
 
@@ -90,7 +94,7 @@ frame_sampling:
   fps: 10
 ```
 
-### 2.2.3. Vision-Language Reasoning
+### 2.3.3. Vision-Language Reasoning
 
 Frames are sent to Cosmos Reason 2, which performs scene reasoning using a structured prompt.
 
@@ -143,7 +147,7 @@ Each report includes:
 - risk assessment
 - uncertainty notes
 
-### 2.2.5 Evaluation
+### 2.3.5 Evaluation
 
 ATIRE is evaluated using CarCrashDataset Crash-1500.
 
@@ -165,10 +169,6 @@ python src/trie_ai/eval_vqa_ccd.py \
     --out ./docs/metrics/vqa_metrics.json \
     --strict_mcq
 ```
-
-## 2.3. Architecture
-
-[Architecture diagram]
 
 ## 2.4. Key Contributions
 
@@ -249,13 +249,11 @@ python src/trie_ai/eval_vqa_ccd.py \
     --strict_mcq
 ```
 
-# 4. Evaluation
-
-## 4.1. VQA Evaluation on CarCrash Dataset (1500 videos)
+# 4. VQA Evaluation on CarCrash Dataset (1500 videos)
 
 ATIRE was evaluated on the **CarCrashDataset (Crash-1500)** containing 1500 annotated traffic incident videos.
 
-### 4.1.1. Overall Performance
+## 4.1. Overall Performance
 
 | Metric              | Value     |
 | ------------------- | --------- |
@@ -273,7 +271,7 @@ Evaluation performed on CarCrashDataset (Crash-1500) containing 1500 traffic inc
 
 The system intentionally outputs "Unknown" when visual evidence is insufficient, resulting in a 16% unknown rate. This behavior prevents hallucinated conclusions and improves reliability in safety-critical applications.
 
-### 4.1.2. Accuracy by Task
+## 4.2. Accuracy by Task
 
 | Task | Accuracy | Unknown Rate |
 |-----|-----|-----|
@@ -288,9 +286,8 @@ Weather        ███████████████     72%
 Ego Involved   ███████             39%
 ```
 
-Day/night and weather classification perform well due to strong visual cues in the dataset.
-
-Predicting ego-vehicle involvement is more challenging because dashcam viewpoints often do not clearly show the full collision context.
+* Day/night and weather classification perform well due to strong visual cues in the dataset.
+* Predicting ego-vehicle involvement is more challenging because dashcam viewpoints often do not clearly show the full collision context.
 
 # 5. Conclusion
 
@@ -304,6 +301,6 @@ MIT License
 
 # 7. Acknowledgements
 
-[NVIDIA Cosmos Reason 2](https://github.com/nvidia-cosmos/cosmos-reason2)
-[NVIDIA Cosmos Cookoff](https://nvidia-cosmos.github.io/cosmos-cookbook/)
-[CarCrashDataset](https://github.com/Cogito2012/CarCrashDataset)
+* [NVIDIA Cosmos Reason 2](https://github.com/nvidia-cosmos/cosmos-reason2)
+* [NVIDIA Cosmos Cookoff](https://nvidia-cosmos.github.io/cosmos-cookbook/)
+* [CarCrashDataset](https://github.com/Cogito2012/CarCrashDataset)
