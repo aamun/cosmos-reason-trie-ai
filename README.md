@@ -1,13 +1,52 @@
 # ATIRE - Autonomous Traffic Incident Reasoning Engine 
 ### Powered by NVIDIA Cosmos Reason 2
 
-ATIRE is a **physical AI reasoning pipeline** that converts traffic video into structured, evidence-grounded incident reports.  
+ATIRE is a **physical AI reasoning pipeline** that converts traffic video into structured, evidence-grounded incident reports.
+
 Using **Cosmos Reason 2**, ATIRE analyzes sampled frames from dashcam footage and produces interpretable outputs including actors, events timelines, environmental conditions, and risk assessment.
 
 This project demonstrates how **vision-language reasoning models** can move beyond perception toward **structured physical reasoning** in real-world traffic environments.
 
-[UI Image]
+----
 
+# 1. Overview
+
+Traffic incident analysis is still largely manual.  
+Investigators must review footage frame-by-frame to determine:
+
+- what happened
+- who was involved
+- whether risk or a collision occurred
+
+This process is:
+
+- slow
+- subjective
+- difficult to scale
+
+ATIRE addresses this by transforming raw video into **structured incident intelligence**.
+
+The system:
+
+1. Samples frames from traffic videos
+2. Sends frames to **Cosmos Reason 2**
+3. Performs scene reasoning
+4. Generates a structured incident report
+5. Evaluates reasoning performance using **CarCrashDataset**
+
+----
+
+# 2. ATIRE Solution Design
+
+The ATIRE consists of five stages.
+
+* 1. Video Ingestion
+* 2. Frame Sampling
+* 3. Vision-Language Reasoning
+* 4. Structured Evidence Report
+* 5. VQA Evaluation
+
+## 2.1 Solution Diagram
 ```mermaid
 flowchart TD
 
@@ -33,19 +72,171 @@ L --> M[Metrics Output]
 M --> N[Accuracy<br>Unknown Rate<br>Consistency Metrics]
 ```
 
-## Cosmos Reason 2 
+## 2.2. Solution Pipeline
 
-NVIDIA Cosmos Reason 2 is purpose-built for Physical AI reasoning model.
+### 2.2.1. Video Ingestion
+Traffic videos are loaded and decoded from a dashcam or dataset sources such as CarCrashDataset.
 
-## Architecture
+### 2.2.2. Frame Sampling
+
+Frames are uniformly sampled to reduce compute while preserving temporal context.
+
+Example configuration:
+
+```yaml
+frame_sampling:
+  strategy: uniform
+  count: 8
+  fps: 10
+```
+
+### 2.2.3. Vision-Language Reasoning
+
+Frames are sent to Cosmos Reason 2, which performs scene reasoning using a structured prompt.
+
+The model is instructed to:
+
+- identify actors
+- describe events
+- determine environmental conditions
+- assess risk
+- avoid hallucinations
+- remain conservative when uncertain
+
+### 2.3.4. Structured Evidence Report
+
+The model produces a JSON report grounded in visual evidence.
+
+Example output:
+
+```json
+{
+  "summary": "The video shows a vehicle approaching an intersection while another car passes through the crossing.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {"id": "car_1", "type": "car"},
+    {"id": "car_2", "type": "car"}
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car passes by the ego vehicle at the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [0,4]
+    }
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "No hazardous interactions or collisions observed.",
+    "confidence": 0.95
+  }
+}
+```
+Each report includes:
+- summary
+- environmental reasoning (VQA)
+- actors detected
+- timeline of events
+- risk assessment
+- uncertainty notes
+
+### 2.2.5 Evaluation
+
+ATIRE is evaluated using CarCrashDataset Crash-1500.
+
+Dataset:
+* 1500 dashcam videos
+* annotated environmental conditions
+* ego vehicle involvement labels
+
+Three reasoning tasks are evaluated:
+1. Day vs Night classification
+2. Weather detection
+3. Ego vehicle involvement
+
+Evaluation script:
+```bash
+python src/trie_ai/eval_vqa_ccd.py \                          
+    --crash1500 ./data/CarCrash/Crash-1500.txt \
+    --pred_dir ./docs/reports \
+    --out ./docs/metrics/vqa_metrics.json \
+    --strict_mcq
+```
+
+## 2.3. Architecture
 
 [Architecture diagram]
 
-## VQA Evaluation on CarCrash Dataset (1500 videos)
+## 2.4. Key Contributions
+
+ATIRE demonstrates how physical AI reasoning models can transform traffic video into structured intelligence.
+
+Key features:
+
+- Vision-language reasoning using Cosmos Reason 2
+- Evidence-grounded structured reports
+- Actor and timeline extraction
+- Conservative uncertainty handling
+- Evaluation with real-world traffic dataset
+
+## 2.5. Limitations
+
+* Dashcam perspective limits full scene visibility
+* Ego vehicle involvement detection is challenging
+* Temporal reasoning may degrade with sparse frame sampling
+
+Future work could include:
+
+* multi-frame temporal models
+* trajectory tracking
+* multi-camera fusion
+
+# 3. Installation
+
+## 3.1. Recommended environemnt
+
+- NVIDIA GPU with ≥16GB VRAM
+- 16–32 GB system RAM
+- CUDA 12+
+- Python 3.10
+
+## 3.2. Installation & Setup env
+
+1. Clone repository:
+```bash
+git clone git@github.com:aamun/cosmos-reason-trie-ai.git
+cd cosmos-reason-trie-ai
+```
+
+2. Setup environment and install dependencies:
+```bash
+./scripts/00_setup_env.sh
+```
+or just install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+## 3.3. Running the pipeline
+Example:
+```bash
+trie --video data/CarCrash/Crash-1500/000001.mp4 --out results/reports/sample.json --frames 8 --backend stub
+````
+or:
+```bash
+./scripts/50_generate_report.sh <video.mp4> [outdir] [frames] [stub|vllm_inprocess]
+```
+
+# 4. Evaluation
+
+## 4.1. VQA Evaluation on CarCrash Dataset (1500 videos)
 
 ATIRE was evaluated on the **CarCrashDataset (Crash-1500)** containing 1500 annotated traffic incident videos.
 
-### Overall Performance
+### 4.1.1. Overall Performance
 
 | Metric              | Value     |
 | ------------------- | --------- |
@@ -63,7 +254,7 @@ Evaluation performed on CarCrashDataset (Crash-1500) containing 1500 traffic inc
 
 The system intentionally outputs "Unknown" when visual evidence is insufficient, resulting in a 16% unknown rate. This behavior prevents hallucinated conclusions and improves reliability in safety-critical applications.
 
-### Accuracy by Task
+### 4.1.2. Accuracy by Task
 
 | Task | Accuracy | Unknown Rate |
 |-----|-----|-----|
@@ -82,14 +273,18 @@ Day/night and weather classification perform well due to strong visual cues in t
 
 Predicting ego-vehicle involvement is more challenging because dashcam viewpoints often do not clearly show the full collision context.
 
-### CarCrash Dataset
+# 5. Conclusion
 
-@InProceedings{BaoMM2020,
-    author = {Bao, Wentao and Yu, Qi and Kong, Yu},
-    title  = {Uncertainty-based Traffic Accident Anticipation with Spatio-Temporal Relational Learning},
-    booktitle = {ACM Multimedia Conference},
-    month  = {May},
-    year   = {2020}
-}
+ATIRE demonstrates how Cosmos Reason 2 can move from perception to structured physical reasoning, converting traffic video into interpretable incident reports.
 
-[CarCrashDataset Github](https://github.com/Cogito2012/CarCrashDataset)
+This approach enables scalable analysis of real-world traffic events and illustrates the potential of reasoning-based physical AI systems.
+
+# 6. License
+
+MIT License
+
+# 7. Acknowledgements
+
+[NVIDIA Cosmos Reason 2](https://github.com/nvidia-cosmos/cosmos-reason2)
+[NVIDIA Cosmos Cookoff](https://nvidia-cosmos.github.io/cosmos-cookbook/)
+[CarCrashDataset](https://github.com/Cogito2012/CarCrashDataset)
