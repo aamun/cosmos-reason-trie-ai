@@ -1,0 +1,53 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. A black sedan is seen drifting sharply to the right before crashing into a yellow truck traveling in the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "black_sedan",
+      "type": "car"
+    },
+    {
+      "id": "yellow_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black sedan drifts sharply to the right, colliding violently with a yellow truck traveling in the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash beyond the initial drift is unclear.",
+    "Reason for the sedan's drift is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The collision between the sedan and truck results in a violent impact, indicating a high-risk scenario.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001088",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:22:52.414527+00:00"
+  }
+}

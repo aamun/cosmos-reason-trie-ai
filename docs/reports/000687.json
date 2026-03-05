@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a daytime highway scene with clear skies and minimal traffic. Multiple vehicles are traveling in both directions. The sun shines brightly, causing glare on the windshield. Cars maintain their lanes and move steadily.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "NEOLINE",
+      "type": "car"
+    },
+    {
+      "id": "NEOLINE_1",
+      "type": "car"
+    },
+    {
+      "id": "NEOLINE_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling on a highway under sunny conditions. Vehicles maintain their lanes and exhibit normal driving behavior without any apparent incidents.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Glare from the sun may obscure some details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous behaviors evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000687",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:30:18.137462+00:00"
+  }
+}

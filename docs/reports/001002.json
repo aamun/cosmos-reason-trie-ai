@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. A yellow truck is positioned ahead in the rightmost lane, while several cars move alongside it. Vehicles pass by on the left side of the highway. Road signs indicate directions for \"XOXOL\" and \"TO.\" The environment appears clear with ample daylight.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along the highway, including a yellow truck in the rightmost lane and several cars passing by.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Vehicle speeds and behaviors beyond the initial observations remain unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001002",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:48:41.633805+00:00"
+  }
+}

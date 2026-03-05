@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a rainy day on a multi-laned road with wet asphalt. Vehicles are traveling in both directions, and there are trees lining the sides of the road alongside buildings. Signs indicating \"STOP,\" \"CHILDREN CROSSING AREA,\" and \"BUS STOP\" are visible.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are seen driving on a rainy day.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles cannot be confirmed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000879",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:25:31.090239+00:00"
+  }
+}

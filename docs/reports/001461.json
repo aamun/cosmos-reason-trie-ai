@@ -1,0 +1,43 @@
+{
+  "summary": "The video shows a vehicle traveling on a snowy road with snowbanks lining both sides of the road. The vehicle ahead has its brake lights illuminated, indicating减速或停车。道路两侧有树木，天空呈现出黄昏时分的柔和光线。",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A van is seen driving on a snowy road, with its brake lights illuminated.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The brake lights of the van are illuminated, but it is unclear if this indicates减速或停车。",
+    "The presence of snowbanks suggests adverse weather conditions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy road surface, which may affect traction and braking efficiency.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001461",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:26:41.274393+00:00"
+  }
+}

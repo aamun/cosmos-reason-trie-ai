@@ -1,0 +1,73 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-laned highway under clear skies with ample sunlight. Cars are spaced apart and moving steadily.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are traveling on a multi-laned highway under clear skies.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The speed of the vehicles is not measurable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001245",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:35:14.356436+00:00"
+  }
+}

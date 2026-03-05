@@ -1,0 +1,62 @@
+{
+  "summary": "The video shows a highway with multiple lanes and several vehicles traveling in both directions. Traffic appears moderately congested, with cars and trucks moving at varying speeds. The sky is overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the highway, including sedans and trucks. Cars are traveling in both directions, maintaining moderate speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is not quantified, making precise comparisons difficult.",
+    "Lane markings may be unclear due to distance and resolution."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic flow is moderate, and there are no visible collisions or erratic behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000023",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:00:44.995447+00:00"
+  }
+}

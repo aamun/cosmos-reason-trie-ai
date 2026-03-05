@@ -1,0 +1,61 @@
+{
+  "summary": "Multiple vehicles are traveling across a multi-lane bridge. Cars and trucks are seen moving in both directions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars and trucks are traveling across the bridge.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise actions of the vehicles are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, accidents, or hazardous behaviors observed among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001250",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:33:53.026531+00:00"
+  }
+}

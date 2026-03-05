@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a street scene viewed from inside a vehicle, with the dashboard camera providing a first-person perspective. The road is marked with yellow dividing lines and white crosswalks, indicating a two-way street. Buildings line both sides of the street, including shops and residences. Vehicles are present on the road, including a white sedan seen ahead and another vehicle partially visible on the left side of the frame.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan is seen driving ahead on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the white sedan is unclear due to its partial visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000780",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:58:52.868393+00:00"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "summary": "The dashcam footage depicts a nighttime urban street scene viewed from inside a vehicle. The road is illuminated by streetlights, and various traffic signs are visible, including prohibitory signs and directional arrows. Vehicles can be seen traveling in both directions along the road. There are no apparent collisions or incidents occurring within the frames provided.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "traffic sign"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "traffic sign"
+    },
+    {
+      "id": "vehicle_1",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_2",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the road, with headlights illuminating the scene. Traffic signs are visible, indicating prohibitory and directional information.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles are unclear due to limited visibility.",
+    "Some traffic signs may be partially obscured or unreadable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, erratic driving behaviors, or other hazards impacting the roadway.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000747",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:09:51.586513+00:00"
+  }
+}

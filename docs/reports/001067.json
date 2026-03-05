@@ -1,0 +1,65 @@
+{
+  "summary": "The video shows a silver sedan traveling down a multi-laned road with several buildings and trees lining the streetscape. The sedan is followed closely by another vehicle, and there are pedestrians crossing the street at a crosswalk. Snow is visible on the ground, indicating cold weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "following_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan travels down a multi-laned road, followed closely by another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Pedestrians are seen crossing the street at a crosswalk.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of pedestrians are unclear due to slight motion blur.",
+    "Visibility of snowflakes is limited due to foggy conditions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001067",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:29:21.220984+00:00"
+  }
+}

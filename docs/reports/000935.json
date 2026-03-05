@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a nighttime scene on a wet road with multiple lanes, illuminated by streetlights. Vehicles are traveling in both directions, including trucks and cars. The road appears slick due to rain, and there are barriers separating opposing traffic flows.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling in both directions on a wet road. Trucks and cars are present, with their headlights illuminating the scene.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and identities of all vehicles are unclear due to reflections and limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the wet road surface, which may affect traction. However, no immediate collisions or hazardous interactions are evident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000935",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:08:07.314259+00:00"
+  }
+}

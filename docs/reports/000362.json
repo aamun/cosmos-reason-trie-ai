@@ -1,0 +1,50 @@
+{
+  "summary": "The footage captures a vehicle traveling along a highway surrounded by trees under clear skies. The road appears to have two lanes in each direction, separated by a median. Vehicles are seen moving ahead, including a red sedan directly in front of the recording vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red sedan travels ahead of the recording vehicle, maintaining a consistent distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The speed of the vehicles is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors observed.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000362",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:13:46.578058+00:00"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "summary": "The video captures a traffic scene at an intersection with multiple vehicles and motorcycles navigating through the area. A motorcycle with a rider wearing a helmet is seen moving forward across the intersection. Several cars and vans are present, including a white van and a blue truck, which appear to be traveling in different directions. Trees and buildings surround the intersection, providing context for the urban setting.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "mot_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A motorcycle with a rider moves forward across the intersection, followed by several cars and vans traveling in different directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise speed and direction of the motorcycle and other vehicles cannot be determined due to limited visibility.",
+    "Some background details like signage or signals are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed between any vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000445",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:46:03.986692+00:00"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "The video shows a traffic scene captured from a dashcam perspective, featuring a white sedan ahead of the observer vehicle. The road is populated with multiple vehicles traveling in both directions. Traffic appears moderate, with cars and buses moving steadily.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles including a white sedan, bus, and truck are seen traveling along the road.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of all vehicles are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous interactions between vehicles.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001269",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:27:53.952049+00:00"
+  }
+}

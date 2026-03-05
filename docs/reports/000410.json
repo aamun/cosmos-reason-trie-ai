@@ -1,0 +1,75 @@
+{
+  "summary": "The video shows a snowy urban street with wet roads. Vehicles are present, including a white van parked on the right side and a black sedan driving past. A pedestrian appears suddenly on the road, seemingly crossing illegally.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van is parked on the right side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "A black sedan drives past the van.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.2
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "A person wearing dark clothing crosses the road illegally.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.2
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The pedestrian's intent is unclear due to their sudden appearance.",
+    "The exact cause of the pedestrian's illegal crossing is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The presence of a pedestrian illegally crossing the road poses a potential risk of injury or collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000410",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:57:35.943235+00:00"
+  }
+}

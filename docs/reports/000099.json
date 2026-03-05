@@ -1,0 +1,55 @@
+{
+  "summary": "The footage captures a roadway with multiple lanes and surrounding greenery. Vehicles are traveling in both directions. The camera initially focuses on a black SUV moving alongside another vehicle before abruptly shifting to an upward view, indicating a sudden movement or disruption.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along a multi-laned road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The abrupt shift in the camera's perspective to an upward view is unclear.",
+    "The identity of the vehicles cannot be fully determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "While there is no direct collision or hazardous behavior evident, the sudden camera shift introduces uncertainty regarding the context of the incident.",
+    "confidence": 0.85
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000099",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:37:48.824471+00:00"
+  }
+}

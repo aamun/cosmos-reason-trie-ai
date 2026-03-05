@@ -1,0 +1,60 @@
+{
+  "summary": "The video captures nighttime footage from a dashcam perspective as a vehicle drives through an intersection. The road is illuminated by streetlights, and several cars are present, including a white hatchback on the left and a taxi approaching from the opposite direction. The taxi's headlights illuminate the road ahead, creating reflections on the wet pavement. Traffic signs and signals are visible but their details are unclear due to lighting conditions.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "taxi_1",
+      "type": "taxi"
+    },
+    {
+      "id": "white_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white hatchback is seen driving alongside the ego-vehicle on the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A taxi approaches from the opposite direction, its headlights illuminating the road ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Details of traffic signs and signals are unclear due to lighting conditions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001165",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:58:52.710041+00:00"
+  }
+}

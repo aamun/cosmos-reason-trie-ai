@@ -1,0 +1,42 @@
+{
+  "summary": "The video captures a snowy road with sparse traffic. A white van approaches from the distance, driving straight towards the camera. The road appears icy, and the surrounding trees are bare, indicating winter conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van drives toward the camera on a snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The timestamp displayed in the frames indicates a date and time, but its relevance to the incident analysis is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000024",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:00:28.879868+00:00"
+  }
+}

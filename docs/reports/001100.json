@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures nighttime street scenes viewed from a dashcam perspective. Vehicles are traveling along a road with buildings lining both sides. Traffic lights and streetlights illuminate the area, creating reflections on wet surfaces. Cars are seen moving in both directions.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are traveling along the road at night. Cars maintain their lanes and speeds, with no apparent collisions or disruptions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Reflections on the road surface may obscure some details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, erratic movements, or hazardous behaviors among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001100",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:19:09.360109+00:00"
+  }
+}

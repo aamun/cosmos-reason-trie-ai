@@ -1,0 +1,65 @@
+{
+  "summary": "Two motorcycles collide with each other and then crash into a white van and a yellow van parked on the road.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "motocycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motocycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 1.4,
+      "t_end": 4.2,
+      "event": "Motocycles collide with each other and crash into vans.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        2.8,
+        3.5,
+        4.2
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash is unclear due to limited visibility.",
+    "Timing of the crash relative to the vehicles' positions is ambiguous."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The collision between two motorcycles results in significant disruption to the parked vehicles, indicating a high-risk situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000325",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:26:57.578775+00:00"
+  }
+}

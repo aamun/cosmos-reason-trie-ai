@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a car driving along a suburban street with multiple vehicles present. The road has clear lane markings, and there are several cars traveling in both directions. Traffic signs such as pedestrian crossings and speed limits are visible. Vehicles maintain safe distances from each other, and there are no apparent incidents or disruptions in the flow of traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling on a suburban road with clear lane markings. Cars maintain safe distances from each other, and traffic flows smoothly without interruptions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of additional vehicles beyond those shown in the frames is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles are moving steadily without any observable incidents or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000660",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:39:16.674155+00:00"
+  }
+}

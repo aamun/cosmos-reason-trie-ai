@@ -1,0 +1,66 @@
+{
+  "summary": "The video captures a city street with moderate traffic, featuring vehicles such as buses, cars, and vans traveling in both directions. The road is marked with directional arrows and tram lines overhead. Buildings line the streets, and there are trees providing shade along the sidewalks.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "tram_line_1",
+      "type": "unknown"
+    },
+    {
+      "id": "tram_line_2",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including buses and cars, are seen moving steadily on the road. A bus travels alongside the ego-vehicle while other cars move in opposite directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of all vehicles cannot be precisely determined due to limited frame resolution."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001219",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:43:26.017805+00:00"
+  }
+}

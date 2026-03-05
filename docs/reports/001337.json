@@ -1,0 +1,54 @@
+{
+  "summary": "Three motorcyclists wearing rain jackets wait at an intersection with wet roads. A yellow taxi is partially visible on the right side.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "taxi_1",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_3",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Three motorcyclists wait patiently at an intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact reason for the motorcyclists' halt is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no signs of imminent danger or collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001337",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:05:25.814278+00:00"
+  }
+}

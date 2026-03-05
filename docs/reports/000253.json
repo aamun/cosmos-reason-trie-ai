@@ -1,0 +1,70 @@
+{
+  "summary": "The footage captures a vehicle traveling along a multi-laned road during daytime hours. The sky appears overcast, suggesting cloudy weather conditions. Multiple vehicles are present on the road, including sedans and vans, moving in both directions. The road is bordered by buildings and utility poles, indicating an urban setting.",
+  "q_day_night": "Day",
+  "q_weather": "Cloudy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "van"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    },
+    {
+      "id": "car_6",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the road, with sedans and vans moving in both directions.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are not fully clear due to limited frame resolution.",
+    "Some background elements like buildings and poles are partially obscured, making it difficult to assess their full characteristics."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors evident in the provided frames.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000253",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:49:02.322360+00:00"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "summary": "The footage captures a nighttime urban street scene viewed from a dashcam perspective. Vehicles are present on the road, with headlights illuminating the surroundings. The sky is dark blue, indicating evening or night time.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "ego_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle approaches an intersection while traveling at a moderate speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles cannot be fully determined due to limited visibility.",
+    "Certain details about the surrounding environment are obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001258",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:31:09.812544+00:00"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in the same direction. Snow accumulates around the vehicles, obscuring their fronts. The road appears congested due to heavy snowfall.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen moving forward on a snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility of the vehicles' fronts due to snow accumulation."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the road is covered in snow, there are no indications of collisions, reckless driving, or other hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000147",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:24:09.771979+00:00"
+  }
+}

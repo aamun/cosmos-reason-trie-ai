@@ -1,0 +1,47 @@
+{
+  "summary": "The dashcam footage depicts nighttime driving conditions with streetlights illuminating the road ahead. A vehicle approaches from the left side of the frame, moving parallel to the ego-vehicle.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car approaches from the left side of the frame, traveling parallel to the ego-vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to darkness.",
+    "Precise details about the car's speed and intentions are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001439",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:33:35.295525+00:00"
+  }
+}

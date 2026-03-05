@@ -1,0 +1,65 @@
+{
+  "summary": "A convoy of vehicles, including a green truck and several cars, is traveling along a congested urban street. The convoy advances steadily, maintaining a safe distance from surrounding vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The convoy of vehicles, consisting of a green truck and multiple cars, advances steadily along the congested urban street.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The convoy's speed and spacing are consistent throughout the frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000987",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:53:27.671469+00:00"
+  }
+}

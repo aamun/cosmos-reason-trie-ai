@@ -1,0 +1,70 @@
+{
+  "summary": "The footage captures a vehicle traveling along a city street under clear skies with modern buildings lining both sides of the road. Traffic signs such as pedestrian crossings and prohibitions for overtaking are visible. Vehicles are seen moving ahead and alongside the recording vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the roadway, including cars and trucks, traveling in both directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility.",
+    "Some traffic signs are partially obscured or unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000993",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:51:54.961450+00:00"
+  }
+}

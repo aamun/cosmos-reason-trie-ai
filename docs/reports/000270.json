@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a road scene with multiple vehicles traveling in both directions. A bus overtakes the camera vehicle from the opposite direction, passing closely while maintaining a safe distance.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "cam_1",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bus overtakes the camera vehicle from the opposite direction, passing closely while maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Distance between the bus and the camera vehicle is unclear due to rapid movement."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The bus maintains a safe distance from the camera vehicle, indicating no immediate threat.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000270",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:44:01.099558+00:00"
+  }
+}

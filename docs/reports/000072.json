@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. A large truck is seen driving ahead in the center lane, while cars move alongside it in adjacent lanes. Snow patches are visible along the roadside, indicating winter conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a snowy highway. Cars are positioned in adjacent lanes, maintaining distance from each other.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of snow patches along the roadside is noted but not fully confirmed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000072",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:45:21.322590+00:00"
+  }
+}

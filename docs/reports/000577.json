@@ -1,0 +1,66 @@
+{
+  "summary": "The video shows a vehicle traveling along a road with clear skies and green surroundings. Traffic signs and markings are visible, including a pedestrian crossing sign. Vehicles pass by on adjacent lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "traffic_sign"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "traffic_sign"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars travel alongside the ego-vehicle on parallel roads.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and behaviors of all vehicles are unclear due to limited visibility.",
+    "Traffic flow dynamics beyond the immediate vicinity are not fully observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Observations indicate normal traffic conditions without apparent incidents or hazards.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000577",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:04:57.819312+00:00"
+  }
+}

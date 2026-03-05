@@ -1,0 +1,82 @@
+{
+  "summary": "The footage captures a first-person view from inside a vehicle traveling along a road lined with trees and buildings. A bus is seen moving alongside the vehicle, while several cars are parked on the roadside. The driver maneuvers carefully around obstacles such as parked vehicles and pedestrians.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "bus_2",
+      "type": "bus"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bus travels alongside the vehicle, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Several cars are parked on the roadside.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Pedestrians can be seen walking on the sidewalk.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and movements of pedestrians are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001363",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:57:42.588110+00:00"
+  }
+}

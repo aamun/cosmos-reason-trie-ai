@@ -1,0 +1,47 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. Snow accumulates on either side of the road, reducing visibility and traction. Vehicles maintain a safe distance from each other while driving cautiously.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a snowy road, maintaining a safe distance from each other.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of road signs are unclear.",
+    "Precise distances between vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to cautious driving and snow-covered conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000645",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:43:53.824584+00:00"
+  }
+}

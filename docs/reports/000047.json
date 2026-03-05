@@ -1,0 +1,78 @@
+{
+  "summary": "The footage captures a city street scene viewed from inside a vehicle, with multiple cars traveling in both directions. Vehicles maintain moderate speeds and distances, with occasional lane changes occurring as they navigate through intersections under an overpass.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "car_8",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along a city street, maintaining moderate speeds and spacing.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Lane changes and overtaking maneuvers are frequent but do not constitute collisions.",
+    "Speed fluctuations are observed, but they remain within normal limits."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles maintain safe distances and speeds, with no apparent collisions or incidents.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000047",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:53:10.631043+00:00"
+  }
+}

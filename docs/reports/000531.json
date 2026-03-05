@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a nighttime scene on a snowy road with multiple vehicles traveling in both directions. Snow accumulates on the windshield, obscuring visibility. Vehicles are moving slowly due to adverse weather conditions.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Snow accumulates on the windshield, obstructing visibility.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility obstruction due to snowfall",
+    "Precise speed and braking actions of vehicles"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Limited visibility caused by snowfall may lead to reduced reaction times, posing a potential risk.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000531",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:19:01.033287+00:00"
+  }
+}

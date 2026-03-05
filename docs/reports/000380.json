@@ -1,0 +1,86 @@
+{
+  "summary": "A vehicle is halted in the right lane of a two-lane road, with its brake lights illuminated. Snow accumulates along the roadside, indicating winter conditions. Vehicles are queued up ahead, and another vehicle passes by from the left side.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "car_8",
+      "type": "car"
+    },
+    {
+      "id": "car_9",
+      "type": "car"
+    },
+    {
+      "id": "car_10",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle is stopped in the right lane, displaying brake lights.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles queued up ahead is unclear.",
+    "The reason for the halted vehicle's brake lights is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000380",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:07:28.732532+00:00"
+  }
+}

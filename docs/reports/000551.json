@@ -1,0 +1,59 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. A red car is seen moving ahead of the camera vehicle, while other cars are visible in the background. Traffic signals regulate the flow of vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a snowy road, regulated by traffic signals.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles are unclear due to snowfall.",
+    "Traffic signal status is not fully observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to snow-covered roads, but potential hazards like slippery conditions exist.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000551",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:13:04.554117+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "summary": "The footage captures nighttime driving conditions on a two-lane road illuminated by streetlights. The vehicle’s headlights illuminate the road ahead, and there is minimal traffic. A car approaches from the opposite direction, traveling in the adjacent lane.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "MiVue538",
+      "type": "car"
+    },
+    {
+      "id": "MiVue538_opposite",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car approaches from the opposite direction, traveling in the adjacent lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of MiVue538_opposite is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or hazardous situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000719",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:19:29.261556+00:00"
+  }
+}

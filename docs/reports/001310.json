@@ -1,0 +1,78 @@
+{
+  "summary": "The video shows a rainy urban street with multiple vehicles moving forward. A blue SUV is prominently featured in the center of the road, followed closely by other cars. The road appears wet due to rainfall, and there are several buildings and advertisements lining both sides of the street.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "rainbow",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a wet road under rainy conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Precise details about the blue SUV's actions are unclear.",
+    "Exact reasons for the vehicles' movements are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous behaviors evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001310",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:14:44.960019+00:00"
+  }
+}

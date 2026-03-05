@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling at low speeds. A white sedan is seen driving ahead of the observer vehicle, maintaining a safe distance. The road surface is covered in snow, creating a slippery condition. Other vehicles can be seen further down the road, also navigating cautiously due to the adverse weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan drives ahead of the observer vehicle, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the observer vehicle is unclear.",
+    "Some details of the vehicles' interiors are obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy road surface, which creates a slippery condition for vehicles. However, all vehicles appear to be traveling at low speeds and maintaining a safe distance from each other, minimizing the risk of collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001177",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:55:15.070588+00:00"
+  }
+}

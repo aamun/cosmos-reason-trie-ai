@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a nighttime urban street scene with multiple vehicles traveling in the same direction. A silver SUV is positioned ahead of the observer vehicle, maintaining a safe distance. To the right of the SUV, another vehicle is traveling alongside. Streetlights illuminate the road, and the environment appears clear of obstructions.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    },
+    {
+      "id": "observer_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV travels ahead of the observer vehicle, maintaining a consistent pace and distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the second vehicle traveling alongside the SUV is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001195",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:49:49.132878+00:00"
+  }
+}

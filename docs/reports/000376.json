@@ -1,0 +1,57 @@
+{
+  "summary": "The video shows a highway with multiple lanes and several vehicles traveling in both directions. A black sedan is seen driving alongside a trailer truck on the left side of the road. The camera appears to be mounted on another vehicle, providing a view of the road ahead. Suddenly, the camera experiences a rapid shift, resulting in a blurry image as it captures an abrupt movement.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A black sedan travels alongside a trailer truck on the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        3
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The camera experiences a rapid shift, resulting in a blurry image.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Blurry image after the rapid shift",
+    "Unclear cause of the rapid shift"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the sudden camera shift leading to a blurry image, which does not constitute a traffic incident but rather a technical issue.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000376",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:08:37.963697+00:00"
+  }
+}

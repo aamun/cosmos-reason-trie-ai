@@ -1,0 +1,59 @@
+{
+  "summary": "The video shows a rainy day with multiple cars traveling on a wet road. Vehicles are moving slowly, and their brake lights are illuminated, indicating congestion or slowdowns. Cars are positioned closely together, suggesting cautious driving due to adverse weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are traveling slowly on a wet road, with brake lights illuminated, indicating congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles beyond the initial five are unclear.",
+    "Intensity and duration of rainfall cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Slow-moving vehicles with brake lights on suggest potential risks such as hydroplaning or sudden stops.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000201",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:06:31.985216+00:00"
+  }
+}

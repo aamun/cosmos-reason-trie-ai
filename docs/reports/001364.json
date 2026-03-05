@@ -1,0 +1,54 @@
+{
+  "summary": "The dashcam footage depicts a nighttime urban driving scenario with multiple vehicles traveling along a multi-laned road illuminated by streetlights. The driver navigates through traffic, maintaining awareness of surrounding vehicles.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV passes closely alongside the dashcam vehicle, creating a brief moment of proximity.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the SUV passing closely alongside the dashcam vehicle is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to the SUV passing closely but without any observable collision or disruption to the dashcam vehicle’s trajectory.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001364",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:57:22.423414+00:00"
+  }
+}

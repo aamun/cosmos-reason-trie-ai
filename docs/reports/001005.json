@@ -1,0 +1,65 @@
+{
+  "summary": "The video captures a rainy day on a multi-laned road with wet pavement. The camera is positioned inside a vehicle, showing a view through the windshield with raindrops and wiper activity. Several vehicles are present, including a red sedan and a black SUV, traveling in the same direction. Pedestrians can be seen walking along the sidewalk.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "truck"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "unknown"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a wet road under rainy conditions.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of pedestrians are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the wet road surface, which may affect traction.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001005",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:47:53.117540+00:00"
+  }
+}

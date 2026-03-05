@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. A white sedan approaches from the opposite direction and passes closely beside the ego-vehicle, necessitating cautious navigation.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_1",
+      "type": "car"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan approaches from the opposite direction and passes closely beside the ego-vehicle, necessitating cautious navigation.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the white sedan is unclear.",
+    "Distance between the ego-vehicle and the white sedan varies slightly."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Close proximity of the white sedan necessitates cautious driving, indicating a moderate risk of collision.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001163",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:59:21.317821+00:00"
+  }
+}

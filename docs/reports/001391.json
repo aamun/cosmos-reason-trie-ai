@@ -1,0 +1,65 @@
+{
+  "summary": "The video shows a vehicle traveling on a two-way road with trees lining both sides. Ahead, there is a large truck carrying construction equipment, which appears to be undergoing maintenance or loading/unloading operations. Other vehicles are present on the road, including a white van passing by from the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van passes by the ego-vehicle from the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The truck ahead exhibits slight instability, possibly due to its cargo.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact nature of the truck’s cargo and its stability is unclear.",
+    "The reason for the truck’s instability is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no direct collision or dangerous interaction between the ego-vehicle and any other actors. The primary concern is the truck’s potential instability, but this does not appear to pose an immediate threat.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001391",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:48:48.609021+00:00"
+  }
+}

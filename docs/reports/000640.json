@@ -1,0 +1,89 @@
+{
+  "summary": "The footage captures a snowy road with multiple vehicles traveling in both directions. Snow covers the ground and trees, indicating adverse weather conditions. Vehicles are seen moving steadily along the road, maintaining their lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_marking_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_marking_2",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_3",
+      "type": "unknown"
+    },
+    {
+      "id": "snow_on_trees",
+      "type": "unknown"
+    },
+    {
+      "id": "snow_on_ground",
+      "type": "unknown"
+    },
+    {
+      "id": "vehicle_on_left_lane",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_on_right_lane",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_on_left_lane",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_on_right_lane",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a snowy road, with snow covering the ground and trees.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of all vehicles cannot be determined due to limited visibility.",
+    "Precise locations of road markings are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy road surface, which may affect vehicle traction and braking distances. However, no collisions or incidents are evident in the provided frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000640",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:45:23.397432+00:00"
+  }
+}

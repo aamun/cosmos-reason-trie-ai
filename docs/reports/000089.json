@@ -1,0 +1,47 @@
+{
+  "summary": "The video shows a snowy urban street with multiple vehicles parked along the roadside. Snow covers the ground and rooftops, indicating cold weather conditions. Several cars are visible, including a white sedan and a silver hatchback. The windshield has water droplets, suggesting recent precipitation. Vehicles appear stationary, and there is no visible movement or activity from drivers.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are parked along the roadside, covered in snow. Snow accumulates on rooftops and the ground.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Drivers' actions are unknown due to lack of motion.",
+    "Precipitation timing is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable collisions, accidents, or hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000089",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:40:33.848434+00:00"
+  }
+}

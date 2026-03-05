@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a snowy road with multiple cars traveling in both directions. Vehicles maintain safe distances from each other while driving cautiously due to slippery conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are seen moving along the snowy road, maintaining cautious speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of vehicles beyond the initial frames are unclear.",
+    "Speed limits and road markings are not fully visible."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles are traveling at appropriate speeds for snowy conditions, and there are no indications of collisions or reckless behavior.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000299",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:36:09.708612+00:00"
+  }
+}

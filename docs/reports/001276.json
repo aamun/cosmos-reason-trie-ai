@@ -1,0 +1,48 @@
+{
+  "summary": "A motorcycle traveling on the road collides with a barrier, causing the rider to fall.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "barrier",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The motorcycle collides with the barrier, resulting in the rider falling.",
+      "confidence": 0.95,
+      "frame_indices": [
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the rider after the fall is unclear.",
+    "Exact speed and trajectory of the motorcycle before the collision are unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The motorcycle crashes into a barrier, leading to a fatal outcome for the rider.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001276",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:25:02.898119+00:00"
+  }
+}

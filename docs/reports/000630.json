@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a first-person view from a vehicle traveling along a rural road with two lanes in each direction. The date displayed is February 19, 2019. Ahead, another vehicle is seen traveling in the opposite lane. Suddenly, debris explodes from the road surface, obscuring the view momentarily.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Debris explodes violently from the road surface, blocking the view briefly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the explosion is unclear.",
+    "Cause of the explosion is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "Explosion debris obstructs the view, potentially endangering the driver.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000630",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:48:23.517755+00:00"
+  }
+}

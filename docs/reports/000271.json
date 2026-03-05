@@ -1,0 +1,73 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. A large military truck crosses the road from left to right, followed by a convoy of trucks and cars moving in the same direction. Vehicles maintain safe distances as they pass each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    },
+    {
+      "id": "sedan_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A convoy of trucks and cars travels along the highway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles beyond the convoy are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles are traveling at consistent speeds and maintaining appropriate distances.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000271",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:43:46.505752+00:00"
+  }
+}

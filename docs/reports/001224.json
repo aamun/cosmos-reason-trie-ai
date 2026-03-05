@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a nighttime urban street scene viewed from a dashcam perspective. The environment is illuminated by streetlights, creating a well-lit roadway with minimal shadows. Two bicyclists are seen riding on the road, moving towards the camera. Suddenly, they collide violently, causing them to crash onto the pavement.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "cyclist_2",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "Two bicyclists collide violently, resulting in a crash where both fall to the ground.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        2.1,
+        2.8,
+        3.5,
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of the bicyclists cannot be confirmed due to their obscured appearances.",
+    "Precise locations of the bicyclists before the crash are unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The bicyclists collide violently, leading to a crash and endangering themselves and potentially others nearby.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001224",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:41:28.509018+00:00"
+  }
+}

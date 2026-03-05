@@ -1,0 +1,59 @@
+{
+  "summary": "Multiple vehicles are traveling on a city street with traffic lights regulating their flow. Cars are seen moving forward while others wait at the intersection.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are moving forward while others wait at the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the bus is unclear.",
+    "Some vehicles' license plates are unreadable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions observed between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001300",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:17:55.343791+00:00"
+  }
+}

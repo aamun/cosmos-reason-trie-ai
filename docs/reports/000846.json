@@ -1,0 +1,66 @@
+{
+  "summary": "The video captures a busy urban street scene with multiple vehicles including cars, motorcycles, buses, and trams. A white sedan is prominently featured in the foreground, followed closely by a red car and a motorcycle. The tram labeled \"DOCKIMOC\" is seen traveling alongside the road. Vehicles appear to be moving smoothly without any apparent disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "tram_1",
+      "type": "bus"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles including cars, motorcycles, buses, and trams are present on the road, moving in different directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are not fully clear due to limited visibility.",
+    "Some background elements like buildings and trees are partially obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000846",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:36:03.170546+00:00"
+  }
+}

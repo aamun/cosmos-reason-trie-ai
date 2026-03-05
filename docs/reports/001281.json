@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. A red sedan overtakes a white SUV on the left side of the road while a large truck travels ahead in the opposite direction. A cyclist appears on the right side of the road, riding parallel to the highway. The environment suggests an overcast day with moderate traffic flow.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on a highway under overcast conditions. A red sedan overtakes a white SUV on the left lane, while a large truck travels ahead in the opposite direction. A cyclist rides alongside the highway on the right side.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed values for each vehicle are not measurable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions among the vehicles and bicyclist.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001281",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:23:45.431860+00:00"
+  }
+}

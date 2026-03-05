@@ -1,0 +1,56 @@
+{
+  "summary": "The video begins with a view of a two-lane highway bordered by leafless trees under an overcast sky. A white sedan travels ahead in the right lane, while the ego vehicle drives in the left lane. The sedan gradually moves closer to the ego vehicle, eventually overtaking it and crossing into the same lane.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan travels ahead in the right lane, while the ego vehicle drives in the left lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The sedan crosses into the same lane as the ego vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The sedan's speed and braking distance are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or significant hazard.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000080",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:43:11.731345+00:00"
+  }
+}

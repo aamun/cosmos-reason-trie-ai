@@ -1,0 +1,47 @@
+{
+  "summary": "The footage captures nighttime行车 scenes with streetlights illuminating the road.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle is seen driving along a dimly lit street at night.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to limited visibility.",
+    "The identity of the vehicles cannot be confirmed definitively."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Insufficient information regarding weather conditions and vehicle identities prevents a conclusive assessment.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001403",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:45:24.611546+00:00"
+  }
+}

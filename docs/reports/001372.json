@@ -1,0 +1,54 @@
+{
+  "summary": "The footage captures a dashcam view from a vehicle traveling on a multi-laned road during daytime under overcast skies. The road is moderately busy with several vehicles moving ahead. A Ukrainian flag is affixed to the dashboard, indicating the driver's nationality. Traffic signs and advertisements are visible overhead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a multi-laned road. Cars and trucks maintain consistent speeds and positions relative to each other.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed readings fluctuate slightly between frames, but there is no indication of erratic driving behavior."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to be maintaining their lanes and speeds without any abrupt maneuvers or collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001372",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:54:43.025687+00:00"
+  }
+}

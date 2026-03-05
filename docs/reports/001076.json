@@ -1,0 +1,46 @@
+{
+  "summary": "The video captures a city street with multiple lanes of traffic moving in both directions. Vehicles are traveling at moderate speeds, and there is minimal congestion. Buildings line both sides of the street, and advertisements are visible on billboards. The road appears to be wet, suggesting recent rainfall.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A large truck drives past the camera from left to right, occupying the middle lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of multiple vehicles and their movements may indicate potential risks, but no collisions or incidents are evident."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001076",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:26:38.054902+00:00"
+  }
+}

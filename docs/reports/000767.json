@@ -1,0 +1,65 @@
+{
+  "summary": "The dashcam footage captures a highway scene with multiple vehicles traveling in both directions. The road appears wet, suggesting recent rainfall. Vehicles are seen moving steadily, with some cars passing by from the opposite direction. Toward the end of the sequence, a white van overtakes the dashcam vehicle from the left side.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_van",
+      "type": "truck"
+    },
+    {
+      "id": "silver_car",
+      "type": "car"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    },
+    {
+      "id": "gray_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a wet highway under overcast skies.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and braking distance of the dashcam vehicle are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous behaviors evident in the footage.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000767",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:02:55.335968+00:00"
+  }
+}

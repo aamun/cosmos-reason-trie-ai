@@ -1,0 +1,66 @@
+{
+  "summary": "The video captures a nighttime scene on a multi-laned highway illuminated by streetlights. Vehicles are traveling in both directions, with headlights and taillights visible against the dark backdrop. The road appears wet, suggesting recent rainfall, and there are guardrails separating opposing lanes.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along the highway at night under streetlight illumination.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and identities of all vehicles cannot be determined due to limited visibility.",
+    "Presence of snowfall or icy conditions is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous behaviors impacting traffic flow.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000382",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:06:49.228557+00:00"
+  }
+}

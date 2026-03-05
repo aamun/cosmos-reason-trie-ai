@@ -1,0 +1,59 @@
+{
+  "summary": "The video captures a traffic incident involving multiple vehicles on a multi-laned road under an overpass. The sequence begins with several cars traveling in the same direction. Suddenly, a black sedan crashes into another vehicle, causing both to veer off course and collide violently.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black sedan collides violently with another vehicle, sending both cars flying wildly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of all vehicles are unclear due to limited visibility.",
+    "Precise location of the crash site relative to the roadway is ambiguous."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The violent crash results in significant disruption to the flow of traffic and poses a serious threat to the safety of all involved parties.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000771",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:01:35.259978+00:00"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The footage captures a first-person view from inside a vehicle traveling along a two-lane road during daylight hours. Snow patches are visible on the roadside, indicating cold weather conditions. Multiple vehicles, including trucks and cars, are seen traveling in both directions. The driver maneuvers through the road, passing by other vehicles while maintaining awareness of their surroundings.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including trucks and cars, travel in both directions on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal vehicular interactions observed; drivers maintain awareness and pass by each other without apparent incidents.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000141",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:26:05.182275+00:00"
+  }
+}

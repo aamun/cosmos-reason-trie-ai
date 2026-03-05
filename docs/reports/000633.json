@@ -1,0 +1,83 @@
+{
+  "summary": "The video shows a car driving through an intersection with traffic lights. The car approaches the intersection while following a motorcycle ahead. Traffic flows smoothly, and there are no apparent collisions or incidents.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 1.8,
+      "event": "A car drives through an intersection with traffic lights.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 3.5,
+      "event": "Traffic flows smoothly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "Motorcycle drives ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Traffic flow may vary beyond the captured frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or incidents observed.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000633",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:47:29.162616+00:00"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "The footage captures a highway scene with multiple vehicles traveling in both directions under an overcast sky. Cars are seen moving steadily along the road, maintaining their lanes. Trees line the sides of the highway, creating a natural border.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are visible on the highway, traveling in both directions. Vehicles maintain consistent speeds and lane positions, indicating normal traffic flow.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed and precise positioning of vehicles are estimated but not directly measurable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic appears orderly with no immediate signs of collisions, reckless driving, or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000280",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:40:53.540499+00:00"
+  }
+}

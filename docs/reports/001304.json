@@ -1,0 +1,65 @@
+{
+  "summary": "The video shows a rainy day with multiple vehicles traveling on a multi-laned highway. The road appears wet, and visibility is somewhat reduced due to raindrops on the windshield. Several cars and trucks are seen moving in both directions. A white SUV is positioned ahead in the left lane, while an orange truck travels in the rightmost lane. All vehicles maintain a steady pace.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a multi-laned highway under rainy conditions. Vehicles maintain a steady pace, with no apparent collisions or disruptions.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility reduction due to raindrops on the windshield."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001304",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:16:53.998961+00:00"
+  }
+}

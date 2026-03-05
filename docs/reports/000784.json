@@ -1,0 +1,59 @@
+{
+  "summary": "The video captures a rainy day on a multi-laned road with vehicles traveling in both directions. The sky is overcast, and the road appears wet, reflecting light from the headlights of nearby cars. Multiple vehicles, including trucks and sedans, are seen moving along the road. The camera angle suggests it is mounted inside a vehicle, providing a view through the windshield.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "road_surface",
+      "type": "unknown"
+    },
+    {
+      "id": "vehicle_1",
+      "type": "truck"
+    },
+    {
+      "id": "vehicle_2",
+      "type": "sedan"
+    },
+    {
+      "id": "vehicle_3",
+      "type": "truck"
+    },
+    {
+      "id": "vehicle_4",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a rainy day, with trucks and sedans moving in both directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility.",
+    "Precise nature of the road surface (slickness) is inferred but not directly observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the rainy conditions create potential hazards, there is no immediate indication of collisions, reckless driving, or other severe incidents.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000784",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:57:26.374070+00:00"
+  }
+}

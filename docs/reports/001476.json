@@ -1,0 +1,54 @@
+{
+  "summary": "The footage captures a bustling urban street scene viewed from inside a vehicle, showcasing multiple vehicles including cars and buses traveling in both directions. Vehicles maintain moderate speeds while navigating through traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including cars and buses, travel along a multi-laned road under clear skies.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is not quantified."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic flow appears orderly with no immediate collisions or disruptions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001476",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:22:57.174043+00:00"
+  }
+}

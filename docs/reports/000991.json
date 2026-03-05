@@ -1,0 +1,46 @@
+{
+  "summary": "Two cars are stopped side-by-side on a road with wet pavement.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Car_1 and Car_2 are stopped side-by-side on a wet road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The license plate of Car_1 is partially obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no observable movement or hazard in the frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000991",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:52:23.825468+00:00"
+  }
+}

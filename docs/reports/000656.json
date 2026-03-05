@@ -1,0 +1,47 @@
+{
+  "summary": "The video shows a first-person view from a motorcycle traveling on a highway. The road is wet, suggesting recent rainfall. A large truck with a flatbed carrying logs is traveling alongside the motorcycle in the adjacent lane. Road signs indicate upcoming exits for Interstate 90 East and Interstate 88 West.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A motorcycle travels alongside a truck on a wet highway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The driver's speed and braking distance are unknown.",
+    "Whether the motorcycle maintains a safe distance from the truck is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no visible collision or near-miss between the motorcycle and the truck. Both vehicles maintain their lanes and speeds consistently throughout the frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000656",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:40:24.591785+00:00"
+  }
+}

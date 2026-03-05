@@ -1,0 +1,106 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam perspective, showing a rural road with trees, buildings, and vehicles passing by. The timestamp indicates early morning hours.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 0.7,
+      "event": "A tractor is seen driving through the village area.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 2.1,
+      "event": "A black SUV drives past the camera.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 3.5,
+      "event": "Another vehicle passes by.",
+      "confidence": 0.95,
+      "frame_indices": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "More vehicles pass by.",
+      "confidence": 0.95,
+      "frame_indices": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of vehicles relative to each other are unclear due to limited visibility.",
+    "Some frames lack clear identification of certain vehicles."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, accidents, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001307",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:16:03.042089+00:00"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a view from inside a vehicle approaching an intersection on a rainy day. The road appears wet, with puddles reflecting light. Several vehicles are present, including a black SUV and a silver sedan. The silver sedan overtakes the black SUV, causing them to collide at the intersection.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "black_suv",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 1.4,
+      "t_end": 4.2,
+      "event": "A silver sedan overtakes a black SUV at an intersection, resulting in a collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact timing of the collision is unclear due to limited frame resolution.",
+    "Visibility of additional vehicles beyond the silver sedan and black SUV is low."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The collision between the silver sedan and black SUV indicates a hazardous situation requiring immediate attention.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000936",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:07:51.072159+00:00"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "The video shows a road with multiple vehicles traveling in both directions. A white sedan passes closely alongside the ego-vehicle, prompting the driver to steer sharply to avoid a collision. The road appears wet, suggesting recent rainfall.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A white sedan passes closely alongside the ego-vehicle, prompting the driver to steer sharply to avoid a collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact distance between the ego-vehicle and the white sedan is unclear.",
+    "Visibility of the road surface condition beyond the wet patches is limited."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The close proximity of the white sedan necessitates an immediate corrective action from the ego-vehicle, indicating a potential collision risk.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000828",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:42:25.148966+00:00"
+  }
+}

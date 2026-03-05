@@ -1,0 +1,76 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-laned road under overcast skies. Cars and vans are seen moving in both directions, adhering to lane divisions marked with dashed lines.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "bus_2",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars and vans travel along a multi-laned road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Unclear if any vehicles are speeding or deviating from their lanes."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to follow normal driving patterns without deviations or collisions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000850",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:34:50.282228+00:00"
+  }
+}

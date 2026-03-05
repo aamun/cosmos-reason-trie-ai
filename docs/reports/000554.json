@@ -1,0 +1,74 @@
+{
+  "summary": "The video captures a road scene with minimal traffic activity. Vehicles are present but do not appear to be directly interacting with each other. The footage includes trees lining the roadside, utility poles, and buildings in the background. There is no evident collision, crash, or hazardous behavior among the vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "roadside_trees_1",
+      "type": "tree"
+    },
+    {
+      "id": "roadside_trees_2",
+      "type": "tree"
+    },
+    {
+      "id": "utility_pole_1",
+      "type": "utility pole"
+    },
+    {
+      "id": "utility_pole_2",
+      "type": "utility pole"
+    },
+    {
+      "id": "building_1",
+      "type": "building"
+    },
+    {
+      "id": "building_2",
+      "type": "building"
+    },
+    {
+      "id": "bridge_structure",
+      "type": "structure"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Minimal traffic activity on a rural road with no apparent incidents.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and movements of vehicles beyond the initial frames are unclear.",
+    "Intensity of sunlight varies slightly across frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, crashes, or hazardous behaviors observed in the provided frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000554",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:12:17.428569+00:00"
+  }
+}

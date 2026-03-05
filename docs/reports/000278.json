@@ -1,0 +1,70 @@
+{
+  "summary": "Multiple vehicles are traveling along a multi-laned road under clear skies with ample sunlight. Vehicles maintain moderate speeds and distances from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars and trucks travel along the roadway.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is unknown.",
+    "Distance between vehicles is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, accidents, or hazardous interactions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000278",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:41:27.363366+00:00"
+  }
+}

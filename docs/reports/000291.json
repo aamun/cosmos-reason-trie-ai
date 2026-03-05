@@ -1,0 +1,42 @@
+{
+  "summary": "The video captures a snowy road where a silver sedan is traveling ahead. The vehicle maintains a steady pace while navigating through the snow-covered terrain.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan travels steadily along the snowy road.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No collisions or incidents are evident in the frames provided."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy road conditions, which may affect traction and braking distances. However, there are no indications of severe disruptions or accidents.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000291",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:38:25.447803+00:00"
+  }
+}

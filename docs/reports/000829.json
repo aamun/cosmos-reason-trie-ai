@@ -1,0 +1,59 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. A black SUV is seen driving alongside another vehicle in the opposite lane. Suddenly, the black SUV veers sharply into the adjacent lane, colliding violently with a blue hatchback. The impact sends debris flying wildly, and the blue hatchback suffers significant damage.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black SUV collides violently with a blue hatchback, causing debris to fly wildly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the blue hatchback is unclear.",
+    "Some debris is visible but its origin is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The sudden violent collision between the black SUV and the blue hatchback results in severe debris scattering and potential injuries.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000829",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:42:08.233311+00:00"
+  }
+}

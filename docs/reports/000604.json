@@ -1,0 +1,54 @@
+{
+  "summary": "Multiple vehicles are traveling on a highway with moderate traffic flow. A white SUV overtakes a sedan from behind in the adjacent lane.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white SUV overtakes a sedan from behind in the adjacent lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the sedan being overtaken is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no indications of collisions, reckless driving, or other hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000604",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:57:09.789797+00:00"
+  }
+}

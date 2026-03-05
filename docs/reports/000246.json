@@ -1,0 +1,66 @@
+{
+  "summary": "The video shows a vehicle driving on a city street with multiple lanes and traffic signals. Vehicles are seen traveling in both directions. A white van passes closely alongside the recording vehicle, creating a brief moment of proximity.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van passes closely alongside the recording vehicle, creating a brief moment of proximity.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and distance between the van and the recording vehicle are unclear due to limited temporal resolution.",
+    "Visibility of additional vehicles beyond those shown may vary."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk of collision due to the brief and close pass of the van.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000246",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:51:43.998372+00:00"
+  }
+}

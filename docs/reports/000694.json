@@ -1,0 +1,59 @@
+{
+  "summary": "Multiple vehicles are traveling along a city street with buildings lining both sides. Cars are seen moving in both directions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_car",
+      "type": "car"
+    },
+    {
+      "id": "black_truck",
+      "type": "truck"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    },
+    {
+      "id": "gray_suv",
+      "type": "car"
+    },
+    {
+      "id": "dark_blue_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Silver car drives straight ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the white car is unclear.",
+    "The identity of the dark blue car is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000694",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:27:38.032868+00:00"
+  }
+}

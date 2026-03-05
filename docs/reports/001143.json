@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a vehicle driving on a snowy urban street with multiple buses parked along the roadside. The driver maneuvers around the buses, maintaining caution due to the slippery road conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "bus_2",
+      "type": "bus"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle drives forward on a snowy urban street, passing by several buses parked along the roadside.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact speed and maneuvering details of the ego-vehicle are unclear.",
+    "Some pedestrians' actions are not fully observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary risk is related to icy roads, which could lead to reduced traction and potential accidents if not managed properly. However, there are no direct collisions or severe disruptions observed.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001143",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:05:05.416286+00:00"
+  }
+}

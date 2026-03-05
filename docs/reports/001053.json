@@ -1,0 +1,65 @@
+{
+  "summary": "Multiple vehicles are traveling on a wet road at night. A white van with a taxi sign is positioned ahead, followed by other cars.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "taxi_1",
+      "type": "van"
+    },
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are moving along a wet road at night.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The speed of the vehicles is estimated but not directly observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous behaviors evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001053",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:33:16.919357+00:00"
+  }
+}

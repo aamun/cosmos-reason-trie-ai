@@ -1,0 +1,69 @@
+{
+  "summary": "The footage captures nighttime driving conditions on a multi-laned highway with moderate traffic. Vehicles are traveling in both directions, and there is a noticeable red sedan ahead of the ego-vehicle.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the highway at night.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous behaviors evident in the provided frames.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000238",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:53:55.045821+00:00"
+  }
+}

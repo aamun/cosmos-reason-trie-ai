@@ -1,0 +1,70 @@
+{
+  "summary": "The video shows a city street with multiple vehicles including cars, buses, motorcycles, and trucks moving in both directions. Vehicles maintain moderate speeds while navigating through an urban environment characterized by tall buildings, bridges, and construction sites.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling along a city road, maintaining safe distances from each other.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is not quantified.",
+    "Exact positions of vehicles relative to each other are approximate."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to be operating within expected parameters without any observable collisions, reckless maneuvers, or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000590",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:01:25.448069+00:00"
+  }
+}

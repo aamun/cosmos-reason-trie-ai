@@ -1,0 +1,86 @@
+{
+  "summary": "The video captures a city intersection during twilight hours with clear skies. Pedestrians and cyclists cross the street using designated crosswalks, while vehicles navigate through the intersection. Traffic signals regulate movement, and signage indicates pedestrian crossings and prohibitions against parking.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    },
+    {
+      "id": "cyclist_2",
+      "type": "bicycle"
+    },
+    {
+      "id": "cyclist_3",
+      "type": "bicycle"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Pedestrians and cyclists cross the intersection, while vehicles proceed cautiously.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of some pedestrians and cyclists are unclear due to motion blur.",
+    "Traffic signal status is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All actors exhibit normal behavior without collisions or hazardous interactions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000902",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:18:29.736338+00:00"
+  }
+}

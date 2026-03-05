@@ -1,0 +1,58 @@
+{
+  "summary": "Multiple vehicles including cars, motorcycles, and buses are traveling on a highway under an overpass. Vehicles maintain moderate speeds and distances from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including cars, motorcycles, and buses, are traveling on a highway under an overpass. Vehicles maintain moderate speeds and distances from each other.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed and distance between vehicles are not quantified."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001484",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:20:14.716407+00:00"
+  }
+}

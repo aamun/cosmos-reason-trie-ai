@@ -1,0 +1,74 @@
+{
+  "summary": "The video captures a busy street scene with multiple vehicles including buses, trucks, motorcycles, and cars. Vehicles are traveling in both directions, separated by dashed white lines. Motorcycles and buses are seen overtaking slower-moving vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "LOCATEX_truck",
+      "type": "truck"
+    },
+    {
+      "id": "YELLOW_BUS",
+      "type": "bus"
+    },
+    {
+      "id": "CYCLIST_ON_MOTORCYCLE",
+      "type": "motorcycle"
+    },
+    {
+      "id": "CAR_FOLLOWING_CYCLIST",
+      "type": "car"
+    },
+    {
+      "id": "WHITE_CAR_NEAR_BUS",
+      "type": "car"
+    },
+    {
+      "id": "BLUE_CAR_NEAR_BUS",
+      "type": "car"
+    },
+    {
+      "id": "BLACK_TRUCK_NEAR_BUS",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including buses, trucks, motorcycles, and cars, are traveling on a two-way road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of some vehicles may vary slightly due to camera perspective.",
+    "Speeds of vehicles cannot be precisely determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions evident in the frames provided.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001228",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:40:29.316852+00:00"
+  }
+}

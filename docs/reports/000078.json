@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. Snow is visible on the roadside, indicating winter conditions. Several cars and trucks are present, including a red truck on the left side of the road and a white van on the right. Vehicles maintain moderate speeds while navigating the road.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a red truck and a white van, travel along the highway under snowy conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is not quantified."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The scene depicts normal vehicular movement without any apparent collisions or hazardous interactions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000078",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:43:41.830927+00:00"
+  }
+}

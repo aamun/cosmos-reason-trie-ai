@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a nighttime scene on a multi-laned highway with moderate traffic. Visibility is low due to rain and darkness, making it difficult to discern fine details. Several vehicles are traveling in both directions, including cars and trucks. The road appears wet, suggesting recent rainfall.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the highway under rainy conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility limitations due to rain and darkness obscure finer details.",
+    "Precise identification of all actors is challenging due to low visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While visibility is compromised, there are no immediate indications of collisions or hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001226",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:40:58.012596+00:00"
+  }
+}

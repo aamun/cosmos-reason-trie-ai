@@ -1,0 +1,62 @@
+{
+  "summary": "The footage depicts a nighttime scene on a snowy road where multiple vehicles are traveling in opposite directions. The road appears slick due to snowfall, reducing traction. Cars are seen moving steadily, with headlights illuminating the path ahead.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along the road during nighttime under snowy conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are unclear.",
+    "Snowfall intensity varies across frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk of collision due to steady vehicle movement and clear visibility despite adverse weather conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000637",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:46:20.316998+00:00"
+  }
+}

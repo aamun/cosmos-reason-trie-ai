@@ -1,0 +1,66 @@
+{
+  "summary": "The video shows a snowy road with a single lane in each direction. Vehicles are traveling ahead, and there is a gas station on the left side of the road.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "gas_station_1",
+      "type": "building"
+    },
+    {
+      "id": "gas_station_2",
+      "type": "building"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling ahead on the snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles are unclear due to snowfall.",
+    "Visibility of distant objects may be compromised."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to clear visibility of the road and surrounding environment despite snowfall.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001431",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:36:00.704444+00:00"
+  }
+}

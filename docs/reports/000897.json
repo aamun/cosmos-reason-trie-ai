@@ -1,0 +1,147 @@
+{
+  "summary": "Pedestrians are crossing the street while vehicles wait.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_4",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_5",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_6",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_7",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_8",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_9",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_10",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Pedestrians are seen crossing the street while vehicles wait.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The pedestrians' movements are continuous and there is no indication of collisions.",
+    "Some vehicles are stationary, but their exact positions and statuses are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000897",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:20:32.945086+00:00"
+  }
+}

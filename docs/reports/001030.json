@@ -1,0 +1,57 @@
+{
+  "summary": "The video shows a flooded roadway with vehicles navigating through积水areas. A yellow car is seen driving across the flooded section, followed by a white truck that crosses the积水area as well. The road appears inundated with water, creating challenging conditions for vehicular movement.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A yellow car drives across the flooded roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A white truck crosses the flooded roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The extent of flooding beyond the roadway is unclear.",
+    "Precise timestamps for additional vehicles or obstacles are unavailable."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The flooded roadway poses a risk of hydroplaning and reduced traction for vehicles, potentially leading to accidents if drivers fail to navigate safely.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001030",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:40:35.386959+00:00"
+  }
+}

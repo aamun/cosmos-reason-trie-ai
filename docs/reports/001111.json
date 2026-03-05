@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a snowy road with several cars parked along the roadside and a few vehicles moving ahead. The road is covered in snow, creating a slippery surface.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black car drives towards the camera on a snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the black car is unclear due to poor visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001111",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:15:48.312973+00:00"
+  }
+}

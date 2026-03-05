@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a vehicle traveling along a two-lane road during daylight hours. Trees line both sides of the road, and there are occasional roadside structures like lampposts and signage. A motorcyclist appears in the adjacent lane, moving alongside the vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A motorcycle approaches from the opposite direction, traveling parallel to the ego-vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Motorcycle rider's behavior beyond passing closely is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to the motorcycle maintaining a safe distance and traveling parallel.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000162",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:19:00.056078+00:00"
+  }
+}

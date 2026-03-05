@@ -1,0 +1,65 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. A large white semi-trailer truck is seen on the left side of the road, while a silver SUV drives past on the right. Traffic appears moderate, with several cars visible ahead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "lawrence_truck",
+      "type": "truck"
+    },
+    {
+      "id": "silver_suv",
+      "type": "car"
+    },
+    {
+      "id": "black_car",
+      "type": "car"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    },
+    {
+      "id": "gray_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are moving along the highway, including a semi-trailer truck labeled \"Lawrence\" and various passenger cars.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles beyond the initial frames are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000463",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:40:44.780161+00:00"
+  }
+}

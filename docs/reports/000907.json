@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a vehicle driving on a narrow road with parked cars and dumpsters along the sides. A dump truck is traveling ahead, and a motorbike approaches from the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dump_truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "motorbike_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "dump_truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A dump truck travels forward on the road, followed by a motorbike approaching from the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Motorbike rider's actions are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000907",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:17:05.389609+00:00"
+  }
+}

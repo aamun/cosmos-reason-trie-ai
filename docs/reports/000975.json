@@ -1,0 +1,58 @@
+{
+  "summary": "A black sedan crashes into a motorcycle traveling perpendicular to the ego vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "black_sedan",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    },
+    {
+      "id": "van",
+      "type": "truck"
+    },
+    {
+      "id": "white_minivan",
+      "type": "truck"
+    },
+    {
+      "id": "silver_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The black sedan crashes into the motorcycle traveling perpendicular to the ego vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the rider on the motorcycle is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "There is a direct collision between the black sedan and the motorcycle, resulting in a crash.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000975",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:57:21.820936+00:00"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a snowy road with several vehicles traveling in both directions. A large truck is seen moving ahead in the opposite lane, while multiple cars are visible in the adjacent lanes. The road is bordered by snow-covered ground and trees.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "road_car_1",
+      "type": "car"
+    },
+    {
+      "id": "road_car_2",
+      "type": "car"
+    },
+    {
+      "id": "road_car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a snowy road, including a large truck and several cars.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles are unclear due to limited visibility.",
+    "Speeds of vehicles cannot be determined accurately."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000068",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:46:19.456879+00:00"
+  }
+}

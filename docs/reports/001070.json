@@ -1,0 +1,73 @@
+{
+  "summary": "A green bus is stopped in traffic, with several cars around it. A silver sedan approaches closely behind the bus, creating a potential collision risk.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "minibus_1",
+      "type": "minibus"
+    },
+    {
+      "id": "minibus_2",
+      "type": "minibus"
+    },
+    {
+      "id": "minibus_3",
+      "type": "minibus"
+    },
+    {
+      "id": "minibus_4",
+      "type": "minibus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The silver sedan accelerates rapidly toward the bus, increasing the likelihood of a collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the silver sedan collides with the bus remains uncertain due to the rapid acceleration.",
+    "The exact speed and trajectory of the silver sedan are unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The silver sedan accelerates rapidly toward the bus, which poses a significant risk of collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001070",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:28:34.993414+00:00"
+  }
+}

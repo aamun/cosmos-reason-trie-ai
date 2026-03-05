@@ -1,0 +1,52 @@
+{
+  "summary": "A silver sedan approaches from the left side of the frame and crashes into the windshield of the recording vehicle, causing the camera to become obscured.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "recording_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan drives past the recording vehicle from the left side of the frame, crashing into its windshield.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the driver of the crashed car is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The crash results in the destruction of the recording vehicle's windshield, which compromises the integrity of the footage and renders it unusable for further analysis.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001452",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:29:38.082632+00:00"
+  }
+}

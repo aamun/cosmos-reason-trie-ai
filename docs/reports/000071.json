@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling ahead. The road appears icy, and there are snowbanks on both sides.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Three cars are seen driving on a snowy road. The car in front emits brake lights, indicating braking or slowing down.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The brake lights of the car in front are activated, but it is unclear if this indicates braking or just a signal."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy road conditions which may affect traction and increase stopping distances. However, no immediate collisions or hazardous interactions are evident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000071",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:45:35.628346+00:00"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "summary": "The video shows a rainy day with wet roads reflecting surrounding vehicles and buildings. Multiple cars are present on a multi-laned road, including a white SUV driving ahead and several parked cars along the roadside. Traffic appears moderate, with vehicles maintaining their lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "car_8",
+      "type": "car"
+    },
+    {
+      "id": "car_9",
+      "type": "car"
+    },
+    {
+      "id": "car_10",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen on a rainy day, with reflections evident on the wet road surface.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Reflections on the road may obscure some details.",
+    "Precise vehicle interactions are unclear due to limited frame resolution."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous behaviors observed; vehicles maintain normal lane positions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000115",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:33:51.476498+00:00"
+  }
+}

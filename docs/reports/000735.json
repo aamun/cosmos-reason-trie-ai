@@ -1,0 +1,74 @@
+{
+  "summary": "The video shows a rainy day with multiple cars traveling on a multi-laned road. Vehicles are moving steadily, with some turning right at an intersection. Raindrops are visible on the windshield, indicating wet conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_car",
+      "type": "car"
+    },
+    {
+      "id": "red_car",
+      "type": "car"
+    },
+    {
+      "id": "black_car",
+      "type": "car"
+    },
+    {
+      "id": "gray_truck",
+      "type": "truck"
+    },
+    {
+      "id": "white_truck",
+      "type": "truck"
+    },
+    {
+      "id": "silver_bus",
+      "type": "bus"
+    },
+    {
+      "id": "gray_bus",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen driving on a multi-laned road under rainy conditions. Cars are traveling at moderate speeds, with some making turns.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of vehicles is unknown due to rain and visibility limitations.",
+    "Precise location of the intersection is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The scene depicts normal traffic flow without any apparent collisions or hazardous interactions. Vehicles maintain reasonable distances and speeds, and there are no indications of reckless driving or sudden maneuvers.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000735",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:13:43.552728+00:00"
+  }
+}

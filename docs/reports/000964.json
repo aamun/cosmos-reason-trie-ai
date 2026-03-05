@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling under an overpass. A large truck dominates the right lane, while cars move in adjacent lanes. The sky is clear, indicating daytime conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel on a highway under an overpass.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of \"truck_1\" is unclear due to its size and dominance in the frame."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, erratic movements, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000964",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:00:38.941423+00:00"
+  }
+}

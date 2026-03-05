@@ -1,0 +1,58 @@
+{
+  "summary": "The dashcam footage captures nighttime driving conditions on a multi-laned road illuminated by streetlights. Vehicles are traveling in both directions, with headlights and taillights visible. The timestamp indicates late hours, suggesting an urban or suburban setting.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen moving along the roadway under nighttime illumination.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to insufficient visibility.",
+    "Precise vehicle interactions or behaviors cannot be determined definitively."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Insufficient information regarding weather and potential hazards prevents a conclusive assessment.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000204",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:05:45.534545+00:00"
+  }
+}

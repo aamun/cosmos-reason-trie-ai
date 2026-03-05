@@ -1,0 +1,58 @@
+{
+  "summary": "A vehicle approaches from the left side of the road and stops in front of the ego-vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "A dark-colored hatchback drives toward the ego-vehicle from the left and comes to a halt in front of it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        2.1,
+        2.8,
+        3.5,
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the hatchback is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The hatchback stops abruptly in front of the ego-vehicle, creating a potential hazard for any nearby vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000142",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:25:50.206098+00:00"
+  }
+}

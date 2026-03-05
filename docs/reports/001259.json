@@ -1,0 +1,54 @@
+{
+  "summary": "The footage captures a vehicle traveling along an urban street during daylight hours. The driver maintains a steady pace while observing surrounding traffic. Multiple vehicles are present on the road, including sedans and SUVs, which are positioned ahead and alongside the recording vehicle. Traffic signals and signage are visible, guiding the flow of vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "SUV"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple sedans and SUVs are seen traveling along the roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is not quantified."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous behaviors evident in the footage.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001259",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:30:55.093071+00:00"
+  }
+}

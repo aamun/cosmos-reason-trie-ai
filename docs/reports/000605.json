@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. A blue van is positioned ahead in the center lane, while a silver hatchback follows closely behind it. To the left side of the frame, a black hatchback passes by swiftly, indicating high-speed traffic. Road signs and directional arrows are visible along the highway.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "silver_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "black_hatchback",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen moving steadily on the highway.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of the vehicles is not quantified."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous behaviors evident in the video.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000605",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:56:54.980266+00:00"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "summary": "The video depicts a daytime driving scene on a multi-laned highway with leafless trees lining both sides of the road. A sedan overtakes the ego-vehicle from behind in the adjacent lane. The timestamp indicates early morning hours.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A sedan overtakes the ego-vehicle from behind in the adjacent lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The timestamp may not accurately reflect the actual time of day."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000413",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:56:40.810737+00:00"
+  }
+}

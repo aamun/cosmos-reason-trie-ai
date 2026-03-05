@@ -1,0 +1,66 @@
+{
+  "summary": "The footage captures a city street scene viewed from inside a vehicle, showing an urban environment with buildings lining both sides of the road. Vehicles are present on the roadway, including a black sedan directly ahead of the recording vehicle. Pedestrians can be seen walking along the sidewalks, while traffic signs and signals regulate the flow of vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple pedestrians are seen walking along the sidewalk, including individuals wearing bright vests who may be workers or supervisors overseeing the area.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and identities of pedestrians are unclear due to limited visibility.",
+    "Traffic signals and their statuses are not fully discernible."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous interactions among the visible entities.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000319",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:28:31.409600+00:00"
+  }
+}

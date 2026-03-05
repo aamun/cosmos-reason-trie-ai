@@ -1,0 +1,60 @@
+{
+  "summary": "The video shows a road scene with multiple vehicles traveling in both directions. A large red dump truck is moving ahead in the same direction as the observer, while a silver sedan follows closely behind it. On the right side of the road, a cyclist rides parallel to the traffic flow. Utility poles and wires run alongside the road, and there are trees lining the left side.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A large red dump truck travels along the road, followed by a silver sedan.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A cyclist rides parallel to the traffic flow on the right side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cyclist's speed relative to the vehicles is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between any vehicles or cyclists.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001262",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:30:07.483967+00:00"
+  }
+}

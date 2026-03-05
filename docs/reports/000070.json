@@ -1,0 +1,50 @@
+{
+  "summary": "The footage depicts a vehicle traveling along a residential street with houses lining both sides. Vehicles are parked along the roadside, and there are no pedestrians or bicyclists present. The road appears clear except for a few parked cars.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan is seen parked on the left side of the road, partially blocking the lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of additional vehicles beyond those shown in the frames is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no active incidents or hazards evident in the frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000070",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:45:49.506763+00:00"
+  }
+}

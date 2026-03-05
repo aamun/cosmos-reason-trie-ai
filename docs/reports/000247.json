@@ -1,0 +1,67 @@
+{
+  "summary": "The video captures a snowy urban street with multiple vehicles moving slowly. A white sedan is stopped at an intersection, while other cars navigate cautiously due to the slippery conditions. Traffic lights regulate the flow of vehicles, and pedestrians are visible in the distance.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "unknown"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a white sedan and trucks, move slowly through a snowy intersection regulated by traffic lights.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of pedestrians are unclear.",
+    "Speed of vehicles cannot be determined precisely."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal vehicular interactions; drivers maintain cautious speeds appropriate for snowy conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000247",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:51:26.275654+00:00"
+  }
+}

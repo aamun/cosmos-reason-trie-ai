@@ -1,0 +1,65 @@
+{
+  "summary": "The video shows a motorcycle traveling along a rural road with multiple vehicles passing by. The motorcycle maintains a steady pace while observing the surrounding traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "van_1",
+      "type": "car"
+    },
+    {
+      "id": "minivan_1",
+      "type": "car"
+    },
+    {
+      "id": "minivan_2",
+      "type": "car"
+    },
+    {
+      "id": "minivan_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the road, including vans and minivans.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of an F*CK text overlay is unexpected and unclear in context."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles or the motorcycle.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000673",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:35:01.061498+00:00"
+  }
+}

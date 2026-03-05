@@ -1,0 +1,42 @@
+{
+  "summary": "The video shows a vehicle traveling along a multi-laned road with buildings and trees lining the sides. The road markings indicate lanes and crosswalks. A silver SUV is seen traveling alongside the ego-vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV travels alongside the ego-vehicle.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The speed of the silver SUV is not clearly measurable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000923",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:11:56.403183+00:00"
+  }
+}

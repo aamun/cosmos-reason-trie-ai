@@ -1,0 +1,58 @@
+{
+  "summary": "Multiple vehicles are traveling on a road with foggy conditions. A white SUV is seen ahead, followed by a blue truck carrying a load. Other cars are queued up behind them.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a road with foggy conditions. A white SUV is seen ahead, followed by a blue truck carrying a load. Other cars are queued up behind them.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The foggy conditions obscure visibility, making it difficult to discern finer details of the vehicles and their surroundings."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is reduced visibility due to fog, which may impact driver reactions. However, there are no immediate signs of collisions or erratic driving behaviors.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001231",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:39:27.901240+00:00"
+  }
+}

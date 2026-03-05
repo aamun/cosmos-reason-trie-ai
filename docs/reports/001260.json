@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a rainy day on a two-lane road with wet asphalt. Vehicles are traveling in both directions. A white pickup truck overtakes the ego-vehicle from the opposite direction, passing closely. The sky is overcast, and raindrops are visible on the windshield.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_2",
+      "type": "truck"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white pickup truck overtakes the ego-vehicle from the opposite direction, passing closely.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the trucks overtaken by the ego-vehicle cannot be confirmed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or hazardous behavior.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001260",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:30:39.566995+00:00"
+  }
+}

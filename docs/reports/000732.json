@@ -1,0 +1,84 @@
+{
+  "summary": "The dashcam footage captures a highway scene with multiple vehicles traveling in both directions. A white SUV overtakes the dashcam vehicle from the opposite direction, passing closely. Shortly after, a large truck appears from the left side of the road and drives past the dashcam vehicle. Unexpectedly, the dashcam vehicle experiences a sudden impact, causing its windshield to shatter violently, resulting in a loss of vision.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_suv",
+      "type": "car"
+    },
+    {
+      "id": "large_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white SUV overtakes the dashcam vehicle from the opposite direction, passing closely.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A large truck appears from the left side of the road and drives past the dashcam vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "The dashcam vehicle suffers a catastrophic impact, leading to shattered glass on the windshield.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash impact is unclear due to limited visibility.",
+    "Cause of the windshield shattering is ambiguous."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The dashcam vehicle experiences a violent impact that destroys the windshield, indicating a severe collision. This results in immediate danger to the occupants and potential fatalities.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000732",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:14:43.796902+00:00"
+  }
+}

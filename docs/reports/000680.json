@@ -1,0 +1,46 @@
+{
+  "summary": "The footage shows a vehicle traveling along a two-lane road bordered by trees and hillsides. A white sedan approaches from the opposite direction and passes closely beside the recording vehicle, resulting in a brief moment of proximity.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan travels alongside the ego-vehicle, passing very close to it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise distance between the vehicles during the pass is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is minimal risk due to the short duration of the pass and the lack of overt endangerment.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000680",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:32:19.678534+00:00"
+  }
+}

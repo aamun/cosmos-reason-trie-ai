@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a snowy highway with multiple vehicles traveling in both directions. Snow covers the ground and road edges, creating a slippery surface. Vehicles maintain moderate speeds while navigating cautiously due to adverse weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen driving on a snowy highway. The vehicles maintain a safe distance from each other, adapting to the slippery conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of vehicles is unclear due to snowfall.",
+    "Distance between vehicles varies slightly but remains consistent."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk of accidents due to cautious driving and adherence to safe distances.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000084",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:42:11.956549+00:00"
+  }
+}

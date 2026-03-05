@@ -1,0 +1,47 @@
+{
+  "summary": "A bicyclist wearing a neon jacket and helmet rides alongside a vehicle, stopping briefly before proceeding.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The cyclist rides alongside the ego-vehicle, stopping briefly before proceeding.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cyclist's exact speed and intent are unclear.",
+    "Whether the cyclist intends to merge into the lane is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of imminent collision or severe disruption to traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000766",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:03:08.425976+00:00"
+  }
+}

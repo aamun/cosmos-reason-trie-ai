@@ -1,0 +1,131 @@
+{
+  "summary": "The video captures a snowy urban street with multiple vehicles traveling in both directions. Cars are seen moving steadily, maintaining their lanes despite the snowy conditions. Snow accumulates along the roadside, indicating winter weather. Vehicles exhibit normal braking and acceleration behaviors consistent with driving in adverse weather.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "car_8",
+      "type": "car"
+    },
+    {
+      "id": "car_9",
+      "type": "car"
+    },
+    {
+      "id": "car_10",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are traveling in both directions on a snowy road. Vehicles maintain safe distances and drive cautiously due to snowfall.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles cannot be determined due to limited visibility.",
+    "Some vehicles' brake lights may flicker intermittently, but this could be due to snow accumulation rather than braking."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to be operating normally without any evident collisions, reckless maneuvers, or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000062",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:48:23.532282+00:00"
+  }
+}

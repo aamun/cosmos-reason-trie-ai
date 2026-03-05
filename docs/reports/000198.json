@@ -1,0 +1,89 @@
+{
+  "summary": "The video shows a street scene with multiple vehicles, including a black SUV prominently featured in the foreground. The SUV appears to be moving forward slowly while another vehicle passes by on its left side. Buildings line both sides of the road, and several other cars are parked along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_suv_1",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black SUV drives steadily down the street, maintaining a consistent speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bus passes by the SUV from the left side of the frame.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The license plate of the black SUV is partially obscured, making it difficult to read completely.",
+    "Some details of the buildings and parked cars are unclear due to the angle and distance."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000198",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:07:26.421670+00:00"
+  }
+}

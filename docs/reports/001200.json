@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a highway scene viewed from inside a vehicle, with a focus on the road ahead. The sky is partly cloudy, and the road is bordered by greenery. A black hatchback appears from the left side of the frame, traveling parallel to the recording vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black hatchback enters the frame from the left, traveling alongside the recording vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the black hatchback is unclear due to its distance and speed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001200",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:48:35.959143+00:00"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "summary": "The video shows a rural road with two lanes in each direction. A motorcycle approaches from the opposite direction, traveling at a moderate speed. Suddenly, the motorcycle crashes into an animal, causing it to flee the scene.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "animal_1",
+      "type": "unknown"
+    },
+    {
+      "id": "animal_2",
+      "type": "unknown"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A motorcycle travels along the road at a moderate pace.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The motorcycle crashes into an animal, resulting in the animal fleeing the scene.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the animal crashing into the motorcycle is unclear.",
+    "The exact cause of the crash is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The motorcycle crashes into an animal, which could pose a risk to other road users due to potential secondary collisions or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000793",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:54:45.914727+00:00"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "summary": "The dashcam footage captures a street scene with pedestrians crossing the road and vehicles moving along the roadway. A person carrying a red bag crosses the road, prompting the dashcam vehicle to halt abruptly.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_1",
+      "type": "car"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_3",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_4",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_5",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_6",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "A person carrying a red bag crosses the road, prompting the dashcam vehicle to halt abruptly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        35,
+        42
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the person carrying the red bag is unclear.",
+    "The reason for the dashcam vehicle stopping is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The dashcam vehicle stops abruptly upon detecting a pedestrian crossing the road, indicating a potential collision risk.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000891",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:22:18.920354+00:00"
+  }
+}

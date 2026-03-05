@@ -1,0 +1,61 @@
+{
+  "summary": "The video shows a highway scene with multiple lanes of traffic moving forward under clear skies. Vehicles are traveling at moderate speeds, maintaining their lanes. A white van with a yellow advertisement is prominently featured in the middle lane, while other cars are seen in adjacent lanes. The road is bordered by trees and barriers, indicating an open highway setting.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a highway with moderate speed and spacing.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed and spacing of vehicles are moderate but may require attention for safety."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles maintain consistent speeds and safe distances, with no immediate signs of collisions or erratic behavior.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000881",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:25:01.268483+00:00"
+  }
+}

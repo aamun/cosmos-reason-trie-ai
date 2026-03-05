@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a traffic scene from a dashcam perspective, showing a congested urban street with multiple vehicles halted or moving slowly. Dominating the center of the frame is a large blue shipping container truck, marked with \"UNIT45,\" positioned ahead of the viewer's vehicle. Several cars are queued up beside the truck, including a dark-colored sedan on the right and an SUV on the left. Traffic signs, such as pedestrian crossings and prohibitory signs, are visible along the roadside. The environment appears overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "adv_cam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "blue_shipping_container_truck",
+      "type": "truck"
+    },
+    {
+      "id": "dark_sedan_car",
+      "type": "car"
+    },
+    {
+      "id": "dark_suv_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A convoy of vehicles, led by a large blue shipping container truck, advances steadily through a congested urban roadway. Adjacent cars remain stationary or move slowly due to traffic congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the convoy and surrounding vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic congestion results in minimal vehicular movement, reducing the likelihood of collisions or accidents.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001032",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:40:06.400396+00:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a highway scene during twilight with multiple vehicles traveling in both directions. Cars are seen moving steadily, with brake lights occasionally illuminated, indicating normal traffic flow.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are traveling on the highway, maintaining their lanes and speeds. Brake lights illuminate intermittently, suggesting normal traffic conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Intermittent brake lights may indicate cautious driving but do not suggest a collision or incident."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, reckless maneuvers, or disruptions in traffic flow. Vehicles maintain consistent speeds and lane positions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000357",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:15:56.529008+00:00"
+  }
+}

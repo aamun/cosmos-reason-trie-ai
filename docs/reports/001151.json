@@ -1,0 +1,75 @@
+{
+  "summary": "The video captures a snowy urban street with multiple vehicles and pedestrians. A white van is stopped on the right side of the road, partially obstructing the lane. A pedestrian wearing a red jacket crosses the street from right to left. The ego-vehicle approaches the van cautiously, maintaining a safe distance. Snow accumulates around the van, indicating recent snowfall.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_2",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van is parked on the right side of the road, partially blocking the lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A pedestrian wearing a red jacket crosses the street from right to left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle approaches the van cautiously, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the second pedestrian is unclear.",
+    "The exact nature of the van's obstruction is ambiguous."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no direct collision or severe disruption observed between the ego-vehicle and the van. The situation appears controlled, with the ego-vehicle maintaining a safe distance.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001151",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:02:40.275235+00:00"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "summary": "The footage captures a rural road during twilight hours with minimal traffic. Vehicles are seen traveling in both directions, maintaining a safe distance from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling along the road, including cars and trucks, moving smoothly without any apparent incidents.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise nature of the vehicles' movements and their interactions cannot be fully assessed due to limited frame resolution."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable collisions, near misses, or hazardous behaviors among the vehicles present.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000383",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:06:30.990986+00:00"
+  }
+}

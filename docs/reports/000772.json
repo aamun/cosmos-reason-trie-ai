@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a highway scene where a large truck dominates the left side of the frame, traveling alongside a sedan in the adjacent lane. The truck appears to be moving steadily while the sedan maintains a safe distance behind it. Trees line the right side of the road, and utility poles run parallel to the roadway.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A large truck occupies the left lane, traveling alongside a sedan in the adjacent lane.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The sedan's speed relative to the truck is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no indications of imminent collisions or hazardous interactions between vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000772",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:01:18.426196+00:00"
+  }
+}

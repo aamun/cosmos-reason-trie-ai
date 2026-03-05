@@ -1,0 +1,47 @@
+{
+  "summary": "The footage captures a vehicle traveling along a rural road during daylight hours. The road is bordered by trees and grass, with clear lane markings delineating the lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white SUV approaches from the opposite direction and passes by the recording vehicle without any interaction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the second car is unclear due to its obscured view.",
+    "There is no indication of any collision or interaction between the two vehicles."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the passing of the SUV without any observable interaction or collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000443",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:46:57.040079+00:00"
+  }
+}

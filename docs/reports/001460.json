@@ -1,0 +1,61 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. Vehicles are seen maintaining their lanes and speeds while adhering to traffic regulations.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on the highway, maintaining their lanes and speeds.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Vehicle behaviors beyond lane maintenance and speed regulation are not fully observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles maintain consistent speeds and lane positions without any apparent deviations or collisions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001460",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:26:56.532772+00:00"
+  }
+}

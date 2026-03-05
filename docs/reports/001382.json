@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. Cars are seen moving steadily along the road, maintaining their lanes. The environment appears clear with good visibility, and there are no apparent incidents or disruptions in the flow of traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are traveling on a multi-lane highway. Vehicles maintain consistent speeds and positions within their respective lanes.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of all vehicles are unclear due to limited detail.",
+    "Speeds of some vehicles cannot be precisely determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to be operating normally without any observable collisions, reckless maneuvers, or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001382",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:51:35.829414+00:00"
+  }
+}

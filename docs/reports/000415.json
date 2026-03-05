@@ -1,0 +1,47 @@
+{
+  "summary": "A blue hatchback passes closely alongside a black Nissan SUV parked on the right side of the road, with minimal disturbance to the SUV’s rear bumper.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A blue hatchback drives past the black Nissan SUV, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The extent of the blue hatchback’s speed relative to the Nissan SUV is unclear.",
+    "Minimal disturbances to the Nissan SUV’s rear bumper indicate a close pass but do not confirm a collision."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no direct contact between the blue hatchback and the Nissan SUV, and the incident appears minor.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000415",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:56:14.228841+00:00"
+  }
+}

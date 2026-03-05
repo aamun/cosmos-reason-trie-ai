@@ -1,0 +1,74 @@
+{
+  "summary": "The video shows a traffic scene captured from inside a vehicle, with multiple cars traveling in both directions on a multi-laned road. Snow is present on the roadside, indicating cold weather conditions. Vehicles maintain moderate speeds and distances, with occasional lane changes occurring as they navigate through the intersection.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling in both directions on a multi-laned road. Cars maintain moderate speeds and distances, occasionally changing lanes.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are inferred indirectly from the timestamps and descriptions.",
+    "Lane changes and speed variations are estimated based on general traffic patterns."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the video. Traffic flows smoothly with vehicles maintaining appropriate spacing and speed.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000005",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:06:02.872207+00:00"
+  }
+}

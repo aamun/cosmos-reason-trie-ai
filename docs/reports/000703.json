@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a highway with multiple lanes and several vehicles traveling in both directions. The road markings are clear, delineating lanes for traffic flow. Vehicles maintain consistent speeds and distances from each other, indicating normal driving conditions without disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the highway, maintaining their positions and speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No collisions, near misses, or hazardous interactions are evident."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles are moving smoothly without any abrupt changes or deviations from expected behavior.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000703",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:24:42.326124+00:00"
+  }
+}

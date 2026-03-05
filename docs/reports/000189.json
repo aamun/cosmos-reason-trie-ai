@@ -1,0 +1,94 @@
+{
+  "summary": "The video shows a vehicle driving along a city street with multiple lanes and intersections. The driver encounters several traffic signs, including pedestrian crossings and warnings about railway tracks. Vehicles pass by on adjacent lanes, and pedestrians can be seen walking along sidewalks. The road appears clear except for these vehicles and pedestrians.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 1.4,
+      "event": "A white truck drives past the camera from left to right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 3.5,
+      "event": "The camera pans sharply to the right, capturing a view of trees and a railway crossing.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The camera continues panning to the right, showing more trees and a railway crossing.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise location of the railway crossing relative to the road is unclear.",
+    "Some details of the vehicles passing by are obscured due to motion blur."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed. The primary activity involves normal vehicular and pedestrian movement.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000189",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:10:38.329305+00:00"
+  }
+}

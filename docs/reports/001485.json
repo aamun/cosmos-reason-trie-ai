@@ -1,0 +1,47 @@
+{
+  "summary": "The video captures nighttime driving conditions with streetlights illuminating the road. A white sedan approaches from the right side of the frame and passes by closely beside the ego-vehicle, creating a brief moment of proximity.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "A white sedan approaches from the right side of the frame and passes by closely beside the ego-vehicle, creating a brief moment of proximity.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The weather condition is unclear due to the lack of visible precipitation or wet surfaces."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or significant disturbance caused by the passing vehicle.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001485",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:19:59.196117+00:00"
+  }
+}

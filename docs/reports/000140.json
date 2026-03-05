@@ -1,0 +1,66 @@
+{
+  "summary": "The video captures a rainy day on a multi-lane highway with vehicles traveling at moderate speeds. Visibility is reduced due to raindrops on the windshield, and drivers must navigate cautiously.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on a wet highway during rainfall.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Precise speed and braking distances of vehicles cannot be determined due to rain conditions.",
+    "Visibility limitations caused by raindrops obscure some details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While driving conditions are challenging due to rain, there are no immediate collisions or incidents reported.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000140",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:26:21.659826+00:00"
+  }
+}

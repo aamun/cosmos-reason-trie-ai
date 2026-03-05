@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a rural road with a convoy of vehicles traveling in the same direction. The convoy consists of trucks carrying loads, and they maintain a safe distance from each other. The road is flanked by buildings and trees, with utility poles lining the sides.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    },
+    {
+      "id": "truck_4",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A convoy of trucks travels along a rural road, maintaining a consistent pace and spacing between vehicles.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The convoy's speed and spacing may vary slightly over time."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors observed in the convoy.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001251",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:33:37.853287+00:00"
+  }
+}

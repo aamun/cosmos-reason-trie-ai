@@ -1,0 +1,110 @@
+{
+  "summary": "The video shows a city street with multiple lanes, vehicles traveling in both directions, and various buildings lining the road. Snow patches are visible on the roadside, indicating cold weather conditions. Flags flutter in the wind atop flagpoles along the sidewalk.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "sign"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "sign"
+    },
+    {
+      "id": "road_sign_3",
+      "type": "sign"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "car_8",
+      "type": "car"
+    },
+    {
+      "id": "car_9",
+      "type": "car"
+    },
+    {
+      "id": "car_10",
+      "type": "car"
+    },
+    {
+      "id": "flagpole_1",
+      "type": "flagpole"
+    },
+    {
+      "id": "flagpole_2",
+      "type": "flagpole"
+    },
+    {
+      "id": "flagpole_3",
+      "type": "flagpole"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling on the road, including sedans and SUVs, maintaining their lanes.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles cannot be fully determined due to limited visibility.",
+    "Presence of snow patches suggests rainy conditions, but this may not directly correlate with actual rainfall."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or other hazardous behaviors evident in the video.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001024",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:42:48.565595+00:00"
+  }
+}

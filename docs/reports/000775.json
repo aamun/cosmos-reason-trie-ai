@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a van traveling along a multi-laned road with clear lane markings and traffic signals. The van proceeds through an intersection, passing by a cyclist who is riding alongside it.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A van travels along a multi-laned road with clear lane markings and traffic signals. The van proceeds through an intersection, passing by a cyclist who is riding alongside it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the cyclist is aware of the van's presence is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles or cyclists.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000775",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:00:29.945099+00:00"
+  }
+}

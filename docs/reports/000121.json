@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a vehicle driving through an urban area with buildings and trees lining the streets. Snow covers the ground, indicating winter conditions. Traffic signals and road markings are visible, guiding the flow of vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle drives forward on a snowy street, passing by buildings and trees.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of snow may affect visibility and traction, but there is no indication of a collision or hazardous condition."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy environment, which could pose risks for drivers. However, the video does not show any collisions, near misses, or loss of control.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000121",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:32:04.933454+00:00"
+  }
+}

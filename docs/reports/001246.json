@@ -1,0 +1,81 @@
+{
+  "summary": "The footage captures a dashcam view from a vehicle navigating through an urban intersection. Vehicles are seen moving in various directions, with some cars halted at traffic signals. Trees line the streets, and buildings are visible in the background. Traffic signs, including prohibitory signs, guide drivers.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "traffic sign"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "traffic sign"
+    },
+    {
+      "id": "road_sign_3",
+      "type": "traffic sign"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    },
+    {
+      "id": "van",
+      "type": "truck"
+    },
+    {
+      "id": "sedan",
+      "type": "car"
+    },
+    {
+      "id": "minivan",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present, including sedans, vans, and trucks, navigating through an intersection.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles beyond those explicitly shown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to be obeying traffic rules and maintaining their lanes without any apparent collisions or reckless maneuvers.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001246",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:34:57.540807+00:00"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "summary": "The footage captures nighttime driving conditions with streetlights illuminating the road ahead. A vehicle approaches from the opposite direction, its headlights glaring intensely into the camera. The driver maneuvers cautiously, avoiding obstacles such as barriers and uneven terrain.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle approaches from the opposite direction, its headlights glaring intensely into the camera.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the approaching vehicle is unclear due to glare from headlights.",
+    "Precise details about the road surface and obstacles are obscured by glare."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk of collision due to cautious driving and limited visibility.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000511",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:25:47.074833+00:00"
+  }
+}

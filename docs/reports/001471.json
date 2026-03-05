@@ -1,0 +1,60 @@
+{
+  "summary": "The dashcam footage shows a vehicle traveling along a suburban street. A white sedan overtakes the dashcam vehicle from behind, passing closely. Concurrently, a bus travels alongside the dashcam vehicle, maintaining a safe distance.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    },
+    {
+      "id": "bus",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan overtakes the dashcam vehicle from behind, passing closely.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bus travels alongside the dashcam vehicle, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and distance between vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or hazardous situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001471",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:24:13.580453+00:00"
+  }
+}

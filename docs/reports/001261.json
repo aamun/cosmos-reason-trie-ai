@@ -1,0 +1,61 @@
+{
+  "summary": "The footage captures a highway scene viewed from inside a vehicle, showcasing multiple cars traveling in both directions. Vehicles are seen moving steadily along the road, with some passing by closely. The sky appears overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on the highway, including cars and trucks, maintaining their lanes and speeds.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of any potential collisions or hazardous interactions is unclear due to the distance between vehicles.",
+    "Weather conditions are ambiguous, making it difficult to classify them definitively."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no immediate signs of collisions, reckless driving, or other hazards evident in the frames provided.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001261",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:30:24.058494+00:00"
+  }
+}

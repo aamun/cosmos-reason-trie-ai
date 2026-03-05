@@ -1,0 +1,118 @@
+{
+  "summary": "The video shows a daytime scene on a multi-laned road with several vehicles parked along the roadside. The date and time displayed are June 25, 2014, at 19:05:53. Vehicles are seen traveling in both directions, and there is no apparent traffic incident occurring within these frames.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "car_8",
+      "type": "car"
+    },
+    {
+      "id": "car_9",
+      "type": "car"
+    },
+    {
+      "id": "car_10",
+      "type": "car"
+    },
+    {
+      "id": "car_11",
+      "type": "car"
+    },
+    {
+      "id": "car_12",
+      "type": "car"
+    },
+    {
+      "id": "car_13",
+      "type": "car"
+    },
+    {
+      "id": "car_14",
+      "type": "car"
+    },
+    {
+      "id": "car_15",
+      "type": "car"
+    },
+    {
+      "id": "car_16",
+      "type": "car"
+    },
+    {
+      "id": "car_17",
+      "type": "car"
+    },
+    {
+      "id": "car_18",
+      "type": "car"
+    },
+    {
+      "id": "car_19",
+      "type": "car"
+    },
+    {
+      "id": "car_20",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are present on the road, including a white sedan ahead and several parked vehicles along the roadside. Traffic appears orderly with no immediate incidents.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The timestamp discrepancy between the recorded date/time and the actual date/time may indicate an anomaly."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, reckless maneuvers, or hazardous behaviors observed among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001282",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:23:28.731620+00:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. A green Volkswagen Beetle is positioned in the rightmost lane, while a white van travels in the adjacent left lane. Traffic flows smoothly without any apparent incidents.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "vw_car_1",
+      "type": "car"
+    },
+    {
+      "id": "vw_car_2",
+      "type": "car"
+    },
+    {
+      "id": "vw_bus",
+      "type": "bus"
+    },
+    {
+      "id": "vw_minivan",
+      "type": "truck"
+    },
+    {
+      "id": "green_volkswagen_beetle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on a multi-laned highway under daylight conditions.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No collisions or incidents are evident in the provided frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001267",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:28:47.369482+00:00"
+  }
+}

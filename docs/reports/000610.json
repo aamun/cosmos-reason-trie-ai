@@ -1,0 +1,47 @@
+{
+  "summary": "A silver hatchback is stopped on the left side of the road with its emergency lights flashing, accompanied by a person wearing a high-vis jacket who appears to be attending to the vehicle. Traffic flows steadily in the adjacent lanes, including cars and trucks passing by.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "silver_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "person_in_high_vis_jacket",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver hatchback is halted on the roadside with emergency lights activated, while a person in a high-vis jacket attends to the vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The reason for the hatchback's halt is unclear.",
+    "The identity of the person attending to the hatchback cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The hatchback is stopped with emergency lights on, indicating an incident requiring attention. The presence of a person attending to the vehicle suggests potential hazards related to the situation.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000610",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:55:12.526673+00:00"
+  }
+}

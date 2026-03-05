@@ -1,0 +1,65 @@
+{
+  "summary": "The video depicts a traffic scenario where multiple vehicles are traveling on a multi-laned road under overcast skies. The road appears congested with several cars moving in both directions. A red hatchback is seen driving ahead of the ego-vehicle, followed closely by other cars. Suddenly, a silver hatchback veers sharply into the median divider, disrupting the flow of traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "silver_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "red_hatchback",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver hatchback suddenly veers sharply into the median divider, disrupting the flow of traffic.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the silver hatchback's sudden movement constitutes a collision or mere disruption remains unclear.",
+    "Exact reasons for the silver hatchback’s erratic behavior are unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The silver hatchback’s abrupt deviation into the median divider poses a significant risk to surrounding vehicles due to its unpredictable trajectory.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000734",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:14:02.176055+00:00"
+  }
+}

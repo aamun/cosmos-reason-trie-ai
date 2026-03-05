@@ -1,0 +1,55 @@
+{
+  "summary": "The footage captures nighttime scenes on a snowy street illuminated by streetlights. Vehicles with headlights are traveling in both directions. Snowbanks line the sides of the road, and pedestrians can be seen walking along the sidewalks.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "snowbanks",
+      "type": "unknown"
+    },
+    {
+      "id": "streetlights",
+      "type": "unknown"
+    },
+    {
+      "id": "vehicles",
+      "type": "unknown"
+    },
+    {
+      "id": "pedestrians",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling in both directions on a snowy street at night.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identities of the vehicles cannot be determined.",
+    "Pedestrian behaviors are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy conditions which may affect traction and visibility.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000508",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:26:34.471680+00:00"
+  }
+}

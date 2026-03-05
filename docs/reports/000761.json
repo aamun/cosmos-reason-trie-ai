@@ -1,0 +1,132 @@
+{
+  "summary": "The video depicts a sequence of frames from a dashcam recording a road scene where a motorcyclist rides past a vehicle. The motorcyclist overtakes the car, which then proceeds forward. A bus is seen traveling alongside the road, and there are several parked vehicles along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 1.4,
+      "event": "A motorcyclist wearing a helmet rides past a stationary white SUV on the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 2.1,
+      "event": "The motorcyclist continues riding past the SUV and exits the frame.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 2.1,
+      "t_end": 2.8,
+      "event": "A dark sedan drives past the motorcycle and comes to a stop.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 3.5,
+      "event": "The motorcycle rider approaches the stopped sedan and passes by it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "The motorcycle rider continues moving away from the sedan.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "The motorcycle rider moves further down the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the motorcyclist cannot be definitively confirmed.",
+    "Some details of the vehicles are obscured due to motion blur."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between the vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000761",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:05:24.279130+00:00"
+  }
+}

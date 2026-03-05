@@ -1,0 +1,82 @@
+{
+  "summary": "The video shows a busy urban street with multiple vehicles including cars, buses, taxis, motorcycles, and pedestrians. Vehicles are traveling in both directions, adhering to traffic signals and regulations. A motorcycle approaches from the right side of the frame, moving towards the center where a red sedan is positioned ahead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "taxi",
+      "type": "taxi"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    },
+    {
+      "id": "bus",
+      "type": "bus"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along a city street, including sedans, taxis, buses, motorcycles, and pedestrians.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact cause of the motorcycle crash is unclear.",
+    "Motorcyclist's reaction time is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "A motorcycle crashes into a red sedan, resulting in a collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000942",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:06:10.408753+00:00"
+  }
+}

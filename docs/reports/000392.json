@@ -1,0 +1,70 @@
+{
+  "summary": "The video shows a nighttime urban street scene with multiple vehicles and pedestrians. The main focus is on a white SUV driving ahead of the observer, accompanied by other cars including a van and a sedan. Streetlights illuminate the road, and traffic signals regulate vehicle movement.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the road, including a white SUV leading the convoy, a van, and a sedan.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to limited visibility.",
+    "Precise timing of pedestrian movements is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000392",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:04:06.326133+00:00"
+  }
+}

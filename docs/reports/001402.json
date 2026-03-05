@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a traffic scene captured from a dashcam perspective on a multi-laned road during daylight hours. A black SUV is driving ahead of the observer vehicle, maintaining a safe distance. Multiple vehicles are present, including a police car with flashing lights traveling alongside the observer vehicle. Pedestrians can be seen walking along the sidewalk on the right side of the road.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_suv",
+      "type": "car"
+    },
+    {
+      "id": "observer_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "police_car",
+      "type": "car"
+    },
+    {
+      "id": "person_on_sidewalk",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black SUV drives ahead of the observer vehicle, maintaining a steady pace.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the pedestrian on the sidewalk is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the video. All vehicles maintain appropriate distances, and pedestrians appear to be walking normally.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001402",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:45:41.110602+00:00"
+  }
+}

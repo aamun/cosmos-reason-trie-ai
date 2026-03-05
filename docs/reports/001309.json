@@ -1,0 +1,62 @@
+{
+  "summary": "The video captures a nighttime urban street scene with multiple vehicles and pedestrians. The timestamp indicates late hours, and the environment includes buildings, sidewalks, and crosswalks. Vehicles are seen moving along the road, including cars and trucks. Pedestrians can be observed walking on the sidewalks.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A person is seen crawling across the road, likely attempting to evade a vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4.2
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact motivation behind the pedestrian’s actions is unclear.",
+    "The severity of the potential collision is uncertain due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The presence of a pedestrian attempting to crawl through the roadway poses a significant risk of collision with nearby vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001309",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:15:02.349350+00:00"
+  }
+}

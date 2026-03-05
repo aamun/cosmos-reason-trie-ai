@@ -1,0 +1,57 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. Snow covers the ground, indicating winter conditions. Several cars are visible, including a white sedan and a blue SUV. The road appears clear of obstructions, and traffic flows smoothly.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the highway under snowy conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of snow may affect visibility and traction, but no immediate hazards are evident."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic flow appears normal with no apparent collisions or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000113",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:34:22.547112+00:00"
+  }
+}

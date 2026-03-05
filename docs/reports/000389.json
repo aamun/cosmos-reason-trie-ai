@@ -1,0 +1,66 @@
+{
+  "summary": "The video shows a rainy urban street with multiple vehicles traveling in both directions. Snow covers parts of the sidewalk and road edges, indicating cold weather conditions. Traffic signs, including a speed limit sign showing \"40,\" are visible along with advertisements.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "billboard_1",
+      "type": "billboard"
+    },
+    {
+      "id": "billboard_2",
+      "type": "billboard"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars and trucks are seen moving along the wet road surface.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of some vehicles may vary slightly due to camera perspective.",
+    "Weather conditions like snow accumulation are partially obscured but still noticeable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless driving behaviors, or other hazards evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000389",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:04:55.903839+00:00"
+  }
+}

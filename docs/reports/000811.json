@@ -1,0 +1,53 @@
+{
+  "summary": "The motorcycle approaches a red hatchback from behind, narrowly avoiding a collision as the motorcycle veers sharply to the right.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    },
+    {
+      "id": "red_hatchback",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The motorcycle drives alongside a red hatchback before veering sharply to the right, narrowly avoiding a collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the motorcycle during the maneuver is unclear.",
+    "Precise reason for the motorcycle's sharp turn is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The motorcycle nearly collided with the red hatchback, indicating a high-risk situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000811",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:48:41.547873+00:00"
+  }
+}

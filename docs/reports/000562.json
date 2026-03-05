@@ -1,0 +1,78 @@
+{
+  "summary": "The video captures a first-person view from a vehicle traveling along a city street lined with tall buildings and bare trees under a partly cloudy sky. The timestamp indicates the footage was recorded on April 13, 2019, at approximately 18:18:30. Multiple vehicles are present, including sedans and SUVs, moving in both directions. Cars are parked along the roadside, and there are no visible traffic signals or signs obstructing the view.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    },
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    },
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    },
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    },
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    },
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    },
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    },
+    {
+      "id": "CAR_CRASHES_TIME_YOUTUBE_CHANNEL",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the road, including sedans and SUVs.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of all vehicles are unclear due to limited visibility.",
+    "Precise locations and movements of all vehicles cannot be definitively assessed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000562",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:09:45.667872+00:00"
+  }
+}

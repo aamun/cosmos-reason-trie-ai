@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a vehicle traveling along a multi-laned road during twilight hours. The sky exhibits hues of pink and purple, indicating either dawn or dusk. Traffic signals and road markings are clearly visible, including directional arrows and prohibitory signs.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "auto_1",
+      "type": "car"
+    },
+    {
+      "id": "auto_2",
+      "type": "car"
+    },
+    {
+      "id": "auto_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The vehicle travels along a multi-laned roadway with visible traffic signals and road markings.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of auto_3 is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000728",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:15:48.912489+00:00"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a scene where a yellow bus is stopped at an intersection with its brake lights illuminated. A white car passes by on the left side of the frame, while a pedestrian walks along the sidewalk on the right. Traffic signals and signage are visible, including a Metro sign.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    },
+    {
+      "id": "metro_sign",
+      "type": "sign"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A yellow bus is halted at an intersection, displaying its rear advertisement and brake lights activated.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The pedestrian's actions are unclear due to their distance and partial visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no immediate signs of vehicular collisions, erratic driving behavior, or other hazards impacting交通安全.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000098",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:38:02.404873+00:00"
+  }
+}

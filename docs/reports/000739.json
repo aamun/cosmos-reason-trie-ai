@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a nighttime driving scene on a wet road with multiple vehicles. A green car is seen on the left side of the frame, followed by several cars moving away from the camera’s viewpoint. On the right side, there is a large white truck whose rear lights are illuminated. The road appears slick due to rain, and the headlights of the vehicles create reflections on the surface.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a wet road at night. Cars are positioned ahead, while a large truck is on the right side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles cannot be fully determined.",
+    "Precise speeds and distances between vehicles are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no immediate signs of collisions or hazardous behaviors observed in the frames provided.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000739",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:12:26.883592+00:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "summary": "The video captures a daytime urban street scene viewed from a dashcam perspective. Vehicles are present on both sides of the road, including buses and trucks. Traffic signals regulate movement, with a prominent red light indicating a halt. Road markings delineate lanes and crosswalks. Trees line the streets, and buildings are visible in the background.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "traffic_light_1",
+      "type": "traffic_light"
+    },
+    {
+      "id": "traffic_light_2",
+      "type": "traffic_light"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Traffic lights regulate vehicle movement, with a red signal prompting vehicles to halt.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles beyond those shown are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The scene depicts normal traffic regulation without any apparent collisions, near misses, or hazardous interactions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001379",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:52:25.145675+00:00"
+  }
+}

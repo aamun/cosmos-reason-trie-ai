@@ -1,0 +1,54 @@
+{
+  "summary": "The dashcam footage shows a vehicle traveling down a suburban street with minimal traffic. The dashboard features a red toy truck ornament. As the vehicle advances, it encounters a white sedan traveling perpendicular to its path, resulting in a collision.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan approaches the ego-vehicle head-on, leading to a collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the collision impact is unclear due to limited frame resolution.",
+    "Speed of the ego-vehicle before the collision is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Collision between two vehicles indicates a high-risk situation requiring immediate attention.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000602",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:57:42.675646+00:00"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "summary": "The video captures a snowy road with minimal traffic. A vehicle approaches from the distance, traveling along the center lane marked by tire tracks. Snow blankets the ground, creating a slippery surface.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car travels toward the camera on a snowy road.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the car is unclear due to its distance and obscured features."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal traffic and clear visibility of the road conditions suggest low risk.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001494",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:17:41.230463+00:00"
+  }
+}

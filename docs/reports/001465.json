@@ -1,0 +1,75 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a road scene with multiple vehicles. The timestamp indicates February 3, 2014, at approximately 15:42:38. In the initial frames, a convoy of vehicles, including a large truck and several cars, travels along a road bordered by utility poles and sparse vegetation. As the convoy advances, a white sedan overtakes it from the left side of the frame. Shortly thereafter, a flatbed truck enters the scene from the right, crossing the path of the convoy. The convoy appears to halt momentarily as the truck crosses, suggesting an avoidance maneuver.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "sedan",
+      "type": "car"
+    },
+    {
+      "id": "flatbed_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A convoy consisting of vans and sedans travels along a snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "A white sedan overtakes the convoy from the left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        4
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 4.9,
+      "event": "A flatbed truck crosses the convoy’s path from the right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact timing of the convoy’s halt due to the truck crossing is unclear.",
+    "Visibility of the convoy’s brake lights during the halt is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "While there is no direct collision, the convoy's halted state suggests potential risks associated with sudden stops or unexpected maneuvers.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001465",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:25:44.966400+00:00"
+  }
+}

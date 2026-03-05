@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a snowy residential street with multiple buildings and bare trees lining the road. Vehicles are present, including a white sedan seen approaching from the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan approaches from the opposite direction on the snowy street.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of snow may affect visibility and traction, but there is no indication of a collision or hazardous interaction."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy conditions which could lead to reduced traction. However, the video does not show any immediate hazards like skids or collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000473",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:37:32.468057+00:00"
+  }
+}

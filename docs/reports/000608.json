@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a vehicle traveling along a rural road, encountering a motorcycle approaching head-on. The motorcycle rider attempts to maneuver around the vehicle but fails, resulting in a collision.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A motorcycle approaches the ego-vehicle head-on, attempting to pass through the narrow road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the motorcycle rider's actions post-collision is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The motorcycle rider failed to avoid the ego-vehicle, leading to a collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000608",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:55:45.478613+00:00"
+  }
+}

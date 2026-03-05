@@ -1,0 +1,43 @@
+{
+  "summary": "The footage captures a nighttime driving scene where the vehicle experiences a sudden blackout, resulting in a loss of visibility.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "auto_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The vehicle travels along a dimly lit road at night.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Loss of visibility due to blackout",
+    "Failure to detect obstacles or other vehicles during blackout"
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "Complete blackout leads to inability to perceive surroundings, posing a significant risk of collisions or accidents.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001371",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:54:55.589387+00:00"
+  }
+}

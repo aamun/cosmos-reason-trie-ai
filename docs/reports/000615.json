@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a snowy road with multiple lanes, featuring vehicles traveling at moderate speeds. A white sedan is seen ahead, followed by another vehicle. As they approach an intersection, the traffic lights are red, prompting the vehicles to halt. Snowbanks flank both sides of the road, indicating winter conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "All vehicles come to a stop at the red traffic light.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of additional vehicles beyond the three shown are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous behaviors evident in the video.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000615",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:53:03.617991+00:00"
+  }
+}

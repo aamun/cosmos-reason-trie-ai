@@ -1,0 +1,67 @@
+{
+  "summary": "Multiple vehicles are seen crossing an intersection on a wet cobblestone road under overcast skies. A white van is prominently featured, moving through the intersection while other cars navigate around it.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    },
+    {
+      "id": "van_2",
+      "type": "car"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    },
+    {
+      "id": "sedan_3",
+      "type": "car"
+    },
+    {
+      "id": "taxi",
+      "type": "car"
+    },
+    {
+      "id": "tram_track",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van drives across the intersection, followed closely by a taxi cab.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise speed of the vehicles cannot be determined accurately.",
+    "Some pedestrians' actions are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions between vehicles or with pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001427",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:37:22.831153+00:00"
+  }
+}

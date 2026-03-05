@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a highway scene with multiple vehicles traveling in both directions. The road has two lanes in each direction separated by dashed white lines. Trees and hills flank the roadway, and there is a stone wall on the right side.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling along a multi-laned highway.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles cannot be determined.",
+    "The cause of the incident is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "There is insufficient information regarding the severity of the incident.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001393",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:48:15.694718+00:00"
+  }
+}

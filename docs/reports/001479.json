@@ -1,0 +1,53 @@
+{
+  "summary": "A black hatchback approaches from the left side of the highway and crashes into the median barrier, causing debris to scatter across the roadway.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "median_barrier",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black hatchback approaches from the left side of the highway and crashes into the median barrier, scattering debris across the roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the median barrier is unclear.",
+    "Some debris scattered across the roadway may be attributed to the crash."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The hatchback crashes into the median barrier, resulting in debris scattering across the roadway. This indicates a collision that poses a significant risk to other vehicles and pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001479",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:22:06.076687+00:00"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "summary": "The video comprises two distinct scenes displayed side-by-side. On the left, there is a view from inside a vehicle showing the dashboard and windshield, with the road ahead featuring multiple vehicles including buses and cars. Traffic appears moderate, with several vehicles moving in both directions. On the right, the interior of a bus is shown, where passengers are seated and standing. One passenger stands near the entrance, holding onto a pole for support.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including buses and cars, are seen traveling along the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Passengers are seated and standing inside a bus, with one person holding onto a pole.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility.",
+    "Details about the bus interior and passenger activities are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between actors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001497",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:16:53.243695+00:00"
+  }
+}

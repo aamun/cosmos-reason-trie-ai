@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a vehicle traveling on a two-lane road under overcast skies. The road markings indicate a median dividing the lanes. Sparse vegetation borders the roadway, and there are no other vehicles or pedestrians in sight.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_markings_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_markings_2",
+      "type": "unknown"
+    },
+    {
+      "id": "median_divider",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle travels along the median divider.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicle traveling along the median divider cannot be determined.",
+    "The presence of additional road markings beyond the median divider is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions involving vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000658",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:39:52.291492+00:00"
+  }
+}

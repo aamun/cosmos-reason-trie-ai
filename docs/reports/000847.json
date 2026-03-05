@@ -1,0 +1,68 @@
+{
+  "summary": "The video captures a road scene with multiple vehicles including cars, buses, motorcycles, and SUVs traveling along a multi-laned road. Vehicles are seen moving in both directions, adhering to traffic regulations such as stopping at crosswalks and obeying speed limits.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "motorbike_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along a multi-laned road, maintaining their lanes and speeds while complying with traffic signals.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of some vehicles may vary slightly due to camera perspective."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to be operating normally without any apparent collisions, reckless maneuvers, or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000847",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:35:44.889084+00:00"
+  }
+}

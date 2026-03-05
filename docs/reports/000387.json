@@ -1,0 +1,62 @@
+{
+  "summary": "The video shows a snowy road with multiple lanes of traffic. Vehicles are moving at varying speeds, including a tractor plowing snow alongside the road. Cars are traveling in both directions, maintaining their lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "tractor",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the road, including cars and a tractor.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed reductions due to snowfall are not explicitly shown.",
+    "Exact reasons for vehicle slowdowns are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal vehicular interactions are observed, and the primary hazard appears to be snowfall affecting visibility.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000387",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:05:27.376747+00:00"
+  }
+}

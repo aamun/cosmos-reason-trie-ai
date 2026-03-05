@@ -1,0 +1,47 @@
+{
+  "summary": "A vehicle traveling on the highway experiences a sudden explosion or rupture, producing a burst of smoke and debris.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car explodes violently, generating a massive burst of smoke and debris.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the exploding vehicle is unclear.",
+    "The extent of the explosion’s aftermath is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The explosion poses an immediate threat to surrounding vehicles and infrastructure, indicating a critical hazard.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000558",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:11:11.114105+00:00"
+  }
+}

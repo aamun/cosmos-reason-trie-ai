@@ -1,0 +1,53 @@
+{
+  "summary": "The footage captures a vehicle traveling along a rural road under overcast skies. The driver proceeds steadily, observing signage and infrastructure such as lampposts and utility poles. Unexpectedly, the vehicle experiences a sudden and violent launch into the air, resulting in a crash.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The vehicle travels smoothly along a rural roadway, maintaining a steady pace.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "Suddenly, the vehicle launches violently into the air, indicating a catastrophic crash.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cause of the launch is unclear.",
+    "Precise details of the crash remain undocumented."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The vehicle undergoes an abrupt and violent launch into the air, which constitutes a catastrophic crash.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000725",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:17:18.090868+00:00"
+  }
+}

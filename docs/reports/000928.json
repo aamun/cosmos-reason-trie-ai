@@ -1,0 +1,62 @@
+{
+  "summary": "Multiple vehicles are stopped in traffic congestion on a multi-laned road. Cars and motorcycles are queued closely together, indicating heavy traffic. Road signs and barriers are visible along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are stopped in traffic congestion on a multi-laned road. Cars and motorcycles are queued closely together, indicating heavy traffic.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact cause of the congestion is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no immediate indication of a collision or hazardous behavior among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000928",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:10:02.944068+00:00"
+  }
+}

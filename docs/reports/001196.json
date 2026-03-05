@@ -1,0 +1,47 @@
+{
+  "summary": "A black SUV traveling alongside a sedan experiences a sudden collision, resulting in both vehicles tumbling violently across the snowy road.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "minivan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The minivan collides violently with the sedan, causing both vehicles to tumble wildly across the snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the collision is unclear due to limited visibility.",
+    "Cause of the crash remains unidentified."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Collision leads to violent tumbling of vehicles, posing significant risks of injury or fatalities.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001196",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:49:34.851382+00:00"
+  }
+}

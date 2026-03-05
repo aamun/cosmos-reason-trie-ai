@@ -1,0 +1,78 @@
+{
+  "summary": "The footage depicts nighttime driving conditions on a multi-laned highway with numerous vehicles traveling in both directions. The road is illuminated by streetlights, and overhead signage provides directional information. Vehicles are spaced apart, maintaining their lanes.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "signage_1",
+      "type": "unknown"
+    },
+    {
+      "id": "signage_2",
+      "type": "unknown"
+    },
+    {
+      "id": "signage_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling along the highway at night, with headlights illuminating the roadway. Vehicles maintain consistent spacing and lane positions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility of additional vehicles beyond those listed.",
+    "Exact nature of overhead signage cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or disruptions in traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000212",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:02:50.763238+00:00"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "summary": "The footage captures a nighttime driving scene on a snowy road with bare trees lining both sides of the street. Snowbanks flank the roadway, indicating winter conditions. A billboard is visible on the right side of the road, displaying advertisements. Vehicles can be seen traveling in the opposite direction. The timestamp indicates late evening.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "billboard",
+      "type": "billboard"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A billboard displaying advertisements is visible on the right side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles traveling in the opposite direction cannot be determined.",
+    "The content displayed on the billboard is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or obstacles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000088",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:40:48.713776+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "summary": "The video shows a snowy road with limited visibility due to snowfall. The vehicle is traveling forward, encountering another car approaching from the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "SHO-ME Combo №1 A7 [E575TO 29]",
+      "type": "car"
+    },
+    {
+      "id": "SHO-ME Combo №1 A7 [E575TO 29]",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car approaches from the opposite direction, creating a potential collision hazard.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Limited visibility due to snowfall may obscure precise details of the approaching car."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Limited visibility due to snowfall creates a potential collision hazard.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000520",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:23:17.340000+00:00"
+  }
+}

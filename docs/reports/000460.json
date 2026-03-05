@@ -1,0 +1,42 @@
+{
+  "summary": "The footage captures a first-person view from inside a vehicle traveling along a multi-laned road during daylight hours. The driver approaches an intersection with traffic signals overhead, intending to make a left turn. Upon reaching the turn, the vehicle executes the maneuver smoothly without encountering any obstacles or impediments.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "aukey_dr02_d",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The vehicle advances steadily toward an intersection marked by traffic signals.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Possibility of glare affecting visibility due to sunlight."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous behaviors evident in the sequence.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000460",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:41:32.217428+00:00"
+  }
+}

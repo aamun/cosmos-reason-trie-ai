@@ -1,0 +1,54 @@
+{
+  "summary": "The dashcam footage shows a highway scene with multiple vehicles traveling in both directions. The vehicle ahead emits smoke from its rear, indicating an emergency brake situation. Traffic appears congested, and the surrounding vehicles maintain a safe distance.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Van_1 emits smoke from its rear, suggesting an emergency brake situation.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Smoke emission from van_1 may indicate a malfunction or emergency braking, but the source of the smoke is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The van emitting smoke poses a potential hazard due to reduced visibility and possible disruption to traffic flow.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000874",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:27:38.585670+00:00"
+  }
+}

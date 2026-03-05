@@ -1,0 +1,47 @@
+{
+  "summary": "The footage captures nighttime driving conditions with streetlights illuminating the road. A construction vehicle is seen moving alongside the roadway, emitting bright headlights and taillights. The vehicle appears to be halted or slowed down due to an obstruction.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "construction_vehicle_1",
+      "type": "truck"
+    },
+    {
+      "id": "construction_vehicle_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A construction vehicle is positioned on the side of the road, emitting bright headlights and taillights. Its presence suggests it may be obstructing the roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the obstruction causing the construction vehicle to halt is unclear.",
+    "Visibility of additional vehicles or pedestrians near the construction site is limited."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The construction vehicle's proximity to the roadway poses a potential hazard to other drivers, especially at night when visibility is reduced.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000216",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:01:16.764310+00:00"
+  }
+}

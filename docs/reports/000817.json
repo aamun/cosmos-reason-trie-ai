@@ -1,0 +1,53 @@
+{
+  "summary": "The footage captures a vehicle traveling down a two-lane road surrounded by open fields under a partly cloudy sky. The road appears clear with no immediate obstacles or vehicles in sight.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_markings",
+      "type": "unknown"
+    },
+    {
+      "id": "vehicles",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle travels along a two-lane road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicle traveling ahead cannot be determined.",
+    "Some road markings appear distorted due to reflections."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors observed in the frames provided.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000817",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:46:04.376853+00:00"
+  }
+}

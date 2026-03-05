@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a snowy highway scene where multiple vehicles are traveling in both directions. Snow accumulates on the road surface, and trees line the sides of the road. Vehicles maintain a safe distance from each other as they navigate the slippery conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "bus",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a snowy highway, maintaining a safe distance from one another.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise cause of the bus’s sudden braking is unclear.",
+    "The extent of snow accumulation on the road is difficult to quantify."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the snowy conditions create a hazardous driving environment, there are no visible collisions or incidents involving the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001193",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:50:19.975740+00:00"
+  }
+}

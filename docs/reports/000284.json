@@ -1,0 +1,75 @@
+{
+  "summary": "The video shows a daytime street scene with multiple vehicles traveling in both directions. A white SUV passes closely alongside the recording vehicle on its left side, while other cars and motorcycles are seen further ahead. Trees line the road, and buildings are visible along the sidewalks.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_3",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_4",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_5",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_6",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white SUV drives past the recording vehicle from the left side, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The speed of the white SUV relative to the recording vehicle is unclear.",
+    "Whether the motorcycle riders are aware of the recording vehicle's presence is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000284",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:39:52.303917+00:00"
+  }
+}

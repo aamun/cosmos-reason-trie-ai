@@ -1,0 +1,46 @@
+{
+  "summary": "A silver hatchback is stopped at an intersection with its brake lights illuminated. A pedestrian approaches from behind the vehicle, seemingly attempting to board it. The hatchback then reverses slowly while the pedestrian steps closer.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "silver_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The silver hatchback is halted at an intersection with its brake lights activated. It begins reversing slowly while a pedestrian approaches from behind.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the pedestrian intends to enter the hatchback cannot be definitively determined."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The hatchback's reversal poses a potential risk to the pedestrian who is approaching closely.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000083",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:42:25.645904+00:00"
+  }
+}

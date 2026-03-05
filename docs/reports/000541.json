@@ -1,0 +1,60 @@
+{
+  "summary": "The video shows a vehicle traveling on a multi-laned road under partly cloudy skies. A white SUV is seen ahead, with its brake lights illuminated, indicating braking. The vehicle then turns sharply to the right, causing the ego-vehicle to swerve slightly.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white SUV is traveling ahead, with its brake lights illuminated, indicating braking.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The white SUV makes a sharp turn to the right, prompting the ego-vehicle to swerve slightly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The reason for the SUV's sharp turn is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The SUV's sudden sharp turn causes the ego-vehicle to swerve, which could lead to a collision or loss of control.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000541",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:16:08.079224+00:00"
+  }
+}

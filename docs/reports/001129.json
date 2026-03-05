@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a snowy road where a blue truck overtakes the camera vehicle from behind, causing a sudden shift in perspective.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_2",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A blue truck overtakes the camera vehicle from behind, resulting in a sudden shift in perspective.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the second vehicle is unclear due to its obscured nature."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the overtaking maneuver may pose a risk, there is no indication of severe consequences such as collisions or fatalities.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001129",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:09:33.314579+00:00"
+  }
+}

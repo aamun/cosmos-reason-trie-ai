@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a suburban street scene on July 22, 2019, with overcast skies. The road is paved and marked with yellow dividing lines. Residential homes flank both sides of the street, interspersed with trees and lawns. Vehicles are parked along the roadside. As the footage progresses, a car approaches from the right side of the road, prompting the observer to anticipate a potential collision.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car approaches from the right side of the road, creating a potential collision point.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the car intends to collide with the observer is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "There is a clear indication of an impending collision due to the car's approach from the right side of the road.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000434",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:49:17.164156+00:00"
+  }
+}

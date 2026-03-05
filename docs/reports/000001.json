@@ -1,0 +1,47 @@
+{
+  "summary": "The dashcam footage captures a daytime urban street scene with multiple vehicles. A yellow taxi is driving straight down the road, overtaken by a black sedan from behind. The taxi maintains a steady pace while the sedan accelerates past it. Traffic signs and signals are visible along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "taxi_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A yellow taxi drives forward on a city street, overtaken by a black sedan.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of both vehicles cannot be determined.",
+    "Distance between the taxi and sedan is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or near misses observed between the taxi and sedan.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000001",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:07:05.667621+00:00"
+  }
+}

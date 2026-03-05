@@ -1,0 +1,53 @@
+{
+  "summary": "A vehicle is traveling along a highway when another car suddenly appears on the right side of the road, seemingly veering into the lane.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car suddenly emerges from the right side of the road, veering into the lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The sudden emergence of the car may indicate reckless driving.",
+    "The precise cause of the car's erratic movement remains unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The sudden appearance of a car on the roadway, veering into the lane, poses a significant risk of collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001117",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:14:00.039133+00:00"
+  }
+}

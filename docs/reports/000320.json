@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a snowy road with minimal traffic. A red truck is seen traveling ahead, and a yellow warning sign is posted on the right side of the road.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "sign_1",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red truck travels along the road ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the yellow warning sign is unclear.",
+    "Minimal traffic but potential hazards due to snow-covered roads."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal traffic and clear visibility despite snowy conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000320",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:28:12.341532+00:00"
+  }
+}

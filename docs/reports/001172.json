@@ -1,0 +1,103 @@
+{
+  "summary": "A white sedan approaches an intersection where pedestrians are crossing illegally. The driver fails to yield, resulting in a collision with the pedestrians.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Pedestrians are seen illegally crossing the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact moment of collision between the car and pedestrians is unclear due to the rapid succession of frames.",
+    "The severity of injuries sustained by the pedestrians cannot be determined definitively."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The primary risk arises from the illegal crossing of pedestrians, which leads to a collision with the vehicle. This constitutes a clear violation of traffic regulations and poses a significant danger to innocent parties.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001172",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:56:40.143983+00:00"
+  }
+}

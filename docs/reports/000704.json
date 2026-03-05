@@ -1,0 +1,55 @@
+{
+  "summary": "The footage captures nighttime driving conditions with streetlights illuminating the road. A tanker truck is traveling alongside the ego-vehicle on the right side of the road. The tanker truck slows down considerably, prompting the ego-vehicle to brake abruptly. The camera experiences a sudden blackout, obscuring the view.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "tanker_truck",
+      "type": "truck"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The tanker truck travels alongside the ego-vehicle on the right side of the road. Unknown",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The tanker truck slows down considerably, prompting the ego-vehicle to brake abruptly.",
+      "confidence": 0.99,
+      "frame_indices": [
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The blackout obscures the view, making it difficult to discern further details."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The tanker truck's sudden slowdown causes the ego-vehicle to brake abruptly, indicating a potential collision or near-collision scenario.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000704",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:24:26.434898+00:00"
+  }
+}

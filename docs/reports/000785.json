@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a traffic scene where multiple vehicles are stopped at an intersection under clear skies. A black hatchback is positioned in the center lane, while a silver hatchback is in the adjacent right lane. Both vehicles appear stationary with their brake lights illuminated, suggesting they are waiting for the traffic signal to change. The surrounding environment includes urban infrastructure such as buildings, utility poles, and overhead wires.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "All vehicles remain stationary with brake lights on, indicating they are halted at the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact reason for stopping is unclear but could be due to traffic signals or congestion."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable incidents like collisions or erratic driving behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000785",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:57:08.734211+00:00"
+  }
+}

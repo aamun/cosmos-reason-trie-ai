@@ -1,0 +1,78 @@
+{
+  "summary": "The video captures a daytime urban street scene with multiple vehicles traveling in both directions. Cars and trucks are seen moving along the road, alongside banners and buildings lining the sides.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "banner_1",
+      "type": "flag/banner"
+    },
+    {
+      "id": "banner_2",
+      "type": "flag/banner"
+    },
+    {
+      "id": "banner_3",
+      "type": "flag/banner"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling in both directions on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited frame granularity.",
+    "Presence of pedestrians or other potential hazards beyond the visible scope is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions among the visible vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000414",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:56:30.237027+00:00"
+  }
+}

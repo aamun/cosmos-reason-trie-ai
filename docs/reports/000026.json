@@ -1,0 +1,78 @@
+{
+  "summary": "The footage captures a street scene viewed from inside a vehicle, showcasing multiple vehicles including buses and vans parked along the roadside. Pedestrians can be seen standing near the curb on the right side of the road. The sky appears overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "bus_2",
+      "type": "bus"
+    },
+    {
+      "id": "bus_3",
+      "type": "bus"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_3",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple buses and vans are parked along the roadside.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to the lack of precipitation or snowfall.",
+    "Visibility of the pedestrians' intentions is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000026",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:00:02.700756+00:00"
+  }
+}

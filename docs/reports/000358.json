@@ -1,0 +1,58 @@
+{
+  "summary": "The video captures a traffic scene where multiple vehicles are traveling on a multi-lane road under overcast skies. A blue hatchback is prominently featured in the center lane, closely followed by another vehicle. To the right, several cars are parked along the curb, including a red sedan and a white SUV. Traffic signs, such as pedestrian crossings and directional arrows, are visible but their meanings are unclear due to poor visibility. The road appears congested with moderate-speed traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_blue_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "car_following_blue_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "car_red_sedan",
+      "type": "car"
+    },
+    {
+      "id": "car_white_suv",
+      "type": "car"
+    },
+    {
+      "id": "van_unknown",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on a multi-lane road. A blue hatchback is centrally located, followed by another vehicle. Cars are parked on the right side of the road, including a red sedan and a white SUV.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Meaning of traffic signs is unclear due to poor visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000358",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:15:39.369796+00:00"
+  }
+}

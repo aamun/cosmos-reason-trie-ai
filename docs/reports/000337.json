@@ -1,0 +1,90 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. A red Volvo car is seen moving ahead of the ego-vehicle, while a silver Volkswagen SUV passes by on the left side. Road signs and markings indicate lanes and pedestrian crossings.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 0.7,
+      "event": "Multiple vehicles are visible on the highway, including a red Volvo car and a silver Volkswagen SUV passing by.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 2.8,
+      "event": "The red Volvo car moves forward, and the silver Volkswagen SUV passes by on the left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 4.2,
+      "event": "The red Volvo car continues moving forward, maintaining its lane position.",
+      "confidence": 0.95,
+      "frame_indices": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Unknown",
+    "Unknown"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000337",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:23:17.773273+00:00"
+  }
+}

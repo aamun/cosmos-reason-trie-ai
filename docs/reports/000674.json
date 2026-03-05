@@ -1,0 +1,50 @@
+{
+  "summary": "Three vehicles are traveling on a road during twilight hours. Two cars are ahead, with their brake lights illuminated, indicating they might be slowing down or stopping. A white van is on the left side of the frame, and a silver sedan is on the right. Road signs are visible, but their content is unclear.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "sedan_1",
+      "type": "sedan"
+    },
+    {
+      "id": "sedan_2",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Three vehicles are traveling on a road during twilight hours. Two cars are ahead, with their brake lights illuminated, indicating they might be slowing down or stopping. A white van is on the left side of the frame, and a silver sedan is on the right. Road signs are visible, but their content is unclear.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The brake lights of the cars ahead may indicate braking or stopping, but it is unclear if this leads to a collision."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no visible collision or hazardous interaction between the vehicles. The brake lights suggest caution, but without further context, it is unclear if this constitutes a traffic incident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000674",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:34:44.067036+00:00"
+  }
+}

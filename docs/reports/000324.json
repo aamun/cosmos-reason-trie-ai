@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a white sedan driving on a road with trucks alongside it. The sedan's brake lights illuminate intermittently as it navigates closely beside the trucks.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The sedan is traveling along a roadway with trucks positioned alongside it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Brake light illumination frequency is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Close proximity between the sedan and trucks may pose a risk of collision.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000324",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:27:11.715271+00:00"
+  }
+}

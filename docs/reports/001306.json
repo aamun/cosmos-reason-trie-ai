@@ -1,0 +1,58 @@
+{
+  "summary": "The footage captures a sequence of frames from a dashcam recording a vehicle traveling along an urban street. The environment includes multi-story residential buildings, bare trees lining the road, and various road signs such as pedestrian crossings and speed bumps. Vehicles are present on both sides of the road, including cars and vans. The sky appears overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Cloudy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle travels forward on a city street with multiple vehicles present, including cars and vans.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the white sedan passing by is unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the footage.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001306",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:16:19.524085+00:00"
+  }
+}

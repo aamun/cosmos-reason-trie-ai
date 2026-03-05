@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a nighttime urban street with multiple lanes and vehicles passing by. The road is well-lit by streetlights, and there are buildings lining both sides of the street. Vehicles are traveling in both directions, with some cars moving closer to the camera.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling along the road, with their headlights illuminating the path ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identities of the vehicles are inferred but not definitively confirmed.",
+    "Some vehicles may appear distorted due to reflections or glare."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, accidents, or hazardous behaviors observed in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000745",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:10:21.958834+00:00"
+  }
+}

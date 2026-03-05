@@ -1,0 +1,74 @@
+{
+  "summary": "The dashcam footage captures a vehicle traveling on a wet road surrounded by numerous vehicles. A white sedan approaches closely from the front, prompting the dashcam vehicle to halt abruptly.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "bus_2",
+      "type": "bus"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "van_3",
+      "type": "truck"
+    },
+    {
+      "id": "van_4",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A white sedan drives directly toward the dashcam vehicle, resulting in the dashcam vehicle stopping suddenly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        3,
+        4,
+        5,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact reason for the dashcam vehicle's abrupt stop is unclear.",
+    "Presence of pedestrians or other factors contributing to the stop is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The dashcam vehicle experiences an abrupt stop due to a white sedan approaching closely, indicating a potential collision or near-miss situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000937",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:07:35.303271+00:00"
+  }
+}

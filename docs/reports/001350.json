@@ -1,0 +1,53 @@
+{
+  "summary": "The footage captures a vehicle traveling on a multi-laned road surrounded by trees and patches of snow. The sky is partly cloudy, indicating fair weather conditions. As the vehicle advances, it encounters a large truck ahead, prompting the driver to maneuver carefully.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car travels along a multi-laned road bordered by trees and snow-covered ground.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and distance between the car and truck are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to cautious driving around the truck.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001350",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:01:24.606021+00:00"
+  }
+}

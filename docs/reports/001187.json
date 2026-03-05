@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a highway scene on a rainy day with multiple vehicles traveling in both directions. The road appears wet, and the sky is overcast. Vehicles are moving steadily, including trucks and cars, maintaining their lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_2",
+      "type": "van"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on a rainy highway. Cars and trucks maintain consistent speeds and lane positions.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to be operating normally without any apparent collisions or disruptions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001187",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:51:55.573334+00:00"
+  }
+}

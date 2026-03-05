@@ -1,0 +1,55 @@
+{
+  "summary": "A bicyclist rides alongside a white sedan on a city street, with other vehicles passing by.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    },
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "blue_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The cyclist rides alongside the white sedan while other cars pass by.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cyclist's speed and trajectory are unclear beyond their presence.",
+    "The distance between the cyclist and the sedan varies slightly."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions; the cyclist maintains a safe distance from the sedan.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000955",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:02:51.643167+00:00"
+  }
+}

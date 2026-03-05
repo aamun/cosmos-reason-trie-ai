@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. A black sedan is seen driving ahead, followed closely by a white truck. Snowbanks line the sides of the road, indicating adverse weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_sedan",
+      "type": "car"
+    },
+    {
+      "id": "white_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a black sedan and a white truck, travel along a snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of snowbanks alongside the road is evident, but their exact purpose (e.g., erosion control vs. obstruction) is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy road surface, which may affect traction. However, there are no visible collisions, near misses, or erratic driving behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001115",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:14:28.143632+00:00"
+  }
+}

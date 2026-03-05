@@ -1,0 +1,90 @@
+{
+  "summary": "A black SUV waits at an intersection with its brake lights illuminated, while pedestrians cross the street. Vehicles pass by from both directions.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_suv_1",
+      "type": "car"
+    },
+    {
+      "id": "red_car",
+      "type": "car"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    },
+    {
+      "id": "gray_car",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "pedestrian"
+    },
+    {
+      "id": "building_1",
+      "type": "unknown"
+    },
+    {
+      "id": "building_2",
+      "type": "unknown"
+    },
+    {
+      "id": "building_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The black SUV waits patiently at the intersection with its brake lights illuminated.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the pedestrians crossing the street cannot be fully confirmed.",
+    "Some details about the vehicles passing by are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions observed between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000374",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:09:22.038168+00:00"
+  }
+}

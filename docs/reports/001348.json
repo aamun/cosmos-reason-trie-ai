@@ -1,0 +1,105 @@
+{
+  "summary": "The video shows a first-person view from inside a vehicle traveling down a two-lane road lined with trees and buildings. The sky appears overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Cloudy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bus travels alongside the ego-vehicle in the adjacent lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "Two motorcycles appear in the left lane, traveling in the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        4.9
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 4.9,
+      "event": "Three cars travel in the same direction as the ego-vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        2.8,
+        4.9
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "A bus travels alongside the ego-vehicle in the adjacent lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identities of the motorcycles traveling in the opposite direction are unclear.",
+    "The identities of the three cars traveling in the same direction as the ego-vehicle are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001348",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:02:27.413083+00:00"
+  }
+}

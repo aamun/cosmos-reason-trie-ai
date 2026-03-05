@@ -1,0 +1,47 @@
+{
+  "summary": "The video shows a nighttime scene where a vehicle approaches an intersection with its headlights illuminating the road. A truck is stopped at the intersection, blocking the path ahead. Another car drives past the truck from the left side of the frame, heading towards the right. The environment is poorly lit, relying mainly on streetlights.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car drives past a stationary truck at night.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the car driving past the truck cannot be confirmed.",
+    "The truck's brake lights are not clearly visible."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000880",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:25:16.020058+00:00"
+  }
+}

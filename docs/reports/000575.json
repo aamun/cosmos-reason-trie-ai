@@ -1,0 +1,67 @@
+{
+  "summary": "The video shows a daytime urban street scene with multiple vehicles stopped at an intersection. Pedestrians can be seen waiting across the crosswalk, and traffic signs indicate pedestrian crossings and tram routes. Vehicles are halted behind brake lights, suggesting they are waiting for the traffic signal to change.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "tram_1",
+      "type": "bus"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are stopped at an intersection, with brake lights illuminated, indicating they are waiting for the traffic signal to change.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of pedestrians are unclear due to limited visibility.",
+    "Traffic signals are not visible, making it difficult to confirm their status."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions or hazardous interactions between vehicles or with pedestrians. The vehicles appear stationary and obey traffic regulations.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000575",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:05:53.360975+00:00"
+  }
+}

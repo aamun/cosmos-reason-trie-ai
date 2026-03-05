@@ -1,0 +1,69 @@
+{
+  "summary": "The video captures nighttime street scenes viewed from inside a vehicle, focusing on an intersection with buildings and streetlights. Vehicles are present, including a white car on the left side of the frame. Traffic signals regulate movement, and signage indicates permitted directions. The timestamp suggests late evening.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "building_1",
+      "type": "building"
+    },
+    {
+      "id": "streetlight_1",
+      "type": "streetlight"
+    },
+    {
+      "id": "streetlight_2",
+      "type": "streetlight"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white car is positioned on the left side of the frame, stationary.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The camera experiences a sudden blackout, obscuring the view.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to darkness.",
+    "Traffic signal status is unknown.",
+    "Visibility of other vehicles beyond the white car is limited."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The scene appears stable with no immediate signs of collisions or hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000229",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:57:05.496910+00:00"
+  }
+}

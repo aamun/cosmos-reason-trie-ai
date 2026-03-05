@@ -1,0 +1,54 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-lane highway under clear skies with directional signs overhead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_car_1",
+      "type": "car"
+    },
+    {
+      "id": "white_truck",
+      "type": "truck"
+    },
+    {
+      "id": "red_suv",
+      "type": "car"
+    },
+    {
+      "id": "silver_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "All vehicles maintain their positions without any noticeable deviations or collisions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise reason for the slowdown of the black Volkswagen remains unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no evident collisions, near misses, or hazardous behaviors among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000748",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:09:33.268926+00:00"
+  }
+}

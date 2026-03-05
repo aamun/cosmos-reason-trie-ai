@@ -1,0 +1,51 @@
+{
+  "summary": "The dashcam footage depicts a vehicle traveling on a multi-laned road under clear skies with ample sunlight. The road features multiple lanes marked with white lines, and there are trees lining both sides of the roadway.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan approaches from the opposite direction and passes closely behind the dashcam vehicle.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise speed of the silver sedan is unclear.",
+    "The exact reason for the silver sedan's close proximity to the dashcam vehicle is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or any other hazardous situation.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000200",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:06:47.133655+00:00"
+  }
+}

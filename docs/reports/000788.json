@@ -1,0 +1,65 @@
+{
+  "summary": "The video shows a white sedan driving on a multi-laned road surrounded by trees. A large truck overtakes the sedan from behind, causing the sedan to swerve slightly to avoid a collision.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan drives ahead on a multi-laned road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A large truck overtakes the sedan from behind.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the swerve is unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The truck's sudden overtaking caused the sedan to swerve, indicating a potential loss of control.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000788",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:56:25.141994+00:00"
+  }
+}

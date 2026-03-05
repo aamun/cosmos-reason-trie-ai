@@ -1,0 +1,51 @@
+{
+  "summary": "The footage captures a dashcam view from a vehicle traveling on a highway under overcast skies with moderate traffic. The windshield wiper is active, indicating rainy conditions. Vehicles are seen traveling alongside the ego-vehicle, including a white truck overtaking from behind.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white truck overtakes the ego-vehicle from behind, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the truck overtaking is unclear.",
+    "Visibility of additional vehicles beyond the truck is limited."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the overtaking maneuver, which does not appear reckless or dangerous.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000169",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:16:57.036074+00:00"
+  }
+}

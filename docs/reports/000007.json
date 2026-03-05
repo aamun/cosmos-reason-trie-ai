@@ -1,0 +1,59 @@
+{
+  "summary": "The video captures a traffic scene where a black station wagon is stopped behind a large truck on a snowy road. The timestamp indicates January 6, 2010, at approximately 3:02 AM. Snow covers the ground, and the sky appears overcast. Vehicles are queued up ahead, with the station wagon maintaining a safe distance from the truck.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "station_wagon",
+      "type": "car"
+    },
+    {
+      "id": "truck",
+      "type": "truck"
+    },
+    {
+      "id": "van",
+      "type": "car"
+    },
+    {
+      "id": "blue_minivan",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black station wagon is halted behind a large truck on a snowy road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the van and blue minivan is unclear due to limited visibility.",
+    "Precise distances between vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000007",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:05:28.541985+00:00"
+  }
+}

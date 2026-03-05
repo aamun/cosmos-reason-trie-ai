@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a rural road with sparse traffic, featuring a white hatchback driving ahead. The vehicle maintains a steady pace, and there are no apparent incidents or disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white hatchback drives steadily down the road, maintaining a consistent speed without deviations.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No additional vehicles or obstacles are present beyond the hatchback."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The road appears clear with no immediate hazards or disruptions.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000004",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:06:15.610558+00:00"
+  }
+}

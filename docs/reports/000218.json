@@ -1,0 +1,78 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-laned road, with traffic moving steadily in both directions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    },
+    {
+      "id": "sedan_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Traffic flows smoothly across multiple lanes, with vehicles maintaining consistent speeds and spacing.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise nature of the vehicles' movements beyond smooth flow cannot be fully determined due to limited temporal resolution.",
+    "Certain vehicle interactions may appear ambiguous without clearer visual distinctions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no evident collisions, abrupt maneuvers, or hazardous behaviors observed among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000218",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:00:42.212155+00:00"
+  }
+}

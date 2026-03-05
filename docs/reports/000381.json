@@ -1,0 +1,66 @@
+{
+  "summary": "The video shows a snowy roadside with several vehicles parked along the sides. A white truck is positioned on the left side of the road, while multiple cars are parked on both sides. The sun shines brightly, creating glare on the windshield. Vehicles appear stationary, and there are no visible movements or interactions between them.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are parked along the roadside in a snowy environment.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles relative to each other are unclear due to limited visibility.",
+    "Presence of any movement or activity around the vehicles cannot be confirmed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable incidents such as collisions, lane deviations, or erratic driving behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000381",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:07:07.880624+00:00"
+  }
+}

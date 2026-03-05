@@ -1,0 +1,54 @@
+{
+  "summary": "Motorcyclists riding ahead of the ego vehicle encounter a slight dip in the road, causing instability.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_3",
+      "type": "motorcycle"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Motorcyclists ride ahead of the ego vehicle, encountering a slight dip in the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the dip in the road is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The motorcyclists experience instability due to the dip in the road, which could lead to loss of control.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001408",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:43:43.364588+00:00"
+  }
+}

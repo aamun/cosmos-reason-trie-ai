@@ -1,0 +1,61 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording an intersection with multiple lanes. The primary focus is on a black Honda SUV stopped at a red light in the center lane. Adjacent to this vehicle, there is another car positioned slightly ahead. As the light turns green, the Honda SUV begins moving forward, but unexpectedly veers sharply to its left, colliding violently with a large truck traveling in the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black Honda SUV is halted at a red traffic signal in the center lane. Another car is situated just ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The Honda SUV accelerates rapidly and makes an abrupt left turn, crashing into a massive truck moving in the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the Honda SUV before the crash is unclear.",
+    "Nature of the truck's cargo is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The footage shows a severe collision between two vehicles, indicating a high-risk situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000539",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:16:43.453438+00:00"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. A white van is seen driving ahead of the camera vehicle, followed closely by a black SUV. The road is bordered by grassy verges and trees, with signage indicating directional routes. As the sequence progresses, the white van veers sharply to the right, crossing into the adjacent lane and crashing into a roadside barrier.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    },
+    {
+      "id": "van_2",
+      "type": "car"
+    },
+    {
+      "id": "black_suv",
+      "type": "car"
+    },
+    {
+      "id": "road_barrier",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van travels along the highway while a black SUV follows closely behind.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The white van abruptly veers sharply to the right, colliding with a roadside barrier.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash impact beyond the barrier is unclear.",
+    "Reason for the van's sudden deviation is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The white van exhibits erratic behavior by veering sharply into the opposite lane and crashing into a roadside barrier, which constitutes a clear traffic incident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000894",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:21:24.301311+00:00"
+  }
+}

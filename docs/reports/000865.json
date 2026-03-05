@@ -1,0 +1,51 @@
+{
+  "summary": "The video depicts a daytime scene on a multi-lane road with trees lining both sides. Vehicles can be seen traveling in the distance, and there are streetlights and signage along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple road signs are visible along the roadside, including directional signs and informational signs.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identities of the vehicles in the distance are unclear.",
+    "Some road signs are partially obscured or unreadable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000865",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:30:36.281713+00:00"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "summary": "The vehicle is traveling on a multi-lane road with clear signage indicating a speed limit of 40 mph. The vehicle maintains a steady pace while navigating through an area with commercial establishments.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "VEHICLE_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The vehicle travels along a multi-laned road with clear signage indicating a speed limit of 40 mph.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed limit signage may not be fully legible.",
+    "Speedometer reading is not visible."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed in the provided frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000482",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:34:59.638111+00:00"
+  }
+}

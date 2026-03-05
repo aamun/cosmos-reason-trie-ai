@@ -1,0 +1,77 @@
+{
+  "summary": "The video shows a city street with multiple vehicles, including cars and buses, traveling in both directions. The road is lined with buildings, trees, and utility poles. Vehicles maintain moderate speeds while navigating through the urban environment.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including cars and buses, are seen moving along the city street. Cars maintain moderate speeds while buses travel steadily.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is not quantified, making precise velocity assessments difficult."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The video depicts normal vehicular movement without any apparent collisions, accidents, or hazardous behaviors.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001419",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:40:30.971876+00:00"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "summary": "The video captures a nighttime highway scene with multiple vehicles traveling in both directions. The sky is dark with scattered clouds illuminated by streetlights. Traffic flows smoothly, with cars maintaining their lanes and speeds. There are no visible incidents such as collisions, abrupt stops, or erratic driving behaviors.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "avc_1",
+      "type": "car"
+    },
+    {
+      "id": "avc_2",
+      "type": "car"
+    },
+    {
+      "id": "avc_3",
+      "type": "car"
+    },
+    {
+      "id": "avc_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling on a multi-laned highway during twilight hours. Vehicles maintain consistent speeds and spacing, indicating normal traffic flow.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and identities of all vehicles cannot be fully determined due to limited visibility.",
+    "Traffic dynamics beyond smooth flow remain unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable incidents like collisions, sudden braking, or erratic maneuvers.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000624",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:50:12.631383+00:00"
+  }
+}

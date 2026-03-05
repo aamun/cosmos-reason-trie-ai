@@ -1,0 +1,82 @@
+{
+  "summary": "Multiple cars are traveling on a multi-laned highway under partly cloudy skies. Vehicles are moving at moderate speeds with some braking intermittently.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    },
+    {
+      "id": "car_6",
+      "type": "sedan"
+    },
+    {
+      "id": "car_7",
+      "type": "sedan"
+    },
+    {
+      "id": "car_8",
+      "type": "sedan"
+    },
+    {
+      "id": "car_9",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are traveling on a multi-laned highway with moderate speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is moderate but varies slightly.",
+    "Exact reasons for braking are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Observed vehicles maintain consistent spacing and exhibit normal driving behaviors without any apparent collisions or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000932",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:08:58.083581+00:00"
+  }
+}

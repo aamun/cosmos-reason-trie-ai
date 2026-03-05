@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a road scene with multiple vehicles traveling in both directions. The footage begins with a view from inside a vehicle, showing other cars moving alongside. Suddenly, the camera experiences an abrupt shift, capturing a moment where the sky dominates the frame, suggesting a rapid ascent or a significant disturbance.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling in opposite directions on a two-lane road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The sudden shift in the camera's perspective to show the sky indicates an unexpected event."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "The primary uncertainty arises from the abrupt change in the camera's viewpoint, which suggests an unforeseen incident or disturbance.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001341",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:04:20.720283+00:00"
+  }
+}

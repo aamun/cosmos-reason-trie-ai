@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a busy urban street scene with multiple vehicles including trucks, vans, and cars. Vehicles are stopped or moving slowly due to traffic congestion. Snowbanks are visible along the roadside, indicating cold weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are halted or moving slowly on a snowy urban road. Cars and vans are positioned closely together, suggesting congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of pedestrians are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic congestion and snowy conditions create potential risks for accidents, but there are no immediate collisions or hazardous interactions evident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000055",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:50:34.444813+00:00"
+  }
+}

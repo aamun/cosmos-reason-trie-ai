@@ -1,0 +1,71 @@
+{
+  "summary": "The video captures nighttime driving conditions on a multi-laned highway with multiple vehicles traveling in both directions. A large dump truck occupies the leftmost lane, while several cars are seen moving in the adjacent lanes. Road signs overhead provide directional information for travelers.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dump_truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    },
+    {
+      "id": "sedan_3",
+      "type": "car"
+    },
+    {
+      "id": "sedan_4",
+      "type": "car"
+    },
+    {
+      "id": "sign_1",
+      "type": "unknown"
+    },
+    {
+      "id": "sign_2",
+      "type": "unknown"
+    },
+    {
+      "id": "sign_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a dump truck and sedans, are traveling on a multi-laned highway at night.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility.",
+    "Road signs may have unclear text or symbols."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001095",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:21:01.522548+00:00"
+  }
+}

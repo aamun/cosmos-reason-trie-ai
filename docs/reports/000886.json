@@ -1,0 +1,66 @@
+{
+  "summary": "The video shows a rainy day with overcast skies, viewed from inside a vehicle's dashboard camera. Raindrops obscure the windshield, and the wiper is active. The road appears wet, and multiple vehicles are traveling in both directions. A silver SUV overtakes the recording vehicle from the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "unknown"
+    },
+    {
+      "id": "car_2",
+      "type": "unknown"
+    },
+    {
+      "id": "car_3",
+      "type": "unknown"
+    },
+    {
+      "id": "car_4",
+      "type": "unknown"
+    },
+    {
+      "id": "silver_suv",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling in both directions on a wet road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and identities of all vehicles are unclear due to rain and reflections.",
+    "Precise timing of interactions between vehicles cannot be determined definitively."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the road conditions are adverse (rain), there is no direct collision or severe disruption observed.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000886",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:23:42.470787+00:00"
+  }
+}

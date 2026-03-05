@@ -1,0 +1,43 @@
+{
+  "summary": "The video depicts a nighttime scene on a snowy road where a white van is stopped with its emergency lights flashing. The vehicle appears stationary, and there are no other moving vehicles or pedestrians visible. Snow covers the ground, and streetlights illuminate the area.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van is stopped on a snowy road with its emergency lights flashing.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the van is truly stopped or merely halted is unclear due to limited visibility.",
+    "The presence of snowfall cannot be confirmed as it is inferred from the road conditions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable hazards such as collisions, erratic movements, or obstructions.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000653",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:41:36.162066+00:00"
+  }
+}

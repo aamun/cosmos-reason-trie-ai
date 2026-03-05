@@ -1,0 +1,87 @@
+{
+  "summary": "The video captures a daytime urban street scene with multiple vehicles traveling in both directions. A white sedan overtakes the ego-vehicle from the opposite direction, passing closely enough to create a brief moment of concern for the ego-vehicle’s safety. The surrounding environment includes buildings, trees, and other cars parked along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "car_8",
+      "type": "car"
+    },
+    {
+      "id": "car_9",
+      "type": "car"
+    },
+    {
+      "id": "car_10",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A white sedan overtakes the ego-vehicle from the opposite direction, passing closely enough to create a brief moment of concern for the ego-vehicle’s safety.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise distance between the ego-vehicle and the overtaking sedan is unclear.",
+    "The extent of any potential collision or near-miss is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "While there is a close pass between the ego-vehicle and the overtaking sedan, no actual collision occurs. However, the proximity raises concerns about potential risks such as swerving or sudden braking.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000306",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:33:10.074229+00:00"
+  }
+}

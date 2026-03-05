@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a silver SUV traveling on a multi-laned highway under overcast skies. The SUV is followed closely by another vehicle, maintaining a safe distance. Road signs and markings indicate directions for different routes.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    },
+    {
+      "id": "follow_up_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV drives ahead on a multi-laned highway, followed by another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to the lack of rain or snow visuals."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous behaviors observed between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000180",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:13:13.016596+00:00"
+  }
+}

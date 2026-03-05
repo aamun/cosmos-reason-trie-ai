@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a street scene with multiple cars traveling in both directions. Vehicles are moving at moderate speeds, and there are no apparent collisions or incidents occurring.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are traveling along the road, maintaining their lanes without any collisions or incidents.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is not fully measurable due to limited frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, accidents, or hazardous interactions observed among the vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000693",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:27:54.396077+00:00"
+  }
+}

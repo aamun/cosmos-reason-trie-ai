@@ -1,0 +1,77 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. A truck is seen moving away from the camera initially, followed by other cars passing by.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 1.4,
+      "event": "A large truck travels along the snowy road ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "Cars pass by on the opposite side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of all vehicles cannot be determined due to limited visibility.",
+    "Snowfall intensity varies across frames, making precise conditions difficult to assess."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal vehicular interactions observed; no collisions or hazardous situations detected.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000105",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:36:20.411938+00:00"
+  }
+}

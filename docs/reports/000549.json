@@ -1,0 +1,47 @@
+{
+  "summary": "The video captures a snowy road with bare trees lining both sides of the road. A white van travels ahead in the same direction as the observer. Suddenly, there is a bright flash indicating an explosion or severe impact somewhere on the road.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "flash_event",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bright flash occurs, suggesting an explosion or severe impact.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the flash/event is unclear.",
+    "Location of the flash/event is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The presence of a sudden flash/event on the road indicates a potential catastrophic incident, such as a crash or explosion, which poses significant risks to surrounding vehicles and pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000549",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:13:33.914865+00:00"
+  }
+}

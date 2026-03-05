@@ -1,0 +1,67 @@
+{
+  "summary": "The footage captures nighttime driving conditions on a snowy road with limited visibility due to darkness and snowfall. The vehicle approaches an intersection where another car is halted at a stop sign. As the vehicle gets closer, the stopped car begins to move forward, prompting the recording vehicle to brake abruptly and steer sharply to avoid a collision.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_1",
+      "type": "car"
+    },
+    {
+      "id": "stopped_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle drives straight on a snowy road at night.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A stopped car appears ahead at the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "The stopped car starts moving forward.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact speed of the stopped car is unclear.",
+    "Precise details about the stopped car's intentions are unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The ego-vehicle brakes suddenly and steers sharply to avoid colliding with the stopped car, indicating a high-risk situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000512",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:25:31.924167+00:00"
+  }
+}

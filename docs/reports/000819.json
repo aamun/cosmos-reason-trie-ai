@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a traffic scene captured from inside a vehicle stopped at an intersection with red traffic lights. A black sedan is halted beside the ego-vehicle, waiting for the light to turn green. Pedestrians can be seen crossing the street on the left side, while other vehicles are visible in the distance.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_sedan",
+      "type": "car"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black sedan is stopped beside the ego-vehicle at an intersection with red traffic lights.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Pedestrian movements beyond the initial frames are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000819",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:45:12.401074+00:00"
+  }
+}

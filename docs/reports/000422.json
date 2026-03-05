@@ -1,0 +1,50 @@
+{
+  "summary": "A silver hatchback traveling alongside the ego vehicle suddenly launches into the air, overturning violently and crashing onto the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "The silver hatchback accelerates rapidly and launches into the air, overturning violently and crashing onto the roadside.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        2.8,
+        3.5,
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the driver/passenger inside the hatchback cannot be determined.",
+    "Details about the crash aftermath are not visible."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The sudden launch of the hatchback indicates a catastrophic loss of control, resulting in severe damage and endangerment of occupants.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000422",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:53:15.822767+00:00"
+  }
+}

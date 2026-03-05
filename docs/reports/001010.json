@@ -1,0 +1,61 @@
+{
+  "summary": "The video depicts a snowy day on a two-lane road with moderate traffic. Visibility is limited due to snowfall, but the road appears clear enough for vehicles to travel without major disruptions. Multiple cars and trucks are present, traveling at varying speeds.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen moving along the road, including cars and trucks, navigating through snowy conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility limitations due to snowfall may obscure some details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the road conditions are恶劣 due to snowfall, there are no immediate signs of collisions, reckless driving, or other hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001010",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:46:34.662712+00:00"
+  }
+}

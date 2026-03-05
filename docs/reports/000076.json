@@ -1,0 +1,82 @@
+{
+  "summary": "The video captures a snowy highway with multiple vehicles traveling in both directions. The road is marked with clear lane dividers, and snow blankets the surrounding landscape. Vehicles such as vans and sedans move steadily along the road. At approximately 3.5 seconds, a red hatchback passes closely alongside the camera vehicle, indicating a moment of proximity but no collision.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "sedan_1",
+      "type": "sedan"
+    },
+    {
+      "id": "sedan_2",
+      "type": "sedan"
+    },
+    {
+      "id": "sedan_3",
+      "type": "sedan"
+    },
+    {
+      "id": "red_hatchback",
+      "type": "hatchback"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles including vans and sedans travel along a snowy highway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A red hatchback passes closely alongside the camera vehicle, indicating proximity but no collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and distance between vehicles cannot be determined due to limited frame resolution.",
+    "Visibility of additional vehicles beyond those shown may vary."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or incidents reported; the primary observation is the passing of a hatchback.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000076",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:44:19.493043+00:00"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "summary": "Two cars are parked side-by-side on a narrow street with bare trees nearby.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Two cars are parked side-by-side on a narrow street.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The license plate of the red car is partially obscured.",
+    "Only the front portion of the white car is visible."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no moving vehicles or pedestrians present; the scene consists solely of parked cars.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001425",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:37:54.315615+00:00"
+  }
+}

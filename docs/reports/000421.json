@@ -1,0 +1,69 @@
+{
+  "summary": "The video shows a vehicle traveling along a multi-laned road with buildings and trees lining both sides. The road markings indicate lanes and crosswalks. Vehicles are seen approaching an intersection where traffic lights regulate movement.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "van_3",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles approach an intersection regulated by traffic lights.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and identities of all vehicles are unclear due to limited visibility.",
+    "Traffic light status is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of collisions, reckless driving, or other hazards.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000421",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:53:29.979628+00:00"
+  }
+}

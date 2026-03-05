@@ -1,0 +1,77 @@
+{
+  "summary": "The footage captures a sequence of frames from a dashcam recording a vehicle traveling along a road under clear skies. The vehicle approaches an intersection where several cars are present. As the vehicle advances, it encounters bright sunlight glare, obscuring visibility momentarily.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 2.1,
+      "event": "A white sedan approaches the intersection from the left side of the frame.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 3.5,
+      "event": "Bright sunlight glare overwhelms the camera view, causing a temporary blackout.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility issues due to sunlight glare",
+    "Exact nature of the vehicles' intentions and behaviors remain unclear"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is reduced visibility caused by sunlight glare, which could impair driver perception. However, there are no indications of imminent collisions or severe disruptions in traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000837",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:39:11.001507+00:00"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "A vehicle traveling on a snowy road suddenly veers sharply to the left, colliding violently with an unseen obstacle or another vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car travels steadily along a snow-covered road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the unseen obstacle causing the crash is unknown.",
+    "Whether the car collided with another vehicle cannot be confirmed."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The sudden and violent deviation of the car indicates a high-risk situation, potentially leading to severe damage or injury.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000472",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:37:46.940859+00:00"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "summary": "The video shows a convoy of vehicles traveling along a rural road under clear skies. The convoy consists of multiple trucks and cars moving in tandem, with the lead vehicle being a silver sedan. As the convoy advances, the camera captures the vehicles from behind, providing a view of their rear ends and license plates. The convoy maintains a steady pace, and there are no apparent disruptions or deviations in its formation.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A convoy consisting of several trucks and a silver sedan travels along a rural road. The convoy moves steadily, maintaining a consistent formation.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The convoy's formation and speed are consistent throughout the frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible incidents such as collisions, near misses, or erratic driving behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001013",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:45:48.766839+00:00"
+  }
+}

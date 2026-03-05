@@ -1,0 +1,80 @@
+{
+  "summary": "The video depicts a highway scene with multiple vehicles traveling under an overpass. A motorcycle crashes into another vehicle, resulting in both falling onto the road.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a highway under an overpass.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A motorcycle crashes into another vehicle, causing both to fall onto the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash impact is unclear.",
+    "Details about the motorcycles' condition post-crash are unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The crash results in two motorcycles crashing into each other, leading to fatalities.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000790",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:55:39.848867+00:00"
+  }
+}

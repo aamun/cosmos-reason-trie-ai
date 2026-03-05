@@ -1,0 +1,62 @@
+{
+  "summary": "The video shows a rural road with multiple vehicles traveling in both directions. A cyclist rides alongside the road, while cars move forward on either side. Vehicles maintain safe distances from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "cyclist",
+      "type": "bicycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a rural road, maintaining their lanes and speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cyclist's speed and direction are unclear.",
+    "The presence of additional vehicles beyond the three shown is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles are traveling safely without any collisions or incidents.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000345",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:20:14.488349+00:00"
+  }
+}

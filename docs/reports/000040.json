@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a nighttime scene with heavy rainfall and snowfall, viewed from inside a vehicle's dashboard camera. The windshield wiper is active, clearing raindrops, while streetlights illuminate the wet road. Vehicles are present on the road, including a car passing closely alongside the recording vehicle.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car passes closely alongside the recording vehicle, indicating a potential hazard due to limited space.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Precise identification of the car passing closely alongside the recording vehicle."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The close proximity of the passing car poses a risk of collision or disruption.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000040",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:55:16.489983+00:00"
+  }
+}

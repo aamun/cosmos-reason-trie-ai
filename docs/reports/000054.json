@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a snowy day with multiple vehicles traveling on a multi-laned road. A large truck carrying several cars drives past the camera vehicle, which is positioned in the rightmost lane. Snow accumulates along the roadside, indicating adverse weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A large truck carrying multiple vehicles travels alongside the camera vehicle, maintaining a steady pace.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The snow accumulation along the roadside is unclear, making it difficult to definitively classify the weather as snowy."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000054",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:50:48.682787+00:00"
+  }
+}

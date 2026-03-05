@@ -1,0 +1,108 @@
+{
+  "summary": "The video shows a rainy day with wet roads, featuring multiple vehicles traveling along a curved roadway. A red taxi overtakes another vehicle, while other cars navigate the curve cautiously.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "taxi_1",
+      "type": "car"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 0.0,
+      "event": "A red taxi overtakes another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 1.4,
+      "event": "Multiple vehicles travel along a curved roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        7
+      ]
+    },
+    {
+      "t_start": 2.1,
+      "t_end": 2.1,
+      "event": "A red taxi overtakes another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        21
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 2.8,
+      "event": "Multiple vehicles travel along a curved roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        28
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 3.5,
+      "event": "A red taxi overtakes another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        35
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.2,
+      "event": "Multiple vehicles travel along a curved roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        42
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "A red taxi overtakes another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Some details about the vehicles' interiors and occupants are unclear due to limited visibility.",
+    "Precise speeds and distances between vehicles cannot be determined accurately."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous behaviors evident in the video. Vehicles maintain reasonable spacing and follow the road's curvature.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001230",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:39:54.204438+00:00"
+  }
+}

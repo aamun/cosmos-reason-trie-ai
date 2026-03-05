@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures nighttime street scenes with vehicles moving along roads illuminated by streetlights. A white hatchback drives ahead, followed closely by another vehicle. Traffic signs and signals regulate the flow of traffic.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "taxi_1",
+      "type": "car"
+    },
+    {
+      "id": "taxi_2",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Taxi_1 travels forward while Taxi_2 follows closely behind.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of Taxi_2 is unclear due to limited visibility.",
+    "The bus's route and destination are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000626",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:49:31.974591+00:00"
+  }
+}

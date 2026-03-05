@@ -1,0 +1,62 @@
+{
+  "summary": "The video shows a split-screen view where the left side captures a road with multiple vehicles traveling in both directions under clear skies, while the right side displays a bus interior with passengers seated.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "bus_interior_passenger_1",
+      "type": "unknown"
+    },
+    {
+      "id": "bus_interior_passenger_2",
+      "type": "unknown"
+    },
+    {
+      "id": "bus_interior_passenger_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen moving along the road, maintaining their lanes and speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Passenger movements inside the bus are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no evident collisions, accidents, or hazardous behaviors impacting the traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000296",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:37:03.892976+00:00"
+  }
+}

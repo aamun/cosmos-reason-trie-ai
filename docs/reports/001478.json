@@ -1,0 +1,61 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. Snow accumulates around the roadside, obscuring visibility. Vehicles maintain a safe distance from each other, and their headlights illuminate the path ahead.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Snow accumulates around the roadside, obscuring visibility.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        49
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along the snowy road, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility obscured by snowfall",
+    "Exact speed and braking actions of vehicles"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to consistent vehicle spacing and cautious driving.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001478",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:22:22.261576+00:00"
+  }
+}

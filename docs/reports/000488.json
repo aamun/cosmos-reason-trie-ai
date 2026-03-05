@@ -1,0 +1,46 @@
+{
+  "summary": "The dashcam footage shows a vehicle driving on a two-lane road under clear skies with sparse clouds. A large truck occupies the right lane ahead, moving slowly. The truck's rear lights blink intermittently, suggesting it may be braking or signaling.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A large truck drives steadily in the adjacent lane while blinking its rear lights.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The blinking of the truck’s rear lights is unclear, making it difficult to determine their purpose."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000488",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:33:23.615805+00:00"
+  }
+}

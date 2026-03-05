@@ -1,0 +1,62 @@
+{
+  "summary": "The video shows a vehicle driving on a city street with multiple lanes. The road is wet, indicating recent rain. Traffic includes cars and buses moving in both directions. Pedestrians can be seen crossing the street at designated crossings. Signs such as pedestrian crossings and tram tracks are visible.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bus approaches from the opposite direction in the adjacent lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the bus driver perceives the ego-vehicle as a hazard is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of imminent collision or severe disruption.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000910",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:16:22.771205+00:00"
+  }
+}

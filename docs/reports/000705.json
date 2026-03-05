@@ -1,0 +1,50 @@
+{
+  "summary": "The dashcam footage shows a vehicle traveling on a multi-laned road with moderate traffic. A white hatchback is directly ahead of the dashcam vehicle, maintaining a safe distance. To the left, another vehicle passes closely alongside the dashcam vehicle, creating a narrow corridor for passage.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "silver_minivan",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver minivan overtakes the dashcam vehicle from the left side, passing closely while occupying the same lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise reason for the minivan's overtaking maneuver is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While there is close proximity between vehicles, no collisions or near misses are evident. The situation appears controlled, with both vehicles maintaining reasonable distances.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000705",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:24:08.895376+00:00"
+  }
+}

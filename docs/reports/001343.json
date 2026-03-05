@@ -1,0 +1,47 @@
+{
+  "summary": "A silver SUV is traveling on a multi-laned road with trees lining both sides. A white sedan crashes into the SUV, causing significant damage to the front of the white sedan.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV travels along a multi-laned road, followed closely by a white sedan.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The severity of the crash is unclear due to limited visibility.",
+    "Damage to the white sedan is only partially visible."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The crash results in significant damage to the white sedan, indicating a high-risk situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001343",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:03:49.791150+00:00"
+  }
+}

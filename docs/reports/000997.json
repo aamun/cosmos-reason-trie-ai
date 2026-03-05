@@ -1,0 +1,122 @@
+{
+  "summary": "The video captures a city street with multiple lanes of traffic moving in both directions. Vehicles are traveling at moderate speeds, maintaining their lanes. A sedan is seen ahead of the observer, followed closely by other cars. The road appears clear of obstructions, and there are no visible incidents or disruptions in the flow of traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "truck"
+    },
+    {
+      "id": "car_4",
+      "type": "van"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    },
+    {
+      "id": "car_6",
+      "type": "sedan"
+    },
+    {
+      "id": "car_7",
+      "type": "sedan"
+    },
+    {
+      "id": "car_8",
+      "type": "sedan"
+    },
+    {
+      "id": "car_9",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along a multi-laned urban road. Cars maintain consistent spacing and speed, indicating normal traffic conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Traffic flow may vary beyond the captured frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Observed traffic conditions appear stable with no immediate hazards or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000997",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:50:29.561461+00:00"
+  }
+}

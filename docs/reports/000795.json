@@ -1,0 +1,82 @@
+{
+  "summary": "The footage captures a vehicle traveling along an urban roadway during daylight hours. The vehicle approaches an intersection marked by traffic signals and road markings. Vehicles are seen moving in both directions across the intersection. The sky appears overcast, and the road is lined with streetlights and utility poles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_markings_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_markings_2",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "unknown"
+    },
+    {
+      "id": "traffic_light_1",
+      "type": "unknown"
+    },
+    {
+      "id": "traffic_light_2",
+      "type": "unknown"
+    },
+    {
+      "id": "vehicle_on_left_lane",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_on_right_lane",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_crossing_intersection",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle travels along a multi-laned urban road under overcast skies.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of vehicles in the intersection are unclear.",
+    "Conflicting interpretations of traffic light statuses."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous interactions evident in the sequence.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000795",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:54:12.957724+00:00"
+  }
+}

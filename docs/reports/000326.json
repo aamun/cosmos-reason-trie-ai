@@ -1,0 +1,65 @@
+{
+  "summary": "The video depicts a city street with multiple lanes of traffic moving in both directions under overcast skies. Vehicles are traveling at moderate speeds, maintaining their lanes. A sedan is seen ahead, signaling its intention to merge into the rightmost lane. As the sedan merges, it creates a gap in the flow of traffic, allowing other vehicles to pass through smoothly.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A sedan signals and merges into the rightmost lane, creating space for adjacent vehicles to pass.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of vehicles cannot be determined due to limited visibility.",
+    "Precise location of the merging point is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the smooth merging of the sedan into the rightmost lane, which does not appear to disrupt the overall traffic flow significantly.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000326",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:26:40.411632+00:00"
+  }
+}

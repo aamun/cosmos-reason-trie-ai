@@ -1,0 +1,53 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a vehicle approaching an intersection with traffic lights. The sky is clear and sunny, indicating daytime conditions. The vehicle proceeds through the intersection while observing the traffic signals. Unexpectedly, the vehicle experiences a sudden loss of control, causing it to veer sharply to the left and crash into an unseen obstacle, resulting in a dramatic flip and destruction.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle approaches an intersection with traffic lights, maintaining awareness of its surroundings.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "Unexpectedly, the ego-vehicle loses control, veers sharply to the left, and crashes into an unseen obstacle, resulting in a dramatic flip and destruction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Details of the unseen obstacle causing the crash are unknown.",
+    "Precise cause of the loss of control is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The footage shows a sudden and severe loss of control leading to a catastrophic crash, indicating a critical risk scenario.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000461",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:41:18.361755+00:00"
+  }
+}

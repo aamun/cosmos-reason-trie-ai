@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a first-person view from inside a vehicle traveling along a multi-laned highway under clear skies with sparse clouds. The road markings indicate a mandatory direction of travel, and there are guardrails separating the lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_markings_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_markings_2",
+      "type": "unknown"
+    },
+    {
+      "id": "road_sign",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The road markings and signage remain static as the vehicle advances steadily.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the road markings and signage cannot be definitively determined.",
+    "Certain details of the road markings and signage may be obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible incidents, collisions, or hazardous interactions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000556",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:11:42.454236+00:00"
+  }
+}

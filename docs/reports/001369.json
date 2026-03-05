@@ -1,0 +1,61 @@
+{
+  "summary": "The video captures a traffic scene from inside a vehicle, showing a silver SUV and a white van stopped on the left side of the road. A large white truck approaches from the right, traveling along the curved roadway. The timestamp indicates the footage was recorded on April 18, 2014, at approximately 16:12:18.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    },
+    {
+      "id": "white_van",
+      "type": "car"
+    },
+    {
+      "id": "large_white_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV and a white van are stationary on the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A large white truck drives past the stationary vehicles from the right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the truck is unknown.",
+    "Exact position of pedestrians is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001369",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:55:42.104879+00:00"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-laned urban road at night. The vehicle in front emits brake lights intermittently, indicating deceleration or stopping.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The white sedan emits brake lights intermittently, suggesting deceleration or stopping.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the brake lights indicate braking or just deceleration is unclear.",
+    "The presence of rain or wet roads cannot be confirmed."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Intermittent brake lights may suggest reduced traction due to wet conditions or cautious driving.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000627",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:49:16.849921+00:00"
+  }
+}

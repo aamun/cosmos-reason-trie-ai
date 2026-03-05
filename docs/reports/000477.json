@@ -1,0 +1,74 @@
+{
+  "summary": "Multiple vehicles are halted in traffic on a multi-laned road under rainy conditions. Cars are stopped with brake lights illuminated, indicating congestion. Vehicles are closely packed, and there is minimal space between them.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are stopped in traffic with brake lights illuminated, indicating congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of vehicles relative to each other are unclear due to limited visibility.",
+    "Precise reasons for stopping are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Traffic congestion and stopped vehicles suggest potential risks such as hydroplaning or sudden braking.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000477",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:36:27.778763+00:00"
+  }
+}

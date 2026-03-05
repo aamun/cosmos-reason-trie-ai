@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a snowy rural road with two vehicles traveling in opposite directions. A white van overtakes the ego-vehicle from behind, passing closely while both vehicles navigate the snowy terrain.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van overtakes the ego-vehicle from behind, passing closely while both vehicles navigate the snowy terrain.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact speed of the van is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of severe collision or loss of control.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000226",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:58:05.303110+00:00"
+  }
+}

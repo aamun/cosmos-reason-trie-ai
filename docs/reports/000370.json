@@ -1,0 +1,42 @@
+{
+  "summary": "The video shows a rural road with a single lane in each direction. The road is bordered by trees and fencing. A cow appears on the right side of the road, moving across it. The vehicle approaches the cow cautiously.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "cow_1",
+      "type": "animal"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "Cow crosses the road while the vehicle drives past it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.2
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Cow's full body is not visible in all frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no collision or significant disruption in the road.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000370",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:10:21.929071+00:00"
+  }
+}

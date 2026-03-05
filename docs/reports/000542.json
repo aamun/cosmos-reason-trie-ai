@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a daytime road scene with multiple vehicles traveling along a highway. A red sedan is positioned ahead of the viewer's perspective vehicle, maintaining a safe distance while driving straight. A white RV is seen further ahead, also moving forward. The environment appears clear with good visibility, and there are no immediate signs of accidents or disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "rv_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a red sedan and a white RV, are traveling on a highway during daylight hours.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No collisions or incidents are evident in the provided frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable collisions, near misses, or hazardous behaviors among the vehicles present.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000542",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:15:50.370999+00:00"
+  }
+}

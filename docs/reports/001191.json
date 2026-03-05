@@ -1,0 +1,89 @@
+{
+  "summary": "Multiple vehicles including cars and buses are stopped at an intersection with pedestrians crossing.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "bus_2",
+      "type": "bus"
+    },
+    {
+      "id": "bus_3",
+      "type": "bus"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "unknown"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "unknown"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "unknown"
+    },
+    {
+      "id": "pedestrian_4",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars and buses are halted at an intersection while pedestrians cross.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Pedestrian movements are unclear beyond their presence.",
+    "Exact positions of buses and trucks are ambiguous."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions evident in the frames provided.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001191",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:50:55.061175+00:00"
+  }
+}

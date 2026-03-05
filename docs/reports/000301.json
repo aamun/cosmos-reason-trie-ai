@@ -1,0 +1,43 @@
+{
+  "summary": "A vehicle is seen drifting sharply to the right side of the road, indicating a loss of control.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_drifting",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car is drifting sharply to the right side of the road, indicating a loss of control.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact cause of the drifting is unclear.",
+    "Whether the drifting leads to a collision cannot be determined definitively."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The car's sharp drift to the right suggests a potential loss of control, which could escalate into a collision if not corrected.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000301",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:35:12.044857+00:00"
+  }
+}

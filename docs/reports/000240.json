@@ -1,0 +1,61 @@
+{
+  "summary": "The video captures a road scene with two vehicles traveling in opposite directions on a two-lane avenue. On the left side, there is a sedan moving forward alongside a truck, while on the right side, a construction vehicle is halted due to an obstruction. The construction vehicle appears to be stuck or immobilized, blocking the lane.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "construction_vehicle",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A sedan travels alongside a truck on the left side of the road, maintaining a safe distance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "A construction vehicle is halted on the right side of the road, obstructing the lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the construction vehicle is truly immobilized or merely stalled is unclear.",
+    "The exact nature of the obstruction preventing the construction vehicle from moving remains unknown."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The construction vehicle's obstruction poses a potential hazard to other vehicles attempting to navigate around it.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000240",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:53:22.366957+00:00"
+  }
+}

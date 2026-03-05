@@ -1,0 +1,51 @@
+{
+  "summary": "The video depicts a nighttime driving scene on a snowy road illuminated by streetlights. Visibility is limited due to darkness and snowfall. Multiple vehicles are present, including a red car ahead and others passing by. The road appears wet and slippery from the snowfall.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling on the road, with their headlights illuminating the snowy surface.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility limitations due to darkness and snowfall obscure finer details.",
+    "Precise distances between vehicles cannot be accurately determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Limited visibility and slippery conditions pose moderate risks, but no immediate collisions or severe incidents are evident.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001014",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:45:32.060195+00:00"
+  }
+}

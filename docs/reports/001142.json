@@ -1,0 +1,47 @@
+{
+  "summary": "The video shows a snowy road with two lanes in each direction. A large truck is traveling ahead in the right lane, while another truck approaches from the opposite direction in the left lane. The road appears wet due to snowfall, creating a slippery surface.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A large truck travels steadily in the right lane, followed closely by another truck approaching from the opposite direction in the left lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The speed of the trucks is not clearly measurable.",
+    "Precise distances between the trucks are difficult to ascertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no immediate signs of collision or erratic behavior from either vehicle.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001142",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:05:20.121893+00:00"
+  }
+}

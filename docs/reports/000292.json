@@ -1,0 +1,50 @@
+{
+  "summary": "The footage captures a vehicle traveling along a snowy urban street during daylight hours. Snow covers the ground and sidewalks, indicating cold weather conditions. Buildings line both sides of the road, with advertisements and signage visible. Vehicles can be seen ahead, maintaining their lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle travels steadily down a snowy urban street.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Precise details about the vehicles' actions beyond steady travel are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors evident in the footage.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000292",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:38:11.622833+00:00"
+  }
+}

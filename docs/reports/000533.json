@@ -1,0 +1,93 @@
+{
+  "summary": "The footage captures nighttime street scenes viewed from a dashcam perspective. Vehicles are present, including a sedan overtaking from the right side.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 0.7,
+      "event": "A sedan is seen traveling ahead on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        7
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 2.1,
+      "event": "Another sedan overtakes from the right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        14,
+        21
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 2.8,
+      "event": "Traffic light shows green.",
+      "confidence": 0.95,
+      "frame_indices": [
+        28
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 3.5,
+      "event": "Traffic light changes to red.",
+      "confidence": 0.95,
+      "frame_indices": [
+        35
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.2,
+      "event": "Traffic light turns green again.",
+      "confidence": 0.95,
+      "frame_indices": [
+        42
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "Traffic light changes to red.",
+      "confidence": 0.95,
+      "frame_indices": [
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to nighttime visuals.",
+    "Whether the ego-vehicle is involved in an incident cannot be determined definitively."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Insufficient information regarding the severity of any incidents or hazards.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000533",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:18:31.938482+00:00"
+  }
+}

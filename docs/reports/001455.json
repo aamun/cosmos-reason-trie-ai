@@ -1,0 +1,50 @@
+{
+  "summary": "A silver sedan is stopped at an intersection with its brake lights illuminated, waiting for traffic to clear before proceeding. Snow covers the road and surrounding areas, creating hazardous driving conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "black_car",
+      "type": "car"
+    },
+    {
+      "id": "blue_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The silver sedan remains stationary at the intersection with its brake lights on, awaiting clearance.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the black car is unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary risk arises from the snowy conditions, which impair traction and increase stopping distances. However, there is no direct collision or severe disruption evident in the frames provided.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001455",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:28:34.452781+00:00"
+  }
+}

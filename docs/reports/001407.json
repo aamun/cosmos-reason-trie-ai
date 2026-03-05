@@ -1,0 +1,47 @@
+{
+  "summary": "A white sedan is stopped on a multi-laned road with several vehicles ahead. Suddenly, a person emerges from behind the sedan, runs toward the left side of the vehicle, and falls to the ground.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "person_1",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan is halted on a multi-laned roadway with multiple vehicles ahead. A person emerges from behind the sedan and rushes toward the left, landing on the ground.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the person emerging from the sedan is unclear.",
+    "Whether the emergence constitutes a collision or reckless behavior cannot be determined definitively."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The sudden emergence of an individual from the vehicle and their aggressive movement pose a significant risk of injury or harm due to the unpredictable nature of such incidents.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001407",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:43:58.560157+00:00"
+  }
+}

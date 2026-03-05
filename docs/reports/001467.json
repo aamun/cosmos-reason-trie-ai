@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a snowy road with two vehicles traveling in opposite directions. One vehicle approaches from the left side of the frame, while another travels from the opposite direction. The road appears slick due to snowfall, creating tire tracks. Suddenly, the camera experiences a blackout, obscuring the view.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Two cars are seen driving on a snowy road, one approaching from the left and the other traveling from the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The blackout obscures the view entirely."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001467",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:25:09.241910+00:00"
+  }
+}

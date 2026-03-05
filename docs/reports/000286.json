@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a traffic incident where a silver Hyundai sedan is stopped ahead of the ego vehicle, with its brake lights illuminated. The Hyundai sedan appears to be halted due to congestion or an obstruction.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "hyundai_sedan",
+      "type": "car"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver Hyundai sedan is stopped ahead of the ego vehicle, with its brake lights illuminated.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The reason for the Hyundai sedan being stopped is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The Hyundai sedan's brake lights are illuminated, indicating it is stopped. This could pose a risk if the ego vehicle decides to accelerate suddenly.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000286",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:39:23.273851+00:00"
+  }
+}

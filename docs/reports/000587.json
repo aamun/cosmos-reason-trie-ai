@@ -1,0 +1,58 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-lane highway under clear skies with ample sunlight. Vehicles maintain consistent speeds and distances from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a multi-lane highway under clear skies with ample sunlight. Vehicles maintain consistent speeds and distances from each other.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speeds and distances are maintained consistently across all vehicles."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles are traveling at consistent speeds and maintaining safe distances from each other. There are no abrupt changes in speed or direction, nor any signs of collisions or near misses.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000587",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:02:15.847217+00:00"
+  }
+}

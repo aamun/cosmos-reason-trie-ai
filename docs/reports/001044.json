@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a vehicle driving on a rural road with sparse vegetation and utility poles lining the sides. Ahead, there is a tanker truck traveling in the same direction. Shortly after, another vehicle passes by from the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "tanker_truck",
+      "type": "truck"
+    },
+    {
+      "id": "opposite_direction_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A tanker truck travels ahead on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the tanker truck is unclear due to its size and distance."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001044",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:35:59.348900+00:00"
+  }
+}

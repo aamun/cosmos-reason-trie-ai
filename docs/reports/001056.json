@@ -1,0 +1,67 @@
+{
+  "summary": "The video shows a traffic incident involving a tanker truck carrying a large tire. The tanker truck is traveling alongside a convoy of vehicles, including sedans and SUVs. Suddenly, the tanker truck veers off course and crashes into the convoy, causing significant disruption.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "tanker_truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    },
+    {
+      "id": "sedan_3",
+      "type": "car"
+    },
+    {
+      "id": "sedan_4",
+      "type": "car"
+    },
+    {
+      "id": "sedan_5",
+      "type": "car"
+    },
+    {
+      "id": "sedan_6",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Tanker truck crashes into convoy of sedans and SUVs.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash impact is unclear.",
+    "Cause of tanker truck deviation is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Collision between tanker truck and convoy results in disruption of traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001056",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:32:27.973458+00:00"
+  }
+}

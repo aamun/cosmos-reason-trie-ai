@@ -1,0 +1,89 @@
+{
+  "summary": "A truck is stopped on a residential street with its brake lights illuminated. Two individuals are standing beside the truck on the right side of the road, seemingly inspecting something. A tram passes by on the left side of the road, while a silver sedan drives past in the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "tram_1",
+      "type": "tram"
+    },
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The truck is stationary with its brake lights on, indicating it has halted.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Two pedestrians are standing next to the truck, possibly assessing an issue.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A tram travels along the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan moves across the road from left to right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identities and actions of the two individuals beside the truck are unclear.",
+    "Whether the truck's brake lights illuminate due to braking or another reason cannot be definitively determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000823",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:43:45.876914+00:00"
+  }
+}

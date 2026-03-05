@@ -1,0 +1,65 @@
+{
+  "summary": "The video captures a snowy road with heavy snowfall obscuring visibility. Snowplows are actively clearing the road, pushing snow aside. Vehicles navigate cautiously due to the hazardous conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "snowplow_1",
+      "type": "truck"
+    },
+    {
+      "id": "snowplow_2",
+      "type": "truck"
+    },
+    {
+      "id": "vehicle_1",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Snowplows are actively clearing the road, pushing snow aside.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "Vehicles navigate cautiously due to the hazardous conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of vehicles beyond the initial frames are unclear.",
+    "Visibility is severely impaired by snowfall, making precise assessments challenging."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Heavy snowfall reduces traction and visibility, posing significant risks for drivers.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001167",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:58:18.505651+00:00"
+  }
+}

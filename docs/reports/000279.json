@@ -1,0 +1,58 @@
+{
+  "summary": "The footage captures a highway scene with multiple lanes of traffic moving in both directions under clear skies. Vehicles are traveling at varying speeds, with some cars maintaining a steady pace while others appear to be accelerating or decelerating.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along the highway, including sedans and trucks. Cars maintain consistent spacing and speed, indicating normal traffic flow.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed variations among vehicles may indicate minor deviations from ideal driving patterns."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic appears orderly with no immediate signs of congestion, accidents, or erratic behavior.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000279",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:41:10.224960+00:00"
+  }
+}

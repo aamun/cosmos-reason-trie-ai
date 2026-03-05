@@ -1,0 +1,52 @@
+{
+  "summary": "The video begins with a clear view of a highway, showing a truck traveling in the opposite direction. Suddenly, the truck crashes violently into the road divider, causing it to overturn completely.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A truck travels along the highway in the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The truck crashes violently into the road divider, overturning completely.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash impact is unclear due to limited frames."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The truck crashes violently into the road divider, overturning completely, indicating a severe accident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000787",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:56:40.117833+00:00"
+  }
+}

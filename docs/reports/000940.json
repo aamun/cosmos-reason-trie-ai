@@ -1,0 +1,59 @@
+{
+  "summary": "A black sedan traveling alongside the ego-vehicle collides violently with the guardrail, causing significant damage.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "guardrail",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 1.4,
+      "t_end": 4.2,
+      "event": "The black sedan collides violently with the guardrail, resulting in severe deformation and damage.",
+      "confidence": 0.95,
+      "frame_indices": [
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the collision beyond violent impact is unclear.",
+    "Damage extent beyond the guardrail is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Violent collision with a guardrail poses a significant risk to occupants and infrastructure.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000940",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:06:38.553425+00:00"
+  }
+}

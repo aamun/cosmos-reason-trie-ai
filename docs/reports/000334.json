@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a daytime road scene with multiple vehicles traveling in both directions. A white van is seen moving from left to right across the intersection, followed by a black sedan crossing from right to left. The road is lined with trees and buildings, and there are streetlights and utility poles along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A white van travels from left to right across the intersection while a sedan crosses from right to left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        3,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of other vehicles beyond the van and sedan is unclear.",
+    "The identity of the sedan cannot be definitively determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the provided frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000334",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:24:07.877602+00:00"
+  }
+}

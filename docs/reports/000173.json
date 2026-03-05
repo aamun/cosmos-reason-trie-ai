@@ -1,0 +1,82 @@
+{
+  "summary": "The video captures a sequence where a vehicle approaches an intersection, passes by a stationary blue sedan, and encounters a driver who appears startled.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "driver_1",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A white sedan drives past the camera along the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A blue sedan stops at the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The driver inside the blue sedan reacts suddenly upon seeing the approaching white sedan.",
+      "confidence": 0.95,
+      "frame_indices": [
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Driver's reaction time",
+    "Exact reason for the driver's startled response"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no direct collision or dangerous interaction between vehicles; however, the sudden reaction of the driver may indicate a minor disturbance.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000173",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:15:31.495384+00:00"
+  }
+}

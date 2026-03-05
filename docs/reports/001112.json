@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a nighttime urban street with multiple vehicles traveling in both directions. The road is illuminated by streetlights, and there are several cars visible, including a yellow taxi on the left side of the frame. Traffic appears to be flowing smoothly without any apparent incidents.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "taxi",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the road at night. Cars maintain their lanes and exhibit normal driving behaviors.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to nighttime visibility limitations.",
+    "Precise vehicle interactions are not evident beyond general traffic flow."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or erratic driving behaviors observed. Vehicles are maintaining their lanes and speeds appropriately.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001112",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:15:32.984257+00:00"
+  }
+}

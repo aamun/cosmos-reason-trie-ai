@@ -1,0 +1,59 @@
+{
+  "summary": "The video captures a traffic scene from inside a vehicle, showing a maroon sedan ahead with its brake lights illuminated. The road appears wet, suggesting recent rainfall, and there are several other vehicles stopped or moving slowly around the area. Tall buildings flank both sides of the street, indicating an urban setting.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "minivan"
+    },
+    {
+      "id": "car_3",
+      "type": "truck"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are halted in traffic, with brake lights activated, indicating congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles relative to each other are unclear due to limited visibility.",
+    "Precise reasons for the halted traffic are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic congestion with vehicles halted suggests low-risk conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000127",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:30:28.708483+00:00"
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "summary": "The video captures a street scene with multiple vehicles and pedestrians. A silver van is seen driving down the road, followed by motorcycles and scooters. Pedestrians are walking along the sidewalk, including one who crosses the road. Construction workers wearing orange vests are present near the roadside, indicating ongoing construction work.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    },
+    {
+      "id": "van_2",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_3",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_4",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_5",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_6",
+      "type": "motorcycle"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_3",
+      "type": "pedestrian"
+    },
+    {
+      "id": "construction_worker_1",
+      "type": "worker"
+    },
+    {
+      "id": "construction_worker_2",
+      "type": "worker"
+    },
+    {
+      "id": "construction_worker_3",
+      "type": "worker"
+    },
+    {
+      "id": "construction_worker_4",
+      "type": "worker"
+    },
+    {
+      "id": "construction_worker_5",
+      "type": "worker"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including vans and motorcycles, are traveling on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles and pedestrians may vary slightly between frames due to camera movement.",
+    "Construction worker identities cannot be definitively confirmed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001458",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:27:41.336921+00:00"
+  }
+}

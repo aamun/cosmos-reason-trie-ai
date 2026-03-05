@@ -1,0 +1,57 @@
+{
+  "summary": "The video captures a first-person perspective from a vehicle traveling along a suburban road. The scene begins with a view of a clear sky and trees lining the roadside. As the vehicle advances, it approaches an intersection marked by a pedestrian crossing. Shortly after, the camera shifts abruptly to show the handlebars of a bicycle entering the frame from the right side, indicating a sudden maneuver or collision.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "bike_handlebars",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle travels along a suburban road under a clear sky, passing by trees and lampposts.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The camera rapidly shifts to reveal the handlebars of a bicycle entering the frame from the right, suggesting a sudden movement or collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the abrupt camera shift is unclear.",
+    "Degree of impact between the vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The abrupt camera shift and introduction of a bicycle into the frame suggest a potential collision or near-miss situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000609",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:55:31.546693+00:00"
+  }
+}

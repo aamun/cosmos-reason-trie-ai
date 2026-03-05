@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a snowy road with minimal traffic. A vehicle approaches from the opposite direction, traveling at a moderate speed. The road appears icy, and there are houses and trees lining the sides.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A van travels from the opposite direction along the snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the van is unclear due to poor visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal traffic and clear visibility allow for safe navigation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000044",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:53:55.835737+00:00"
+  }
+}

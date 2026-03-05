@@ -1,0 +1,46 @@
+{
+  "summary": "The video captures a traffic scenario where a vehicle approaches an intersection with a pedestrian crossing sign and a yellow traffic light. The vehicle slows down as it nears the crosswalk but fails to stop completely before the line, resulting in a collision with another vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan approaches the intersection while the traffic light is yellow.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Failure to stop completely due to uncertainty about the traffic signal."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The ego-vehicle failed to come to a complete stop at the yellow light, leading to a collision with another vehicle.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000857",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:32:55.185597+00:00"
+  }
+}

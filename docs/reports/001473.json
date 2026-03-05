@@ -1,0 +1,47 @@
+{
+  "summary": "The dashcam footage captures a snowy road with a truck traveling alongside the vehicle. The truck overtakes the dashcam vehicle, causing it to swerve sharply to avoid a collision. Snow accumulates on the roadway, indicating adverse weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A truck overtakes the dashcam vehicle, prompting the dashcam vehicle to swerve sharply to avoid a collision.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the truck’s speed and maneuver is unclear.",
+    "Degree of swerving severity is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The dashcam vehicle experiences a sharp swerve due to the truck’s overtaking maneuver, posing a significant risk of collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001473",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:23:44.950922+00:00"
+  }
+}

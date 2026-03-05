@@ -1,0 +1,61 @@
+{
+  "summary": "The video captures a traffic scene where multiple vehicles are traveling along a road bordered by trees and utility poles. A silver SUV is positioned centrally in the lane, while other cars are seen on either side. A STOP sign is visible on the left side of the road, indicating an intersection ahead. Traffic flows smoothly without any apparent disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    },
+    {
+      "id": "white_suv",
+      "type": "car"
+    },
+    {
+      "id": "black_car",
+      "type": "car"
+    },
+    {
+      "id": "semi_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles including a silver SUV, white SUV, black car, and semi-truck are traveling on a road with a STOP sign visible.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the vehicles maintain safe distances from each other."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000588",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:01:59.216050+00:00"
+  }
+}

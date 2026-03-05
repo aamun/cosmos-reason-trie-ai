@@ -1,0 +1,94 @@
+{
+  "summary": "The video captures a snowy urban street with multiple vehicles parked along both sides of the road. A silver minibus overtakes the ego-vehicle from the right side, passing closely. Snow accumulates on the roadside, indicating winter conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_minibus",
+      "type": "minibus"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "black_suv",
+      "type": "car"
+    },
+    {
+      "id": "silver_minivan",
+      "type": "minibus"
+    },
+    {
+      "id": "white_minivan",
+      "type": "minibus"
+    },
+    {
+      "id": "dark_suv",
+      "type": "car"
+    },
+    {
+      "id": "gray_car",
+      "type": "car"
+    },
+    {
+      "id": "black_car",
+      "type": "car"
+    },
+    {
+      "id": "silver_truck",
+      "type": "truck"
+    },
+    {
+      "id": "yellow_bus",
+      "type": "bus"
+    },
+    {
+      "id": "snow_on_ground",
+      "type": "unknown"
+    },
+    {
+      "id": "snow_on_sidewalks",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver minibus overtakes the ego-vehicle from the right side, passing closely.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact license plate numbers of vehicles cannot be determined.",
+    "Precise vehicle speeds and intentions are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary risk involves close proximity between the ego-vehicle and the silver minibus during overtaking, which could lead to a potential collision if not managed carefully. However, since the minibus successfully passes without incident, the overall risk remains low.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000039",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:55:38.859361+00:00"
+  }
+}

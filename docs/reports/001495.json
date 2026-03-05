@@ -1,0 +1,50 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. A large truck carrying cars is seen on the left side of the road, while other vehicles, including a van and a sedan, move alongside it. The road appears wet, suggesting recent rainfall.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a wet highway. A large truck carrying cars is positioned on the left side of the road, while other vehicles, including a van and a sedan, move alongside it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of all vehicles cannot be determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions or hazardous interactions between vehicles. All vehicles appear to be moving normally without any signs of erratic behavior or sudden stops.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001495",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:17:28.468692+00:00"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-laned highway under an overpass. Vehicles maintain moderate speeds and distances from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "INTEGO CONDOR",
+      "type": "car"
+    },
+    {
+      "id": "CAR CRASHES TIME YOUTUBE CHANNEL",
+      "type": "text/logo"
+    },
+    {
+      "id": "TRUCK",
+      "type": "truck"
+    },
+    {
+      "id": "ORANGE CAR",
+      "type": "car"
+    },
+    {
+      "id": "BLUE CAR",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel on a multi-laned highway under an overpass.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the truck is unclear.",
+    "The license plate of the orange car is unreadable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000544",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:15:17.847890+00:00"
+  }
+}

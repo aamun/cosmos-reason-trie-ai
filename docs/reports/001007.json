@@ -1,0 +1,46 @@
+{
+  "summary": "The video captures a street scene with residential buildings on both sides. Vehicles are present, including a black sedan traveling in the opposite direction. The timestamp indicates March 11, 2015, at approximately 12:47 PM. There are no apparent collisions or incidents occurring within the frames provided.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_sedan",
+      "type": "car"
+    },
+    {
+      "id": "opposite_direction_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black sedan travels along the road while another vehicle moves in the opposite direction.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of vehicles beyond the initial frames are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable collisions, accidents, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001007",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:47:20.767746+00:00"
+  }
+}

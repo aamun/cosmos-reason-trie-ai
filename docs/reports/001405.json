@@ -1,0 +1,56 @@
+{
+  "summary": "The dashcam footage shows a vehicle traveling on a highway with multiple lanes. A white van is seen driving alongside the ego-vehicle in the adjacent lane. The road appears wet, suggesting rainy conditions. Towards the end of the sequence, there is a sudden jerk or abrupt stop, causing the camera to shake violently.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van travels alongside the ego-vehicle in the adjacent lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The camera experiences an abrupt jerk or stop, resulting in violent shaking.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cause of the abrupt jerk or stop is unclear.",
+    "The severity of the crash cannot be determined due to the lack of clear visual evidence."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The abrupt jerk or stop may indicate a collision or loss of control, posing a significant risk to the driver.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001405",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:44:33.963425+00:00"
+  }
+}

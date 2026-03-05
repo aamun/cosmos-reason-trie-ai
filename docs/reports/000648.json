@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures nighttime driving conditions with multiple vehicles on a multi-laned road. The road appears wet due to rain, as evidenced by reflections on the surface and illuminated streetlights creating glare. Several cars are present, including a white sedan overtaking from the left side of the frame. Traffic lights and signage are faintly visible but not clearly readable.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are stopped or moving slowly on a rainy night road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility of traffic signs/signals is unclear.",
+    "Exact positions and statuses of some vehicles cannot be fully determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is reduced visibility due to rain and darkness, which increases the risk of accidents. However, there are no immediate collisions or hazardous maneuvers evident in the frames provided.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000648",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:43:05.911206+00:00"
+  }
+}

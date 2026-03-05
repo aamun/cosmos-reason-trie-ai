@@ -1,0 +1,74 @@
+{
+  "summary": "The footage captures a city street scene with multiple vehicles traveling in both directions. Cars are seen moving along the road, including a silver sedan on the right side and various other cars on the left. Buildings line the streets, and there are parked cars alongside the roadway.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_on_left_side",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_on_right_side",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_in_middle_lane",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_on_opposite_side",
+      "type": "car"
+    },
+    {
+      "id": "building_on_left_side",
+      "type": "building"
+    },
+    {
+      "id": "building_on_right_side",
+      "type": "building"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on the road, including a silver sedan on the right side and several cars on the left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility.",
+    "Some background elements like trees and poles are partially obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000163",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:18:46.172351+00:00"
+  }
+}

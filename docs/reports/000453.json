@@ -1,0 +1,46 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. A black BMW SUV is seen overtaking a large semi-trailer truck on the right side of the road. The BMW maintains a safe distance from the truck while passing it. Trees line the sides of the highway, and the sky appears overcast.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "bmw_suv",
+      "type": "car"
+    },
+    {
+      "id": "semi_trailer_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black BMW SUV overtakes a large semi-trailer truck on the highway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The weather conditions are unclear due to the lack of visible precipitation or cloud formations."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000453",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:43:46.944410+00:00"
+  }
+}

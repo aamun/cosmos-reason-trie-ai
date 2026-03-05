@@ -1,0 +1,73 @@
+{
+  "summary": "The video shows a snowy road with minimal traffic. A white van is seen parked on the left side of the road, while a black sedan approaches from the opposite direction. The road appears wet and icy due to snowfall, creating a hazardous driving environment.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 0.7,
+      "event": "A white van is parked on the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 2.1,
+      "event": "A black sedan approaches from the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1
+      ]
+    },
+    {
+      "t_start": 2.8,
+      "t_end": 3.5,
+      "event": "The sedan continues moving forward.",
+      "confidence": 0.95,
+      "frame_indices": [
+        2
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "The sedan passes by the van and drives away.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of other vehicles beyond the van and sedan is unclear.",
+    "The exact speed and trajectory of the sedan are uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal traffic and clear visibility allow for safe navigation despite adverse weather conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001156",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:01:10.049511+00:00"
+  }
+}

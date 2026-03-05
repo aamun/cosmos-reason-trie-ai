@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a snowy road with multiple vehicles traveling in both directions. A white truck overtakes a red truck from the opposite direction, while a black car drives alongside the red truck. Snow accumulates on the roadside, indicating adverse weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white truck overtakes a red truck from the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The driver's actions of overtaking are unclear due to snowfall.",
+    "Snow accumulation on the roadside is evident but its impact on driving conditions is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk of collision exists due to overtaking maneuvers and snowfall.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001179",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:54:40.766904+00:00"
+  }
+}

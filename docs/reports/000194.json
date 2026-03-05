@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a rural road intersection. The scene unfolds under a partly cloudy sky with clear visibility. A motorcycle travels ahead of the dashcam vehicle, navigating through the intersection. Vehicles, including trucks and cars, move across the intersection, creating a typical traffic flow. Signs indicating directions such as \"Tomsk\" and \"Krasnoyarsk\" are visible, guiding travelers.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A motorcycle travels ahead of the dashcam vehicle, navigating through the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact nature of the traffic incident is unclear due to the lack of explicit collision or hazardous interaction details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no direct evidence of a collision, loss of control, or hazardous interaction between vehicles or motorcycles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000194",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:08:34.652706+00:00"
+  }
+}

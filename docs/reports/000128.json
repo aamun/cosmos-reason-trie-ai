@@ -1,0 +1,48 @@
+{
+  "summary": "The video captures nighttime street scenes viewed from inside a vehicle, showcasing urban infrastructure such as buildings, streetlights, and vehicles.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A truck is seen driving ahead in the distance, illuminated by streetlights.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to limited visibility.",
+    "The identity of the truck cannot be definitively determined.",
+    "The status of the second car remains ambiguous."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Insufficient information regarding the severity of any incidents or hazards.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000128",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:30:12.637146+00:00"
+  }
+}

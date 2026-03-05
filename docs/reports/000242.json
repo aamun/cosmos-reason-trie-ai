@@ -1,0 +1,46 @@
+{
+  "summary": "The footage captures a vehicle traveling along a rural road flanked by dense pine forests under an overcast sky. The road appears relatively empty with minimal traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black sedan travels ahead of the recording vehicle on a two-lane rural road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Minimal traffic but potential for unforeseen incidents due to rural setting."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal traffic and rural setting suggest low risk of accidents.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000242",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:52:44.874842+00:00"
+  }
+}

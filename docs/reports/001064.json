@@ -1,0 +1,94 @@
+{
+  "summary": "The video captures a rainy urban street scene with multiple vehicles and pedestrians. Cars, buses, trucks, and motorcycles are present, moving through flooded roads. A pedestrian crosses the street, causing a disturbance among the vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling along a flooded roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A pedestrian crosses the road, disrupting the flow of traffic.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the disruption caused by the pedestrian crossing is unclear.",
+    "Precise timing of vehicle reactions to the pedestrian is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The presence of a pedestrian crossing the road unexpectedly increases the likelihood of accidents due to reduced visibility and slippery conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001064",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:30:13.954674+00:00"
+  }
+}

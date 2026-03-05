@@ -1,0 +1,74 @@
+{
+  "summary": "Multiple vehicles are stopped or moving slowly on a city street with buildings and tram lines overhead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_car_1",
+      "type": "car"
+    },
+    {
+      "id": "van",
+      "type": "truck"
+    },
+    {
+      "id": "tram_line",
+      "type": "unknown"
+    },
+    {
+      "id": "building_1",
+      "type": "unknown"
+    },
+    {
+      "id": "building_2",
+      "type": "unknown"
+    },
+    {
+      "id": "building_3",
+      "type": "unknown"
+    },
+    {
+      "id": "tram_post",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are stopped or moving slowly on a city street with buildings and tram lines overhead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The tram line's status is unclear.",
+    "Details about the tram post are missing."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000110",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:35:04.565392+00:00"
+  }
+}

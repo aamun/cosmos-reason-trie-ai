@@ -1,0 +1,42 @@
+{
+  "summary": "A white van drives past on the left side of the road, moving from the background towards the foreground.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van enters the frame from the left, traveling along the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The timestamp \"2013/15/16\" may refer to a date rather than a time."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no indications of collisions, near misses, or hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001423",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:38:45.147192+00:00"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "summary": "The video captures a highway scene with multiple trucks traveling in both directions. Two trucks are seen moving towards each other on opposite lanes, creating a potential collision hazard. The trucks are positioned close to each other, indicating an imminent risk of impact.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Two trucks are traveling in opposite directions on the highway, with their paths converging closely.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of the trucks relative to each other are unclear due to limited visibility.",
+    "Distance between the trucks cannot be accurately assessed."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The convergence of two trucks traveling in opposite directions creates a significant risk of collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000372",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:09:51.870183+00:00"
+  }
+}

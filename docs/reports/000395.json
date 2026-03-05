@@ -1,0 +1,66 @@
+{
+  "summary": "The footage captures a daytime urban street scene with multiple vehicles traveling in both directions. Snow is visible on the ground, indicating cold weather conditions. Cars are seen moving along the road, including a white sedan and a dark-colored SUV. Traffic appears moderate, with vehicles maintaining their lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are traveling on a snowy road, with headlights and taillights illuminated.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be precisely determined due to limited frame resolution.",
+    "Visibility of snow accumulation on sidewalks and curbs is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no evident collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000395",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:02:50.205928+00:00"
+  }
+}

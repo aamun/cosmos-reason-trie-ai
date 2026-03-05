@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a silver sedan traveling alongside a red vehicle on a two-lane road under overcast skies. The silver sedan maintains a consistent distance from the red vehicle while moving forward.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_car",
+      "type": "car"
+    },
+    {
+      "id": "red_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan travels alongside a red vehicle on a two-lane road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to the lack of rain or snow in the frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001323",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:10:02.016363+00:00"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "summary": "The video shows a dashcam view of an urban street with multiple vehicles and buildings. A red pickup truck crosses the intersection from left to right, followed by a white sedan. The dashcam vehicle initiates a left turn, passing by commercial establishments and infrastructure.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "building_1",
+      "type": "building"
+    },
+    {
+      "id": "building_2",
+      "type": "building"
+    },
+    {
+      "id": "commercial_establishment_1",
+      "type": "building"
+    },
+    {
+      "id": "commercial_establishment_2",
+      "type": "building"
+    },
+    {
+      "id": "infrastructure_1",
+      "type": "unknown"
+    },
+    {
+      "id": "infrastructure_2",
+      "type": "unknown"
+    },
+    {
+      "id": "infrastructure_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red pickup truck crosses the intersection from left to right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan follows behind the red pickup truck.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The dashcam vehicle begins executing a left turn.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the dashcam vehicle is unclear.",
+    "Some details of the buildings and infrastructure are obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the video.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001296",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:19:13.011111+00:00"
+  }
+}

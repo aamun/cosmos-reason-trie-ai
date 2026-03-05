@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a vehicle traveling along a multi-laned highway during daytime under overcast skies. The road markings indicate a divided roadway with a median barrier separating opposing traffic flows. Several trucks are present on the right side of the road, positioned alongside the median. As the vehicle advances, it encounters these trucks, resulting in a close encounter where the vehicle narrowly avoids colliding with them.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle travels along a multi-laned highway during daylight hours. Trucks are seen on the right side of the road, positioned alongside the median.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the vehicle is unclear.",
+    "Distance between the vehicle and the trucks is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The vehicle experiences a close encounter with trucks, indicating a potential collision risk.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001217",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:44:20.039828+00:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a nighttime urban street scene captured from a dashcam perspective. Vehicles are present on the road, with headlights illuminating the path. Buildings flank both sides of the street, and streetlights provide additional illumination. Cars are seen traveling in both directions.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are visible on the road, traveling in both directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the vehicles are moving or stopped is unclear due to limited visibility.",
+    "Exact positions and velocities of the vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001182",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:53:10.757975+00:00"
+  }
+}

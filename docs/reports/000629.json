@@ -1,0 +1,78 @@
+{
+  "summary": "The video captures a daytime traffic scene at an intersection with multiple lanes and traffic signals. Vehicles are seen approaching the intersection from various directions. Traffic lights are functioning normally, displaying green signals for vehicles traveling straight ahead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "traffic_light_1",
+      "type": "traffic_light"
+    },
+    {
+      "id": "traffic_light_2",
+      "type": "traffic_light"
+    },
+    {
+      "id": "traffic_light_3",
+      "type": "traffic_light"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars approach the intersection while traffic lights display green signals.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles beyond those shown.",
+    "Behavior of additional traffic lights beyond the three visible ones."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the provided frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000629",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:48:43.870339+00:00"
+  }
+}

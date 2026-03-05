@@ -1,0 +1,57 @@
+{
+  "summary": "A sedan is traveling on a snowy road, followed by a truck. The sedan slows down and stops briefly before restarting its movement.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The sedan begins to decelerate and comes to a stop.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The sedan resumes forward motion after stopping.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact reason for the sedan's deceleration is unclear.",
+    "Reason for the truck's halted status is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to brief deceleration and resumption of motion.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000124",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:31:17.073746+00:00"
+  }
+}

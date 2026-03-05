@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a highway scene with multiple trucks traveling in both directions. The road features clear lane markings and signage indicating prohibitions and mandatory directions. Trucks are seen moving steadily along the lanes.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple trucks are traveling on the highway, maintaining their lanes and speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and direction of trucks are unclear due to limited visibility.",
+    "Presence of additional vehicles beyond the three trucks is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All trucks are moving steadily without any apparent deviations or collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001186",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:52:09.728967+00:00"
+  }
+}

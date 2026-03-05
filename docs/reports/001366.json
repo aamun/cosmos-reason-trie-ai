@@ -1,0 +1,58 @@
+{
+  "summary": "A blue Kia hatchback is stopped behind another vehicle at an intersection with a green light. A motorcyclist rides alongside the Kia hatchback, maintaining a safe distance. Pedestrians are present on the sidewalk, observing the traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "blue_kia_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    },
+    {
+      "id": "red_suv",
+      "type": "car"
+    },
+    {
+      "id": "black_suv",
+      "type": "car"
+    },
+    {
+      "id": "person_on_sidewalk",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The blue Kia hatchback is halted behind another vehicle at an intersection with a green light.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the person on the sidewalk is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001366",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:56:30.593456+00:00"
+  }
+}

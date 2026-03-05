@@ -1,0 +1,63 @@
+{
+  "summary": "The video captures a daytime urban street scene with multiple vehicles traveling in both directions. The sun shines brightly, creating glare on the windshield. Vehicles are seen moving forward, including a white van on the right side and several cars ahead. Smoke emanates from the rear of one vehicle, indicating some form of malfunction or emergency.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "smoke_source",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Smoke is emitted from the rear of a vehicle, suggesting an issue such as a malfunction or emergency braking.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The source of the smoke is unclear.",
+    "It is difficult to determine the exact nature of the malfunction."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The emission of smoke from a vehicle poses a potential hazard, especially if it indicates a breakdown or dangerous situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000118",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:32:51.391497+00:00"
+  }
+}

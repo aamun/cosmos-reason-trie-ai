@@ -1,20 +1,12 @@
-# Cosmos Reason 2: Traffic Incident Evidence Agent (TRiE-AI)
+# ATIRE - Autonomous Traffic Incident Reasoning Engine 
+### Powered by NVIDIA Cosmos Reason 2
 
-A reproducible Physical AI project for **traffic incident understanding** and **evidence-style reporting** using **NVIDIA Cosmos Reason 2**.
+ATIRE is a **physical AI reasoning pipeline** that converts traffic video into structured, evidence-grounded incident reports.  
+Using **Cosmos Reason 2**, ATIRE analyzes sampled frames from dashcam footage and produces interpretable outputs including actors, events timelines, environmental conditions, and risk assessment.
 
-**What it does**
-
-* Takes a traffic video clip (dashcam/CCTV)
-* Produces a **structured evidence report** (JSON) with:
-  * actors, event timeline, causal chain, and risk assessment
+This project demonstrates how **vision-language reasoning models** can move beyond perception toward **structured physical reasoning** in real-world traffic environments.
 
 [UI Image]
-
-## Cosmos Reason 2 
-
-NVIDIA Cosmos Reason 2 is purpose-built for Physical AI reasoning model.
-
-## Architecture
 
 ```mermaid
 flowchart TD
@@ -40,6 +32,14 @@ K --> L
 L --> M[Metrics Output]
 M --> N[Accuracy<br>Unknown Rate<br>Consistency Metrics]
 ```
+
+## Cosmos Reason 2 
+
+NVIDIA Cosmos Reason 2 is purpose-built for Physical AI reasoning model.
+
+## Architecture
+
+[Architecture diagram]
 
 ## VQA Evaluation on CarCrash Dataset (1500 videos)
 

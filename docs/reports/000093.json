@@ -1,0 +1,54 @@
+{
+  "summary": "The footage captures a rural road scene with snow-covered surroundings. Multiple vehicles are present, including vans and trucks traveling in both directions. The road appears narrow and unpaved, with patches of cleared mud. Vehicles are positioned closely together, indicating congestion.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including vans and trucks, are seen traveling along a snowy rural road. Vehicles are positioned closely together, suggesting congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Congestion on a narrow road with snow-covered surfaces increases the risk of accidents. Vehicles may struggle to navigate safely, especially if they lose traction.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000093",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:39:38.100099+00:00"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a daytime urban roadway with moderate traffic flow. Vehicles are traveling in both directions, adhering to lane markings and signage. A billboard is prominently displayed overhead, and construction equipment can be seen in the distance. Traffic signs such as directional arrows and prohibitory signs are visible along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "traffic sign"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "traffic sign"
+    },
+    {
+      "id": "construction_equipment",
+      "type": "unknown"
+    },
+    {
+      "id": "billboard",
+      "type": "advertisement"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the road, including cars and trucks, moving in both directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Construction equipment's exact nature and purpose are unclear.",
+    "Some traffic signs' details are partially obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000166",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:17:53.108595+00:00"
+  }
+}

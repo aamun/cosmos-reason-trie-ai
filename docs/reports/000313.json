@@ -1,0 +1,51 @@
+{
+  "summary": "Multiple vehicles are traveling on a snowy road during daylight hours. Snow covers the ground, and the visibility is reduced due to foggy conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are moving along the road, with headlights illuminating the snowy surface.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility is low due to foggy conditions.",
+    "Exact positions of some vehicles are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is reduced visibility caused by snowfall and fog, which may affect driver awareness. However, there is no indication of imminent collisions or severe disruptions in traffic flow.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000313",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:30:32.805879+00:00"
+  }
+}

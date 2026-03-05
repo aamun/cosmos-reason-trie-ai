@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a snowy road with multiple trucks traveling in the same direction. A large truck suddenly veers off the road and crashes into another vehicle, causing significant disruption.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A truck travels along the snowy road and suddenly veers off the road, crashing into another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact cause of the truck's sudden veering is unclear.",
+    "Extent of damage to the crashed vehicles is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The truck loses control and crashes into another vehicle, resulting in a catastrophic incident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001481",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:21:35.440390+00:00"
+  }
+}

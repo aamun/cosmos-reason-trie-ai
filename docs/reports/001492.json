@@ -1,0 +1,59 @@
+{
+  "summary": "The footage captures a snowy road with several vehicles traveling in both directions. A snowplow truck is seen moving alongside a convoy of trucks, creating disturbances in the snow-covered lane.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "snowplow_truck",
+      "type": "truck"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    },
+    {
+      "id": "road_barrier",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Snowplow truck travels alongside a convoy of trucks, causing disturbances in the snow-covered lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the convoy trucks is unclear.",
+    "Disturbances caused by the snowplow truck may extend beyond the visible frames."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The presence of multiple trucks traveling closely together in snowy conditions increases the risk of accidents due to reduced traction and potential collisions.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001492",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:18:12.418939+00:00"
+  }
+}

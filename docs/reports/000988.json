@@ -1,0 +1,47 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam perspective as a vehicle travels along a multi-laned road under overcast skies. The traffic light ahead is green, permitting the vehicle to proceed through an intersection. Several cars are visible in adjacent lanes, including one that crosses the path of the dashcam vehicle from the right side.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "car_crossing_from_right",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car crosses the path of the dashcam vehicle from the right side.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the car crossing from the right is unclear.",
+    "The dashcam vehicle's speed and trajectory are not fully discernible."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no direct collision or significant disruption observed between the dashcam vehicle and the crossing car.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000988",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:53:11.260255+00:00"
+  }
+}

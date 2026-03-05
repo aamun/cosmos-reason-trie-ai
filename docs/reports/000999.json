@@ -1,0 +1,42 @@
+{
+  "summary": "The video captures a snowy road with minimal traffic. A vehicle approaches from the opposite direction and passes by closely, prompting the ego-vehicle to halt abruptly due to proximity.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car approaches from the opposite direction and passes very close to the ego-vehicle, causing the driver to stop suddenly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise nature of the car’s braking action is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The car’s abrupt stopping indicates a potential collision or near-collision scenario.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000999",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:49:46.359902+00:00"
+  }
+}

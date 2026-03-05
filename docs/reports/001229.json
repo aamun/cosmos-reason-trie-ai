@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a highway scene. The footage begins with a clear view of a multi-laned road under an overcast sky. Vehicles are traveling in both directions, including cars and trucks. A notable event occurs when a white sedan approaches closely alongside the dashcam vehicle, resulting in a brief collision where the sedan's rear end impacts the dashcam vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    },
+    {
+      "id": "dump_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan approaches closely alongside the dashcam vehicle, resulting in a brief collision where the sedan’s rear end impacts the dashcam vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the impact is unclear due to limited visual detail.",
+    "Visibility of the sedan's license plate is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The collision between the sedan and the dashcam vehicle constitutes a hazardous situation, potentially endangering occupants and disrupting traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001229",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:40:10.628918+00:00"
+  }
+}

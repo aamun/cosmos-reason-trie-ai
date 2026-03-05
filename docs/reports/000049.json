@@ -1,0 +1,54 @@
+{
+  "summary": "The footage captures nighttime driving conditions with snowfall, featuring a vehicle navigating through an intersection. Snow accumulates along the roadside, and streetlights illuminate the path ahead. A vehicle approaches from the opposite direction, its headlights piercing through the darkness. The camera experiences a sudden blackout, obscuring the view momentarily.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A vehicle approaches from the opposite direction, its headlights illuminating the snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The blackout in the footage leaves the exact cause unclear.",
+    "Some details of the approaching vehicle are obscured during the blackout."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary risk is related to reduced visibility due to snowfall and nighttime conditions, which could impair driver reaction times. However, there are no collisions or near misses evident in the footage.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000049",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:52:15.108461+00:00"
+  }
+}

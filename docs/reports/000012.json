@@ -1,0 +1,85 @@
+{
+  "summary": "The video captures nighttime driving conditions on a multi-laned road with wet pavement due to rainfall. Numerous vehicles are present, including sedans and SUVs, traveling in both directions. Streetlights illuminate the scene, and headlights from other cars create reflections on the wet surface.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "minivan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    },
+    {
+      "id": "car_6",
+      "type": "sedan"
+    },
+    {
+      "id": "car_7",
+      "type": "sedan"
+    },
+    {
+      "id": "car_8",
+      "type": "sedan"
+    },
+    {
+      "id": "car_9",
+      "type": "sedan"
+    },
+    {
+      "id": "car_10",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along a multi-laned road under rainy night conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000012",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:04:09.836173+00:00"
+  }
+}

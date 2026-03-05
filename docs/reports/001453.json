@@ -1,0 +1,89 @@
+{
+  "summary": "The video captures a traffic incident involving multiple vehicles on a wet road under overcast skies. A silver sedan is stopped in the center lane, with its brake lights illuminated, indicating it is halted. To the right, a large blue bus occupies part of the lane, partially obstructing the view. In the left lane, a white van is moving slowly, while another vehicle approaches from behind. Pedestrians are seen crossing the road near the sidewalk on the left side.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "white_van",
+      "type": "car"
+    },
+    {
+      "id": "blue_bus",
+      "type": "bus"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan is stopped in the center lane with its brake lights on, indicating it is halted.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van is moving slowly in the left lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A blue bus is positioned in the right lane, occupying part of the roadway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Pedestrians are seen crossing the road near the sidewalk on the left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the traffic incident (collision, near-miss, etc.) is unclear due to limited visibility.",
+    "Conflicting descriptions of vehicle movements may indicate ambiguity."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Multiple vehicles are congested, and pedestrians are crossing illegally, posing potential risks.",
+    "confidence": 0.85
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001453",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:29:23.600011+00:00"
+  }
+}

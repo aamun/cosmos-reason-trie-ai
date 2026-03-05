@@ -1,0 +1,57 @@
+{
+  "summary": "A moose suddenly appears on the road, startling the driver of a car behind it.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "moose_1",
+      "type": "unknown"
+    },
+    {
+      "id": "car_1",
+      "type": "unknown"
+    },
+    {
+      "id": "car_2",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A moose suddenly appears on the road, startling the driver of a car behind it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The moose's sudden appearance is unexpected and may indicate a wildlife sighting.",
+    "The driver's reaction time is unclear due to the unexpected nature of the event."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the presence of a moose could pose a risk to drivers, there is no direct evidence of collision or injury. The driver reacts appropriately by braking.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000361",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:14:03.105274+00:00"
+  }
+}

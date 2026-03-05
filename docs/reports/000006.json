@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in both directions. A van overtakes the ego-vehicle from behind, creating a potential hazard due to reduced visibility and traction on the icy surface.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A van overtakes the ego-vehicle from behind, indicating a potential hazard due to reduced traction on the snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the van overtaking is unclear.",
+    "Visibility of the van's license plate is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The van overtaking creates a potential hazard due to reduced traction on the snowy road, which could lead to a collision or near-miss.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000006",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:05:43.707761+00:00"
+  }
+}

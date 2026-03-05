@@ -1,0 +1,42 @@
+{
+  "summary": "The video depicts a highway scene during sunset with a truck traveling ahead. The sun creates a lens flare effect on the left side of the frame. There are no visible incidents or abnormalities in the footage.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A truck travels steadily along the highway.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Sun glare may obscure some details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible incidents or abnormalities in the footage.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001031",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:40:18.694807+00:00"
+  }
+}

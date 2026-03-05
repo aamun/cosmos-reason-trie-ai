@@ -1,0 +1,53 @@
+{
+  "summary": "A black sedan crashes violently into another vehicle, causing both vehicles to explode outward.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black sedan crashes violently into another vehicle, causing both vehicles to explode outward.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the second vehicle crashing with the sedan is unclear.",
+    "Details about the crash aftermath are absent."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The violent crash results in explosive deformation of both vehicles, indicating a severe impact.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000909",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:16:36.501906+00:00"
+  }
+}

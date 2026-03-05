@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a busy urban street with multiple lanes of traffic moving in both directions. Vehicles, including cars and buses, are seen traveling along the road under clear skies. Traffic signs and advertisements are visible overhead, providing directional information. The vehicles maintain consistent speeds and positions throughout the frames, indicating normal traffic flow without disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including cars and buses, are traveling on a multi-laned urban road. Cars maintain their positions while buses move alongside them.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and spacing between vehicles cannot be determined due to limited frame resolution."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic flows smoothly with no apparent incidents or disruptions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001003",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:48:25.105887+00:00"
+  }
+}

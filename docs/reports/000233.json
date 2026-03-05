@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a snowy road with vehicles traveling at moderate speeds. Snow accumulates around the roadside, and several cars are visible ahead. A truck passes closely alongside the camera vehicle, creating a blur due to its speed and proximity.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A truck travels alongside the camera vehicle, causing a blur due to its speed and proximity.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the truck is unclear due to the blur caused by its movement.",
+    "Precise details about the road conditions beyond snow accumulation are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary risk involves the close proximity of the truck to the camera vehicle, which could lead to a potential collision if not managed carefully. However, since the truck maintains a steady pace and does not make abrupt maneuvers, the immediate danger appears manageable.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000233",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:55:40.752150+00:00"
+  }
+}

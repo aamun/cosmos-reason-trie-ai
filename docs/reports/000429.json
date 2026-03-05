@@ -1,0 +1,89 @@
+{
+  "summary": "The video captures a view from inside a vehicle navigating through an urban area. The driver approaches an intersection where several cars are stopped or moving slowly. Vehicles are positioned along the roadside, including sedans and vans. Electrical wires and poles dominate the upper portion of the frame, while buildings and trees are visible in the background.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "van_3",
+      "type": "truck"
+    },
+    {
+      "id": "building_1",
+      "type": "building"
+    },
+    {
+      "id": "building_2",
+      "type": "building"
+    },
+    {
+      "id": "tree_1",
+      "type": "tree"
+    },
+    {
+      "id": "tree_2",
+      "type": "tree"
+    },
+    {
+      "id": "tree_3",
+      "type": "tree"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present, including sedans and vans, either stopped or moving slowly at the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and statuses of all vehicles are unclear due to limited visibility.",
+    "Some vehicles' movements are ambiguous, making it difficult to classify their actions definitively."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or with infrastructure.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000429",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:51:05.487607+00:00"
+  }
+}

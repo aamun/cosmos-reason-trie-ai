@@ -1,0 +1,66 @@
+{
+  "summary": "The video captures a daytime urban driving sequence where multiple vehicles navigate through an intersection. The footage begins with a view from inside a vehicle, showing a dashboard-mounted device and a clear sky. Vehicles are seen moving in both directions across the intersection, with traffic lights regulating their flow. As the sequence progresses, a red car overtakes another vehicle, causing a slight disturbance in the traffic pattern.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present in the intersection, including cars and a van, moving under regulated traffic signals.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact details of the traffic signal regulation are unclear.",
+    "Precise positions of all vehicles cannot be fully determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the video. Traffic flows smoothly with regulated signals.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000692",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:28:14.637027+00:00"
+  }
+}

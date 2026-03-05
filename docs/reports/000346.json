@@ -1,0 +1,62 @@
+{
+  "summary": "The footage captures a vehicle traveling along a suburban street with houses lining both sides. As the vehicle advances, it encounters a pedestrian crossing marked by a crosswalk signpost. Suddenly, debris explodes across the windshield, obscuring the view.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car travels down a residential street, passing by houses and encountering a pedestrian crossing.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "Debris explodes across the windshield, obscuring the view.",
+      "confidence": 0.95,
+      "frame_indices": [
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the debris causing the explosion is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The sudden explosion of debris across the windshield poses an immediate threat to the driver’s safety, indicating a severe risk.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000346",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:19:56.682421+00:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a traffic incident involving multiple vehicles on a multi-laned road. A silver sedan is seen driving ahead of the ego-vehicle, maintaining a safe distance. Other vehicles, including a red sedan and a white SUV, are present in adjacent lanes. The road appears clear except for these vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "red_sedan",
+      "type": "car"
+    },
+    {
+      "id": "white_suv",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on a multi-laned road, including a silver sedan, a red sedan, and a white SUV.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are not fully observable.",
+    "Some details about the road surface and surroundings are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000308",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:32:34.280058+00:00"
+  }
+}

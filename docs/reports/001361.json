@@ -1,0 +1,58 @@
+{
+  "summary": "The video captures a city street scene viewed from a dashcam perspective. Vehicles and motorcycles navigate through an intersection marked by traffic signals and road markings. Cars move steadily forward while motorcycles travel alongside them. Buildings line both sides of the street, featuring shops and signage. Trees provide shade along the sidewalk.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including cars and motorcycles, traverse the intersection under a green light.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of all vehicles cannot be determined due to limited frame resolution."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles maintain consistent speeds and trajectories within the intersection.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001361",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:58:12.807560+00:00"
+  }
+}

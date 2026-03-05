@@ -1,0 +1,42 @@
+{
+  "summary": "The video shows a white van traveling down a rural road with fields on either side. The van maintains a steady pace while driving straight ahead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van travels along a rural road, maintaining a consistent speed and direction.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No collisions or incidents are evident in the video."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000423",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:53:00.682783+00:00"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "summary": "A black SUV with a spare tire mounted on its rear is stopped at an intersection, waiting for traffic to clear before proceeding.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_suv_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The black SUV waits patiently at the intersection until traffic clears.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Traffic flow is unclear beyond the initial stoppage.",
+    "Speed of vehicles crossing the intersection is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to the SUV waiting patiently without any apparent threats or obstacles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000946",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:05:01.031408+00:00"
+  }
+}

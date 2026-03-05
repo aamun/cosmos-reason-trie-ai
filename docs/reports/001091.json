@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a rainy day with wet roads, viewed from inside a vehicle. Raindrops obscure the windshield, limiting visibility. Multiple cars are present on the road, including a white SUV ahead whose brake lights illuminate intermittently.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are visible on the road, including a white SUV ahead whose brake lights illuminate intermittently.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility limitations due to raindrops obscure the windshield."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Limited visibility caused by raindrops may impair driver reaction times, but there is no direct collision or hazardous maneuver observed.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001091",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:22:08.400917+00:00"
+  }
+}

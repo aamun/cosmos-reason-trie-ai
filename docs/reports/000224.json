@@ -1,0 +1,66 @@
+{
+  "summary": "The video shows a street scene captured from inside a vehicle, with a silver sedan parked in the center of the road. To the left of the silver sedan, there is a vending machine and a yellow structure. Two individuals stand near the vending machine. Vehicles are seen moving alongside the silver sedan, including a white SUV and a black van passing by.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "white_suv",
+      "type": "car"
+    },
+    {
+      "id": "black_van",
+      "type": "car"
+    },
+    {
+      "id": "individual_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "individual_2",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a white SUV and a black van, pass by the silver sedan while two pedestrians stand near a vending machine.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identities of the pedestrians are unclear due to their distance from the camera.",
+    "The exact reason for the silver sedan's stationary position is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed between the vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000224",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:59:01.474868+00:00"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The footage captures a highway scene with multiple vehicles traveling in both directions. A red sedan is seen ahead in the same lane as the observer vehicle, while a white truck travels in the opposite direction. The road is bordered by trees and signage indicating exits or destinations.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "truck"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are moving along the highway, including a red sedan and a white truck traveling in opposite directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The timestamp discrepancy between the video and the timestamp in the last frame may indicate an error."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000884",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:24:11.643821+00:00"
+  }
+}

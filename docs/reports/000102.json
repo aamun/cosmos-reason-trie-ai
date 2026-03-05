@@ -1,0 +1,67 @@
+{
+  "summary": "The dashcam footage captures a vehicle traveling on a multi-laned road during daylight hours. The sky appears overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Cloudy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "van_3",
+      "type": "van"
+    },
+    {
+      "id": "van_4",
+      "type": "van"
+    },
+    {
+      "id": "van_5",
+      "type": "van"
+    },
+    {
+      "id": "van_6",
+      "type": "van"
+    },
+    {
+      "id": "van_7",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vans are traveling in the same lane as the ego-vehicle.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles relative to each other are unclear due to limited visibility.",
+    "Speeds and velocities of the vehicles cannot be accurately determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed between the vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000102",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:37:04.437482+00:00"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a street scene with multiple vehicles traveling in both directions. A motorcycle is seen moving ahead of the ego-vehicle, while cars and buses move alongside. The road features sidewalks lined with trees and buildings. Traffic signs and signals regulate vehicle movement.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "mv_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "mv_2",
+      "type": "van"
+    },
+    {
+      "id": "mv_3",
+      "type": "sedan"
+    },
+    {
+      "id": "mv_4",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling along the road, including motorcycles, vans, sedans, and buses.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of all vehicles cannot be determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between vehicles.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000791",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:55:20.504418+00:00"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "summary": "The video shows a rural road with trees lining both sides. Vehicles are seen traveling in the opposite direction. Two cars collide violently, resulting in smoke emanating from the wreckage.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Two vehicles collide violently, producing significant smoke.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of the vehicles cannot be determined.",
+    "Smoke emission is attributed solely to the collision."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Collision results in smoke emission, indicating a severe impact.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000960",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:01:37.438746+00:00"
+  }
+}

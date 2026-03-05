@@ -1,0 +1,47 @@
+{
+  "summary": "The video shows a highway with multiple lanes and vehicles traveling in both directions. A silver SUV overtakes the ego-vehicle from the left side, passing closely while maintaining speed. Other vehicles are seen further ahead on the road.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV overtakes the ego-vehicle from the left side, passing closely while maintaining speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of the silver SUV relative to the ego-vehicle is unclear.",
+    "Exact distance between the silver SUV and the ego-vehicle during overtaking is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or hazardous interaction between the ego-vehicle and the silver SUV. The overtaking maneuver appears routine and controlled.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000454",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:43:31.908046+00:00"
+  }
+}

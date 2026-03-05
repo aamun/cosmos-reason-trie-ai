@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a foggy day with poor visibility. Multiple vehicles are traveling on a rural road. A white SUV overtakes the vehicle from which the footage originates, passing closely alongside it.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white SUV overtakes the vehicle from which the footage originates, passing closely alongside it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to fog.",
+    "Visibility is compromised by fog, making precise assessment challenging."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Poor visibility caused by fog may lead to potential accidents.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000100",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:37:34.369056+00:00"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "summary": "The video captures a rural road scene with sparse traffic. A large truck is traveling ahead on the left side of the road, while a tractor is seen moving alongside it on the right. The tractor appears to be veering slightly off-course, heading towards the edge of the road.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "tractor_1",
+      "type": "tractor"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A tractor is traveling alongside a truck on a rural road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The tractor's exact path and intent are unclear due to its slight deviation from the road.",
+    "Whether the tractor constitutes a hazard depends on how much it deviates from the road."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The tractor's deviation from the road poses a potential risk of collision.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001450",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:30:07.711146+00:00"
+  }
+}

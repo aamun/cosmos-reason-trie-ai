@@ -1,0 +1,42 @@
+{
+  "summary": "The footage captures a dashcam recording from a vehicle traveling along a narrow road surrounded by dense trees. The timestamp indicates July 10, 2015, at approximately 10:56 AM. Initially, the road appears clear with minimal traffic. As the vehicle advances, it encounters a white van traveling in the opposite direction. Shortly after, the vehicle experiences a sudden blackout, plunging the footage into darkness.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van travels in the opposite direction alongside the ego-vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The blackout duration is unclear, making it difficult to assess the full extent of the incident."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Due to the abrupt blackout, it is impossible to evaluate the severity of the incident comprehensively.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000826",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:42:55.813729+00:00"
+  }
+}

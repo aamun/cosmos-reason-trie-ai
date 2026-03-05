@@ -1,0 +1,54 @@
+{
+  "summary": "The video shows a dashcam view of a highway during sunrise/sunset with intense backlighting from the sun obscuring visibility. Multiple vehicles are present, including sedans and SUVs, traveling in both directions. Traffic appears congested, with cars stopped intermittently.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "minivan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on a multi-lane highway during sunrise/sunset. The sun creates intense backlighting, reducing visibility.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Intensity of backlighting makes it difficult to discern finer details of the vehicles."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Observed congestion and reduced visibility due to backlighting pose minimal immediate risks. Vehicles appear stationary or moving slowly, indicating controlled traffic conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001463",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:26:13.566945+00:00"
+  }
+}

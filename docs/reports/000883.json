@@ -1,0 +1,69 @@
+{
+  "summary": "A large white truck with red lettering is stopped on the left side of the road, its trailer loaded with numerous boxes. Unexpectedly, the trailer begins to tilt violently, causing the boxes to spill out dramatically. The truck's trailer overturns, sending the cargo flying into the air and onto the road.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "cart_trailer",
+      "type": "truck"
+    },
+    {
+      "id": "boxes",
+      "type": "unknown"
+    },
+    {
+      "id": "silver_car",
+      "type": "car"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    },
+    {
+      "id": "blue_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The trailer of the truck begins to tilt violently, causing the boxes inside to spill out dramatically.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact cause of the trailer overturn remains unclear.",
+    "Extent of damage to surrounding vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The trailer overturn poses a significant risk to nearby vehicles and pedestrians due to the sudden release of heavy loads.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000883",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:24:29.883147+00:00"
+  }
+}

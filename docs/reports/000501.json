@@ -1,0 +1,82 @@
+{
+  "summary": "The video captures a snowy urban street with vehicles and pedestrians. A red car is seen driving ahead, while a group of pedestrians gathers on the sidewalk. Snow covers the ground, and traffic signals regulate vehicle movement.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_4",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_5",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red car drives forward along the road, followed by other vehicles.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the pedestrians is unclear due to their obscured appearances.",
+    "Some pedestrians' actions are ambiguous, making it difficult to ascertain their intentions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions observed between vehicles or pedestrians. The primary concern is the snowy conditions, which may affect traction but does not constitute a critical risk.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000501",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:29:04.013459+00:00"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a rainy day with overcast skies, viewed from inside a vehicle's dashboard camera. Raindrops obscure the windshield intermittently, and the wiper operates periodically. The road appears wet, reflecting light diffusely. Multiple vehicles are present, including a white sedan traveling alongside the ego-vehicle and a black van overtaking it. At approximately 2.8 seconds, the camera experiences a sudden blackout, obscuring the view momentarily.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "van",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are visible on the road, including a white sedan and a black van.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The blackout at approximately 2.8 seconds leaves the view unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001278",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:24:34.624786+00:00"
+  }
+}

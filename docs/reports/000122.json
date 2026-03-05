@@ -1,0 +1,66 @@
+{
+  "summary": "The video captures a rainy day with wet roads, featuring multiple vehicles traveling along a multi-laned avenue. Vehicles are moving at moderate speeds, maintaining safe distances from each other. The windshield wiper is active, clearing raindrops from the view. Trees devoid of leaves line both sides of the road, and streetlights are evenly spaced along the roadway.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen driving on a wet road during rainy weather.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited frame resolution.",
+    "Visibility of additional vehicles beyond those listed may vary."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the provided frames. All vehicles appear to be moving smoothly without any signs of erratic behavior or sudden stops.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000122",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:31:49.272826+00:00"
+  }
+}

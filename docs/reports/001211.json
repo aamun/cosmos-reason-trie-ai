@@ -1,0 +1,51 @@
+{
+  "summary": "The footage depicts a nighttime urban street scene viewed from inside a vehicle. The road is illuminated by streetlights, and several cars are present, including a red sedan ahead.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red sedan is seen driving ahead in the same lane as the recording vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of multiple vehicles and their interactions are unclear due to limited visibility.",
+    "Some details of the vehicles' appearances are obscured."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Limited visibility makes it difficult to assess potential risks accurately.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001211",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:45:47.328427+00:00"
+  }
+}

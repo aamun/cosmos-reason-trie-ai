@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a nighttime scene on a poorly lit road with heavy snowfall. Multiple vehicles are traveling in single file, maintaining a safe distance from each other. The foremost vehicle is a sedan, followed by another car, and further ahead, a truck is visible. Snow accumulates around the vehicles, obscuring visibility.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel in single file on a snowy night road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility of the road surface due to snowfall",
+    "Exact speed of the vehicles"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to consistent single-file driving and maintained distances between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000526",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:21:02.619339+00:00"
+  }
+}

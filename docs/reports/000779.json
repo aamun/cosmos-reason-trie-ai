@@ -1,0 +1,47 @@
+{
+  "summary": "The video shows a rural dirt road with sparse traffic. A vehicle is traveling alongside the road, kicking up dust as it moves. The road appears uneven and dusty, surrounded by trees.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A truck travels alongside the road, kicking up dust as it moves.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The truck's speed and trajectory are unclear.",
+    "The road's condition is dusty and uneven."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The road conditions are dusty and uneven, which may affect traction but does not constitute a critical hazard.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000779",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:59:06.613380+00:00"
+  }
+}

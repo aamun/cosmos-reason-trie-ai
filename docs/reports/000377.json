@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a vehicle traveling along a rural road surrounded by trees. The vehicle maintains a steady pace while navigating through the wooded area.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A blue hatchback drives ahead of the observer, maintaining a consistent speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The license plate of the blue hatchback is partially obscured, making it difficult to read completely."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no evident collisions, accidents, or hazardous behaviors observed in the video. The vehicle moves steadily without deviations from its path.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000377",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:08:19.641466+00:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. The sun glare significantly reduces visibility, creating challenging conditions for drivers. Vehicles are seen moving steadily along the lanes, maintaining their positions relative to each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a multi-lane highway under bright sunlight. Van_1 is positioned ahead in the left lane, while Van_2 is further back in the same lane. Truck_1 is in the rightmost lane, and Car_1 and Car_2 are in adjacent lanes.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Sun glare impacts visibility, making it difficult to discern fine details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles. Drivers appear to maintain consistent speeds and distances.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000406",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:59:04.300967+00:00"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "error": "Model output was not valid JSON, and JSON extraction failed.",
+  "raw_output": "```json\n{\n  \"summary\": \"The video captures a white sedan driving down a rural road surrounded by houses and trees during twilight hours. The vehicle maintains a steady pace, with its brake lights occasionally illuminated as it navigates the countryside setting.\",\n  \"q_day_night\": \"Day\"|\"Night\"|\"Unknown\",\n  \"q_weather\": \"Normal\"|\"Rainy\"|\"Snowy\"|\"Unknown\",\n  \"q_ego_involved\": \"No\",\n  \"actors_list\": [\n    {\n      \"id\": \"car_1\",\n      \"type\": \"car\"\n    }\n  ],\n  \"events_timeline\": [\n    {\n      \"t_start\": 0.0,\n      \"t_end\": 4.9,\n      \"event\": \"A white sedan travels along a rural road, maintaining a consistent speed.\",\n      \"confidence\": 0.95,\n      \"frame_indices\": [\n        0,\n        4.9\n      ]\n    }\n  ],\n  \"uncertainties\": [\n    \"The brake lights illumination may indicate braking, but it is unclear if this relates to an incident.\",\n    \"The presence of headlights from other vehicles is noted, but their role in the incident is uncertain.\"\n  ],\n  \"risk_assessment\": {\n    \"level\": \"Low\",\n    \"why\": \"There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.\",\n    \"confidence\": 0.95\n  }\n}\n```",
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000210",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:03:44.412356+00:00"
+  }
+}

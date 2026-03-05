@@ -1,0 +1,53 @@
+{
+  "summary": "A white van traveling alongside the ego-vehicle suddenly veers sharply to the right, colliding violently with the curb.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Van travels alongside the ego-vehicle before veering sharply to the right and crashing into the curb.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the van during the crash is unclear.",
+    "Nature of the crash’s severity beyond the immediate impact is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The van’s sudden and violent deviation from its path indicates a loss of control, resulting in a high-risk crash scenario.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000934",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:08:23.071469+00:00"
+  }
+}

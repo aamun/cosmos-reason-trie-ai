@@ -1,0 +1,89 @@
+{
+  "summary": "The footage captures nighttime driving conditions with multiple vehicles passing by. A yellow taxi overtakes the observer's vehicle from the right side, indicating a potential conflict in the roadway.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "taxi_1",
+      "type": "taxi"
+    },
+    {
+      "id": "taxi_2",
+      "type": "taxi"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 1.8,
+      "event": "Multiple cars are seen traveling along the road, including taxis and private vehicles.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "A yellow taxi overtakes the observer’s vehicle from the right, creating a brief moment of proximity.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Conflicting trajectories between the observer’s vehicle and the overtaking taxi."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The overtaking taxi creates a potential conflict in the roadway, which could lead to a collision if not managed properly.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000721",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:18:57.781720+00:00"
+  }
+}

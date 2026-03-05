@@ -1,0 +1,57 @@
+{
+  "summary": "The video shows a vehicle traveling on a multi-laned road with snowbanks alongside the roadside. A silver sedan overtakes the recording vehicle from the right side, passing closely. The recording vehicle then veers sharply to avoid colliding with the overtaking car, resulting in a loss of control.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "recording_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan overtakes the recording vehicle from the right side.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The recording vehicle veers sharply to avoid colliding with the overtaking car.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the overtaking car is unclear.",
+    "Precise reason for the sharp veering maneuver is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The recording vehicle loses control due to the sudden overtaking maneuver, indicating a high-risk situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000116",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:33:31.466308+00:00"
+  }
+}

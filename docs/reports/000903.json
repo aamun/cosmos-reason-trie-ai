@@ -1,0 +1,79 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-lane road during daylight hours. Traffic appears moderately congested with several cars stopped or moving slowly.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    },
+    {
+      "id": "truck_4",
+      "type": "truck"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Traffic congestion is evident with multiple vehicles halted or slowed down.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact reasons for congestion are unclear.",
+    "Some vehicles' statuses (stopped/idling/moving) are ambiguous."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Congestion indicates potential delays but does not suggest imminent collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000903",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:18:07.497353+00:00"
+  }
+}

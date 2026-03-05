@@ -1,0 +1,62 @@
+{
+  "summary": "The video captures nighttime driving conditions on a snowy road with multiple vehicles present. The ego-vehicle approaches a convoy of cars traveling in the opposite direction. Snowbanks flank both sides of the road, and streetlights illuminate the scene.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling in the opposite direction on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the convoy vehicles is unclear.",
+    "Precise details about the convoy's formation and speed are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the presence of multiple vehicles traveling in opposite directions, which could pose a potential risk if they collide.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000041",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:55:02.567973+00:00"
+  }
+}

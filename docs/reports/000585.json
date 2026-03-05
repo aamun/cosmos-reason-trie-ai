@@ -1,0 +1,42 @@
+{
+  "summary": "The footage captures a vehicle traveling along a rural road with minimal traffic. The road is bordered by grasslands and trees under a partly cloudy sky. A single car is seen ahead, maintaining a safe distance.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car is visible ahead, traveling at a steady pace.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the car ahead is unclear due to its distance and motion blur."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous behaviors evident in the footage.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000585",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:02:43.802852+00:00"
+  }
+}

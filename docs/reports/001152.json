@@ -1,0 +1,85 @@
+{
+  "summary": "The video depicts nighttime driving conditions with snowfall on the road. The driver navigates through an urban area characterized by multi-story residential buildings and streetlights illuminating the scene. Vehicles are traveling in both directions, adhering to traffic regulations.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    },
+    {
+      "id": "van_3",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 0.3,
+      "event": "Snowflakes fall steadily as the vehicle moves forward.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along the road, maintaining their lanes and speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1,
+        2,
+        3,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are unclear due to limited visibility.",
+    "Precise nature of interactions between vehicles cannot be determined definitively."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy road conditions, which may affect traction and braking distances. However, there are no visible collisions or severe disruptions in traffic flow.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001152",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:02:19.333408+00:00"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "summary": "Multiple vehicles are seen crossing an intersection regulated by traffic lights. Cars move sequentially across the crosswalk, with clear visibility of their movements.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "minivan"
+    },
+    {
+      "id": "car_3",
+      "type": "compact_car"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are seen moving through the intersection, complying with traffic signals.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of vehicles are inferred but not directly measurable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles appear to follow traffic regulations without deviation.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001326",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:08:58.106755+00:00"
+  }
+}

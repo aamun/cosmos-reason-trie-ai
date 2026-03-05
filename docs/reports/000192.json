@@ -1,0 +1,62 @@
+{
+  "summary": "The footage captures a city street scene viewed from inside a vehicle, with multiple vehicles traveling in both directions. A black hatchback is prominently featured in the center lane, while a yellow bus travels alongside on the right side. The road includes tram tracks embedded in the asphalt. Buildings line both sides of the street, and utility poles with wires are visible overhead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "tram_track_1",
+      "type": "tram_track"
+    },
+    {
+      "id": "tram_track_2",
+      "type": "tram_track"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along the city street, including a black hatchback in the center lane and a yellow bus on the right.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles cannot be confirmed due to insufficient detail."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000192",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:09:12.143054+00:00"
+  }
+}

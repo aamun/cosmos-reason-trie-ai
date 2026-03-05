@@ -1,0 +1,59 @@
+{
+  "summary": "The video shows a nighttime scene on a multi-laned road with streetlights illuminating the area. Vehicles are traveling in both directions, and there is a clear view of road markings and signage.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "road_markings",
+      "type": "unknown"
+    },
+    {
+      "id": "street_signage",
+      "type": "unknown"
+    },
+    {
+      "id": "vehicle_1",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_2",
+      "type": "car"
+    },
+    {
+      "id": "vehicle_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along the road, maintaining their lanes and speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to nighttime visibility.",
+    "The identity of the vehicles cannot be fully confirmed."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, erratic movements, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000289",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:38:50.534753+00:00"
+  }
+}

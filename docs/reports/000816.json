@@ -1,0 +1,66 @@
+{
+  "summary": "A white sedan traveling on the highway experiences a sudden explosion-like event, ejecting debris violently.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan traveling on the highway experiences a sudden explosion-like event, ejecting debris violently.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cause of the explosion/event is unknown.",
+    "Debris ejected during the event is not fully visible."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The sudden explosion-like event causes debris to eject violently, posing a significant risk to surrounding vehicles and infrastructure.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000816",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:46:20.833101+00:00"
+  }
+}

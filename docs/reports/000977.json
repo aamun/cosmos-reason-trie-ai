@@ -1,0 +1,46 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a vehicle traveling along a suburban street. The vehicle is moving forward behind a Renault sedan, which has its brake lights illuminated, indicating it may be slowing down or stopping. Trees line both sides of the road, and buildings can be seen on the left side. The sky is clear and sunny, suggesting favorable weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A Renault sedan with brake lights on is positioned ahead of the ego-vehicle, indicating potential braking or stopping.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact reason for brake lights illumination is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to stationary vehicle ahead and no apparent obstacles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000977",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:56:30.280715+00:00"
+  }
+}

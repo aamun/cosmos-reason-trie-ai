@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a foggy road with two vehicles traveling in the same direction. A silver SUV is ahead, followed by a purple bus. Both vehicles maintain a safe distance from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    },
+    {
+      "id": "purple_bus",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV drives ahead while a purple bus follows closely behind.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of fog limits visibility, making it difficult to assess potential hazards accurately."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Visibility is reduced due to fog, but there are no immediate signs of collision or erratic driving behavior.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001442",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:32:48.462873+00:00"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "summary": "The video captures a snowy urban street scene with multiple vehicles and pedestrians. A white SUV is seen driving ahead, followed closely by another vehicle. The road is covered in snow, and there are residential buildings and utility poles lining the sides. Pedestrian signs and directional arrows are visible on the road.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "building_1",
+      "type": "building"
+    },
+    {
+      "id": "building_2",
+      "type": "building"
+    },
+    {
+      "id": "utility_pole_1",
+      "type": "unknown"
+    },
+    {
+      "id": "utility_pole_2",
+      "type": "unknown"
+    },
+    {
+      "id": "utility_pole_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the snowy road, including a white SUV and other cars.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of pedestrians are unclear due to limited visibility.",
+    "Some details about the vehicles' interiors are obscured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between vehicles or with pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000053",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:51:08.369771+00:00"
+  }
+}

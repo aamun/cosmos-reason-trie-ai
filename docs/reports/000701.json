@@ -1,0 +1,54 @@
+{
+  "summary": "The video captures a nighttime driving scene on a wet road illuminated by streetlights and vehicle headlights. Multiple cars are present, including a white sedan and a red SUV, traveling in both directions. The ego-vehicle is navigating through an intersection, making a left turn while yielding to oncoming traffic. The road appears slick due to rain, creating reflections on the surface.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle executes a left turn at an intersection, yielding to oncoming traffic.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and identities of all vehicles are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk of collision due to cautious driving and adherence to traffic rules.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000701",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:25:14.877265+00:00"
+  }
+}

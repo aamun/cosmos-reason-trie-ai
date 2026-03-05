@@ -1,0 +1,54 @@
+{
+  "summary": "The bicyclist rides down the street and encounters a white car passing by, resulting in a collision.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_bike",
+      "type": "bicycle"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The bicyclist rides forward on the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the bicyclist lost control due to the collision is unclear.",
+    "The severity of the bicyclist's injuries is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The bicyclist collided with a car, which constitutes a traffic incident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000994",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:51:37.145673+00:00"
+  }
+}

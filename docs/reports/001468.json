@@ -1,0 +1,55 @@
+{
+  "summary": "A silver sedan experiences an abrupt turn, causing it to veer sharply to the right.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The silver sedan executes a sharp right turn, deviating significantly from its original path.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise cause of the sudden turn is unclear.",
+    "Whether the turn constitutes a collision depends on the vehicle's trajectory."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The silver sedan's sharp deviation from its intended path indicates a potential loss of control, which could lead to a collision with surrounding vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001468",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:24:55.248798+00:00"
+  }
+}

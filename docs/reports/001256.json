@@ -1,0 +1,14 @@
+{
+  "error": "Model output was not valid JSON, and JSON extraction failed.",
+  "raw_output": "```json\n{\n  \"summary\": \"Multiple vehicles are stopped at an intersection with traffic lights. Cars and buses are queued up, waiting for the light to change.\",\n  \"q_day_night\": \"Day\",\n  \"q_weather\": \"Normal\",\n  \"q_ego_involved\": \"No\",\n  \"actors_list\": [\n    {\n      \"id\": \"car_1\",\n      \"type\": \"car\"\n    },\n    {\n      \"id\": \"car_2\",\n      \"type\": \"car\"\n    },\n    {\n      \"id\": \"car_3\",\n      \"type\": \"car\"\n    },\n    {\n      \"id\": \"bus_1\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_2\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_3\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_4\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_5\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_6\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_7\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_8\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_9\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_10\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_11\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_12\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_13\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_14\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_15\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_16\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_17\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_18\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_19\",\n      \"type\": \"bus\"\n    },\n    {\n      \"id\": \"bus_20\",\n      \"type\": \"bus\"\n  ],\n  \"events_timeline\": [\n    {\n      \"t_start\": 0.0,\n      \"t_end\": 4.9,\n      \"event\": \"Cars and buses are halted at an intersection.\",\n      \"confidence\": 0.98,\n      \"frame_indices\": [\n        0,\n        4,\n        7,\n        14,\n        21,\n        28,\n        35,\n        42,\n        49\n      ]\n    }\n  ],\n  \"uncertainties\": [\n    \"The license plate of the grey sedan is unclear.\",\n    \"Some vehicles' headlights are not illuminated.\"\n  ],\n  \"risk_assessment\": {\n    \"level\": \"Low\",\n    \"why\": \"All vehicles are stationary, and there are no observable collisions or hazardous interactions.\",\n    \"confidence\": 0.98\n  }\n}\n```",
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001256",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:32:15.379586+00:00"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "summary": "The video shows a rainy day with multiple vehicles traveling on a multi-laned road. The ego-vehicle is driving cautiously due to wet conditions. Several cars are visible ahead, including a sedan whose brake lights are illuminated, indicating braking. Vehicles are spaced apart, and there are no apparent collisions or incidents occurring.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a multi-laned road under rainy conditions. Cars are spaced apart, and brake lights are illuminated on one vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Brake lights illumination on one vehicle is unclear without additional context."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or incidents occurring. Vehicles maintain appropriate spacing, and the driver appears cautious due to rainy conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000364",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:13:15.053065+00:00"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "summary": "The video depicts a daytime highway scene with multiple lanes of traffic moving in both directions. Vehicles are traveling at moderate speeds, and there are no apparent incidents or disruptions in the flow of traffic.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "truck_3",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along the highway, maintaining their lanes and speeds. There are no collisions, disruptions, or unusual interactions among the vehicles.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of a bicyclist riding alongside the road is not visible in any of the provided frames."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no observable incidents such as collisions, near misses, or erratic driving behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000961",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:01:23.638582+00:00"
+  }
+}

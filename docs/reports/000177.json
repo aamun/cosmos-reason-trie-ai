@@ -1,0 +1,69 @@
+{
+  "summary": "Multiple vehicles are traveling on a multi-laned urban road under clear skies with ample sunlight. Traffic appears moderately congested, with cars maintaining safe distances from each other.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars are moving steadily along the road, with no apparent incidents or disruptions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact nature of the traffic congestion is unclear.",
+    "Some vehicles' behaviors are ambiguous due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic flow appears smooth with no immediate hazards or collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000177",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:14:01.300706+00:00"
+  }
+}

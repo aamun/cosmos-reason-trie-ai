@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a street scene with multiple vehicles moving along a road bordered by residential buildings. A silver sedan is prominently featured, traveling ahead of the observer. Shortly after, a white van overtakes the sedan from the left side, passing closely alongside it. Concurrently, a dark-colored truck drives past the sedan from the right side. The road appears wet, suggesting recent rainfall, and there are directional arrows and other road signs visible.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "white_van",
+      "type": "car"
+    },
+    {
+      "id": "dark_truck",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan travels forward on the road while a white van overtakes it from the left, followed by a dark-colored truck passing it from the right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed and distance between vehicles cannot be determined due to limited temporal resolution.",
+    "Visibility of additional vehicles beyond those shown is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001327",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:08:44.022503+00:00"
+  }
+}

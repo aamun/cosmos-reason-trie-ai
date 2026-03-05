@@ -1,0 +1,53 @@
+{
+  "summary": "The video captures a nighttime urban street scene viewed from a dashcam perspective. The road appears wet, likely due to recent rainfall, and there is minimal traffic activity. A sedan with its brake lights illuminated is traveling ahead, while another vehicle is partially visible on the right side of the frame.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "sedan_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A sedan with its brake lights illuminated is traveling ahead, while another vehicle is partially visible on the right side of the frame.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Minimal traffic activity, but unclear if any other vehicles are present."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the wet road surface, which may affect traction. However, there are no immediate signs of collisions or hazardous interactions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000231",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:56:15.268654+00:00"
+  }
+}

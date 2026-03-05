@@ -1,0 +1,78 @@
+{
+  "summary": "The footage captures a rainy day on a multi-laned road with wet asphalt. Vehicles are traveling in both directions, and there is a fence and trees lining the right side of the road.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_lane_divider_1",
+      "type": "unknown"
+    },
+    {
+      "id": "road_lane_divider_2",
+      "type": "unknown"
+    },
+    {
+      "id": "road_lane_divider_3",
+      "type": "unknown"
+    },
+    {
+      "id": "road_lane_divider_4",
+      "type": "unknown"
+    },
+    {
+      "id": "road_lane_divider_5",
+      "type": "unknown"
+    },
+    {
+      "id": "road_lane_divider_6",
+      "type": "unknown"
+    },
+    {
+      "id": "road_lane_divider_7",
+      "type": "unknown"
+    },
+    {
+      "id": "road_lane_divider_8",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen driving on the road, including cars and trucks, moving in both directions.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of vehicles beyond the initial frames are unclear.",
+    "Precise identities of all vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the provided frames.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000217",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:01:01.681123+00:00"
+  }
+}

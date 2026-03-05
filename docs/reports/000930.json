@@ -1,0 +1,51 @@
+{
+  "summary": "The video captures a city intersection during twilight hours with multiple vehicles and pedestrians present. A silver sedan is stopped at the intersection, while another vehicle crosses the road ahead. Pedestrians are seen walking across the crosswalk, and other cars are queued up waiting for the light to turn green.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_sedan",
+      "type": "car"
+    },
+    {
+      "id": "crossing_pedestrian",
+      "type": "pedestrian"
+    },
+    {
+      "id": "queued_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan is halted at an intersection, awaiting the traffic signal to change.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact license plate numbers of vehicles are unclear.",
+    "Pedestrian movements beyond the initial crossing are not fully captured."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000930",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:09:30.152779+00:00"
+  }
+}

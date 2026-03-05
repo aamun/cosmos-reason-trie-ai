@@ -1,0 +1,70 @@
+{
+  "summary": "The video shows a snowy road with minimal traffic. Vehicles are present but not interacting dangerously.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_markings",
+      "type": "unknown"
+    },
+    {
+      "id": "snowbanks",
+      "type": "unknown"
+    },
+    {
+      "id": "street_lamps",
+      "type": "unknown"
+    },
+    {
+      "id": "buildings",
+      "type": "unknown"
+    },
+    {
+      "id": "trees",
+      "type": "unknown"
+    },
+    {
+      "id": "vehicles",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Minimal traffic on a snowy road with vehicles present.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of vehicles are unclear.",
+    "Precise interactions between vehicles are not evident."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal traffic and clear visibility allow for safe navigation despite adverse weather conditions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000298",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:36:27.541055+00:00"
+  }
+}

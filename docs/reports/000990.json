@@ -1,0 +1,70 @@
+{
+  "summary": "The footage captures nighttime scenes from a dashcam perspective, showing a vehicle traveling along a multi-laned road with streetlights illuminating the surroundings. Vehicles and cyclists are present in adjacent lanes, moving in both directions. The timestamp indicates progression through time, with each frame capturing moments as the vehicle advances.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    },
+    {
+      "id": "cyclist_2",
+      "type": "bicycle"
+    },
+    {
+      "id": "cyclist_3",
+      "type": "bicycle"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles and bicycles are seen traveling in adjacent lanes, indicating normal traffic flow.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles/bicycles cannot be precisely determined due to limited visibility.",
+    "Presence of additional vehicles beyond those shown may be uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Observed traffic appears orderly with no immediate collisions or disruptions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000990",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:52:42.067955+00:00"
+  }
+}

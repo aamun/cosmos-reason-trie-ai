@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a vehicle traveling along a road bordered by trees and patches of snow. The road appears clear with no immediate obstacles or disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red car travels ahead of the ego-vehicle on a two-lane road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The presence of snow on the roadside is evident but may not fully define the weather conditions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible incidents such as collisions, near misses, or erratic driving behaviors.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001438",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:33:49.345547+00:00"
+  }
+}

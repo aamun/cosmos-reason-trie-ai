@@ -1,0 +1,167 @@
+{
+  "summary": "The video depicts a snowy urban street with multiple vehicles parked along both sides of the road. Snow covers the ground and rooftops, indicating winter conditions. Several cars are visible, including sedans and SUVs, some of which have snow piled on their roofs. Vehicles appear to be moving slowly, likely due to the slippery road conditions caused by snowfall.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    },
+    {
+      "id": "car_6",
+      "type": "sedan"
+    },
+    {
+      "id": "car_7",
+      "type": "sedan"
+    },
+    {
+      "id": "car_8",
+      "type": "sedan"
+    },
+    {
+      "id": "car_9",
+      "type": "sedan"
+    },
+    {
+      "id": "car_10",
+      "type": "sedan"
+    },
+    {
+      "id": "car_11",
+      "type": "sedan"
+    },
+    {
+      "id": "car_12",
+      "type": "sedan"
+    },
+    {
+      "id": "car_13",
+      "type": "sedan"
+    },
+    {
+      "id": "car_14",
+      "type": "sedan"
+    },
+    {
+      "id": "car_15",
+      "type": "sedan"
+    },
+    {
+      "id": "car_16",
+      "type": "sedan"
+    },
+    {
+      "id": "car_17",
+      "type": "sedan"
+    },
+    {
+      "id": "car_18",
+      "type": "sedan"
+    },
+    {
+      "id": "car_19",
+      "type": "sedan"
+    },
+    {
+      "id": "car_20",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple sedans are parked along the roadside, covered in snow, indicating winter conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and movements of all vehicles are unclear due to limited visibility.",
+    "Some vehicles may be obscured by snow, making identification difficult."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the presence of snow-covered roads, which could lead to reduced traction and potential accidents. However, there is no direct evidence of collisions or near misses.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000499",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:30:17.858597+00:00"
+  }
+}

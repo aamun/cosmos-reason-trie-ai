@@ -1,0 +1,49 @@
+{
+  "summary": "The video shows a first-person view from inside a vehicle traveling along a narrow urban street lined with tall residential buildings. The road is paved and appears relatively clear except for occasional parked cars and some greenery.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver sedan approaches from the opposite direction, passing by the ego-vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        2.8,
+        3.5,
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The license plate of the silver sedan is partially obscured, making identification difficult."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000751",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:08:47.254083+00:00"
+  }
+}

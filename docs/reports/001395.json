@@ -1,0 +1,59 @@
+{
+  "summary": "The video captures a nighttime scene on a wet road where multiple vehicles are traveling in the same direction. The foremost vehicle is an SUV with its brake lights illuminated, indicating减速或停车状态。Other cars are visible ahead and alongside it, maintaining their lanes.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "van",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A convoy of vehicles travels along a wet roadway during twilight hours.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The brake lights of the SUV are blinking intermittently, but it is unclear if this indicates braking or just a malfunction.",
+    "The timestamp \"21+\" displayed in the lower right corner may refer to a countdown timer rather than a specific frame number."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "All vehicles maintain consistent spacing and velocities without abrupt changes.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001395",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:47:45.298015+00:00"
+  }
+}

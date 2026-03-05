@@ -1,0 +1,58 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a vehicle traveling along a suburban street. The road is lined with trees and buildings, and there are multiple cars ahead. As the vehicle progresses, it encounters a parked car on the right side of the road, which appears to be obstructing the lane.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black sedan drives forward on a two-lane road, passing by several other vehicles.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the parked car constitutes a hazard is unclear due to its position relative to the moving vehicle."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the parked car may pose a potential hazard, there is no direct indication of imminent collision or severe disruption to traffic flow.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000184",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:12:07.152861+00:00"
+  }
+}

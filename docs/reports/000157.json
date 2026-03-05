@@ -1,0 +1,85 @@
+{
+  "summary": "The footage captures a city street scene viewed from inside a vehicle, showing multiple vehicles including motorcycles and cars traveling in both directions. Vehicles maintain moderate speeds while navigating through an urban environment characterized by buildings, trees, and traffic signals.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "motorcycle_2",
+      "type": "motorcycle"
+    },
+    {
+      "id": "building_1",
+      "type": "unknown"
+    },
+    {
+      "id": "building_2",
+      "type": "unknown"
+    },
+    {
+      "id": "tree_1",
+      "type": "unknown"
+    },
+    {
+      "id": "tree_2",
+      "type": "unknown"
+    },
+    {
+      "id": "tree_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including motorcycles and cars, travel along a city street with moderate speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles cannot be precisely determined due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions observed among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000157",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:20:45.304580+00:00"
+  }
+}

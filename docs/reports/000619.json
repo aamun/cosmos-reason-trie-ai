@@ -1,0 +1,62 @@
+{
+  "summary": "The video depicts a snowy urban roadway with multiple vehicles traveling in both directions. Snow accumulates on rooftops and sidewalks, indicating adverse weather conditions. Vehicles exhibit reduced traction due to snowfall, necessitating cautious driving.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a multi-laned road during snowy weather.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Precise vehicle speeds and braking distances are unclear due to snowfall.",
+    "Visibility through the windshield is compromised by accumulating snowflakes."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Reduced visibility caused by snowfall may lead to delayed reactions and increased chances of collisions.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000619",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:51:59.287927+00:00"
+  }
+}

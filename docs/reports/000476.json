@@ -1,0 +1,57 @@
+{
+  "summary": "The video shows a daytime scene where multiple vehicles are traveling on a multi-laned road. A white sedan overtakes the ego-vehicle from behind, while other cars move alongside. The road appears clear with no immediate obstacles or disruptions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on a multi-laned road during daylight hours. Cars maintain their lanes and speeds without any apparent incidents.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "No collisions or near misses are evident."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible incidents such as collisions, reckless driving, or hazardous maneuvers.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000476",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:36:44.158184+00:00"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "summary": "The footage captures nighttime street scenes viewed from inside a vehicle, showcasing numerous cars, buses, and trucks traveling in both directions. Vehicles exhibit headlights and taillights, illuminating the road ahead. Traffic appears moderately congested with vehicles closely packed together.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "bus_2",
+      "type": "bus"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along a multi-laned avenue at night. Cars and buses move steadily, with their headlights and taillights providing illumination.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the vehicles are maintaining safe distances or exhibiting erratic behavior is unclear due to limited visibility.",
+    "The presence of any pedestrians or cyclists is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the traffic flow is moderate, there are no overt signs of collisions, reckless driving, or other hazards evident in the frames provided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000504",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:28:08.888136+00:00"
+  }
+}

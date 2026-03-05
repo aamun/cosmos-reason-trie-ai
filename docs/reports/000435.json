@@ -1,0 +1,49 @@
+{
+  "summary": "A blue Chevrolet Volt crashes into a black Honda Civic as both vehicles cross the intersection at a red light.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "The blue Chevrolet Volt crashes into the black Honda Civic.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The license plate of the Chevrolet Volt is not readable."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "There is a direct collision between two vehicles, resulting in a crash.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000435",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:49:01.228588+00:00"
+  }
+}

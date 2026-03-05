@@ -1,0 +1,43 @@
+{
+  "summary": "The footage captures nighttime driving conditions on a poorly lit street with snowbanks lining both sides of the road. Visibility is limited due to darkness and snowfall, which impairs the driver's ability to see obstacles clearly.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "navitel_r400",
+      "type": "vehicle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The vehicle travels along a snowy street at night, encountering intermittent snowfall.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility limitations due to darkness and snowfall impact the driver's perception of the road.",
+    "Precise details about other vehicles or obstacles are unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Limited visibility caused by darkness and snowfall increases the likelihood of accidents.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000509",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:26:18.324453+00:00"
+  }
+}

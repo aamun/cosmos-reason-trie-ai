@@ -1,0 +1,61 @@
+{
+  "summary": "The footage captures a daytime scene on a multi-laned highway with clear skies and ample sunlight. Vehicles are traveling in both directions, maintaining their lanes. Construction activity is evident on the left side of the road, marked by dirt piles and machinery.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling along the highway, maintaining consistent speeds and lane positions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Construction activity on the left side of the road may impact traffic flow but does not appear to directly affect the vehicles' behavior."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no immediate signs of collisions, reckless driving, or disruptions in traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000449",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:44:53.267010+00:00"
+  }
+}

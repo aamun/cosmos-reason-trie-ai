@@ -1,0 +1,75 @@
+{
+  "summary": "A large white truck is traveling on a road with multiple lanes. The truck is seen making a right turn at an intersection while other vehicles pass by.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The truck travels along the road, followed by a van.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The cyclist rides ahead of the truck.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The person walks alongside the road.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cyclist's identity is unclear.",
+    "The bicyclist's speed is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000774",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:00:48.253962+00:00"
+  }
+}

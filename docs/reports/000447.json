@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a nighttime scene on a wet road with multiple lanes, illuminated by streetlights. Vehicles are traveling in both directions. The road appears slick due to rain, and there are reflections of lights on the surface.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling along the road, with their headlights and taillights illuminating the wet pavement.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "It is unclear whether the vehicles are maintaining safe distances from each other.",
+    "There is no direct evidence of collisions or near misses."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the road conditions are rainy and potentially slippery, there is no clear indication of a collision or hazardous behavior.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000447",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:45:25.962073+00:00"
+  }
+}

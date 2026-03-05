@@ -1,0 +1,56 @@
+{
+  "summary": "The video depicts a snowy roadside scene viewed through a windshield with raindrops. A person stands on the right side of the road, dressed warmly. Snowbanks flank both sides of the road, and bare trees line the perimeter. As the video progresses, a vehicle approaches from the left, seemingly unaware of the person standing nearby.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "vehicle_1",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A person stands on the right side of the road, dressed warmly.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A car approaches from the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the person reacts to the approaching vehicle."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The presence of a pedestrian on the roadside increases the risk of a potential collision if the vehicle fails to yield.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001038",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:37:41.962700+00:00"
+  }
+}

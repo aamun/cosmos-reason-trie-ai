@@ -1,0 +1,58 @@
+{
+  "summary": "The video captures a street scene with multiple vehicles moving along a multi-laned road bordered by buildings. A red van is prominently featured in the foreground, driving away from the camera’s perspective. Other vehicles, including sedans and SUVs, are seen traveling in both directions. The environment appears to be urban, with clear skies and ample sunlight illuminating the area.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "sedan_1",
+      "type": "sedan"
+    },
+    {
+      "id": "sedan_2",
+      "type": "sedan"
+    },
+    {
+      "id": "sedan_3",
+      "type": "sedan"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on a city street, including a red van, sedans, and an SUV. All vehicles are moving forward without any apparent collisions or disruptions.",
+      "confidence": 0.97,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are unclear due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or erratic behaviors among the vehicles. All vehicles appear to be operating normally within their lanes.",
+    "confidence": 0.97
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000109",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:35:21.818419+00:00"
+  }
+}

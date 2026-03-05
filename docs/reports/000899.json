@@ -1,0 +1,53 @@
+{
+  "summary": "A vehicle crashes into the windshield of the recording vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black SUV crashes into the windshield of the recording vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The speed of the SUV before crashing is unknown.",
+    "The exact cause of the crash is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "There is a clear instance of a vehicle crashing into another vehicle, resulting in significant damage to both vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000899",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:19:44.500062+00:00"
+  }
+}

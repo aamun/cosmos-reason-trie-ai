@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a dump truck turning left across an intersection while a sedan waits for clearance. The dump truck completes its turn smoothly without colliding with any vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dump_truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "sedan",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Dump truck turns left across the intersection.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the dump truck collided with the sedan."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Dump truck completes its turn without colliding with any vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000869",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:29:24.013568+00:00"
+  }
+}

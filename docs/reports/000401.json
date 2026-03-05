@@ -1,0 +1,58 @@
+{
+  "summary": "The footage captures a nighttime driving scenario on a snowy road where multiple vehicles are traveling. The primary vehicle, seen from the perspective of the ego-car, maintains a cautious pace while observing other cars passing by. Snowfall adds complexity to the driving conditions, necessitating heightened awareness.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a truck and several cars, traverse the snowy road during nighttime hours.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and speeds of all vehicles remain unclear due to limited visibility.",
+    "Snowfall intensity varies across frames, impacting driving conditions."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Driving on a snowy road at night poses inherent risks such as reduced traction and visibility, which may lead to accidents if not managed properly.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000401",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:00:53.622617+00:00"
+  }
+}

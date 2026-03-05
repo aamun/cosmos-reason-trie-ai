@@ -1,0 +1,47 @@
+{
+  "summary": "The footage captures a vehicle traveling along a rural road under overcast skies. Sparse trees line both sides of the road, alongside modest residential structures. The road appears unpaved with minimal markings. A white sedan overtakes the recording vehicle from the opposite direction, passing closely enough for the recording vehicle to perceive its proximity.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "recording_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "white_sedan",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white sedan overtakes the recording vehicle from the opposite direction, passing closely enough for the recording vehicle to perceive its proximity.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The weather is unclear due to the lack of raindrops or snowflakes.",
+    "The recording vehicle's speed is estimated but not directly observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000548",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:13:49.411697+00:00"
+  }
+}

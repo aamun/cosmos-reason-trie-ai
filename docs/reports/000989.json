@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a nighttime driving scene where the camera is mounted inside a vehicle traveling on a two-lane road. Bright headlights from an oncoming vehicle dominate the view, causing glare and obscuring much of the surroundings. The road appears wet, reflecting light from the headlights. Traffic is minimal, with only occasional glimpses of other vehicles ahead.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A bright light from an approaching vehicle dominates the view, creating glare and obscuring visibility.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Visibility issues due to glare from the oncoming vehicle."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal visible hazards such as glare from the oncoming vehicle do not pose immediate risks.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000989",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:52:56.379458+00:00"
+  }
+}

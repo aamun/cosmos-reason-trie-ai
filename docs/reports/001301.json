@@ -1,0 +1,58 @@
+{
+  "summary": "The dashcam footage depicts a city street with multiple lanes and surrounding buildings. Vehicles are traveling in both directions, and there is moderate traffic flow. The timestamp indicates that the incident occurred around 18:56 UTC.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are seen traveling on the road, including cars and trucks.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The severity of the crash is unclear due to the abrupt camera blackout."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Due to the sudden blackout, it is impossible to ascertain the full extent of the incident.",
+    "confidence": 0.7
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001301",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:17:40.332041+00:00"
+  }
+}

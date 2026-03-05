@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in the same direction. The vehicle ahead emits brake lights intermittently, indicating deceleration or stopping.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Vehicle ahead emits brake lights intermittently, suggesting deceleration or stopping.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Intermittent brake light emission of the vehicle ahead may indicate stopping or slowing down.",
+    "Unclear reason for the brake lights, but it could be due to congestion or an obstacle ahead."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to consistent braking pattern and lack of overt collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000082",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:42:39.765274+00:00"
+  }
+}

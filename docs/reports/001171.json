@@ -1,0 +1,46 @@
+{
+  "summary": "A sedan approaches from the right side of the road and drives into the lane adjacent to the ego vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "sedan_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "The sedan enters the lane next to the ego vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.2
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the sedan entered the lane safely."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The sedan enters the lane next to the ego vehicle, potentially causing a collision or disruption.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001171",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:56:52.856298+00:00"
+  }
+}

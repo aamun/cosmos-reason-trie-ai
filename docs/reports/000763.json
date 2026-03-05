@@ -1,0 +1,59 @@
+{
+  "summary": "The video shows a rainy day on a two-way road with trees lining both sides. Vehicles are traveling in opposite directions. Signs indicating a curve ahead are visible.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "van",
+      "type": "van"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van travels ahead in the same direction as the ego-vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The camera experiences a sudden blackout.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The blackout in the video is abrupt and unclear, making it difficult to determine its cause."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000763",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:04:36.326309+00:00"
+  }
+}

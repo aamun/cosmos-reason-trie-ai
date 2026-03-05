@@ -1,0 +1,43 @@
+{
+  "summary": "The video begins with a nighttime view of a dimly lit road illuminated by streetlights. A vehicle approaches from the opposite direction, its headlights glaring brightly as it drives past. Suddenly, an explosion erupts violently, engulfing the scene in intense light and smoke.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "explosion",
+      "type": "explosion"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Explosion occurs, causing a sudden burst of bright light and smoke.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the explosion is unclear.",
+    "Reason for the explosion is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "Explosion results in immediate destruction and potential fatalities.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000532",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:18:45.292335+00:00"
+  }
+}

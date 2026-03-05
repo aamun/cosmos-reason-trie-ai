@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a sequence of frames from a dashcam recording a highway scene. The footage begins with a view of a multi-laned highway under a partly cloudy sky. A silver hatchback is seen traveling ahead in the left lane, while other vehicles are present further down the road. As the dashcam vehicle advances, it approaches an intersection marked by signage indicating exits and destinations. Suddenly, the camera experiences a rapid shift, resulting in a disoriented view where the horizon appears distorted due to the abrupt movement.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "silver_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "dashcam_vehicle",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver hatchback travels ahead in the left lane, followed by other vehicles in subsequent frames.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 4.9,
+      "t_end": 4.9,
+      "event": "The dashcam vehicle undergoes a sudden rotational movement, causing a loss of orientation and a distorted view of the surroundings.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Loss of orientation during the rotational movement."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Due to the rotational movement, it is unclear whether this constitutes a collision, near-miss, loss of control, or hazardous interaction.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000266",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:45:09.190375+00:00"
+  }
+}

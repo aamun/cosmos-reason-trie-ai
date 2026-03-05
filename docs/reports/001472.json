@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a foggy road with limited visibility. A vehicle is traveling ahead, and another vehicle approaches from behind. The road appears wet, suggesting rainy conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A car travels ahead on the road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Limited visibility due to fog may obscure details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Limited visibility due to fog may obscure details.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001472",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:23:57.606012+00:00"
+  }
+}

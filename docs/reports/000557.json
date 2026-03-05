@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a rainy day on a multi-laned highway where several vehicles are traveling at moderate speeds. A white truck with red branding is seen driving ahead of the ego-vehicle, while emergency responders and personnel are present near a yellow van on the right side of the road. The road appears wet due to rainfall, which may affect visibility and traction.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "emergency_team",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a rainy highway, including trucks and vans.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact identities of emergency responders are unclear.",
+    "Precise speed limits and road conditions are not fully observable."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "Rain reduces traction and visibility, increasing the risk of accidents.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000557",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:11:27.455680+00:00"
+  }
+}

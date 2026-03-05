@@ -1,0 +1,57 @@
+{
+  "summary": "The video depicts nighttime street scenes with vehicles moving along roads illuminated by streetlights. Snowfall is evident, creating a wintry atmosphere.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are traveling on a snowy night road, with their headlights illuminating the path ahead.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the cars are maintaining safe distances or reacting appropriately to the snowy conditions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, reckless maneuvers, or other hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000537",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:17:14.946739+00:00"
+  }
+}

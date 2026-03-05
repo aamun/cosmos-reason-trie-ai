@@ -1,0 +1,73 @@
+{
+  "summary": "Multiple vehicles are stopped at an intersection, with a black SUV positioned prominently in the foreground. A construction vehicle is visible behind the SUV, and pedestrians can be seen walking along the sidewalk. Traffic appears to be halted due to the presence of the construction vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "black_suv_1",
+      "type": "car"
+    },
+    {
+      "id": "construction_vehicle",
+      "type": "truck"
+    },
+    {
+      "id": "gray_car_1",
+      "type": "car"
+    },
+    {
+      "id": "white_car_1",
+      "type": "car"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "person_3",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are stopped at an intersection, including a black SUV in the foreground and a construction vehicle behind it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise reason for the vehicles being stopped is unclear but may relate to the construction vehicle."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no immediate signs of collisions or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000250",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:50:14.160091+00:00"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "summary": "A motorcycle crashes into a vehicle, causing both to overturn.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "motorcycle",
+      "type": "motorcycle"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A motorcycle crashes into a vehicle, causing both to overturn.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the driver/passenger on the motorcycle is unclear.",
+    "Exact speed and trajectory of the motorcycle before crashing are unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Collision between two vehicles results in overturning, indicating a severe crash.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000425",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:52:31.732610+00:00"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "error": "Model output was not valid JSON, and JSON extraction failed.",
+  "raw_output": "```json\n{\n  \"summary\": \"The video captures a nighttime urban street scene viewed from a dashcam perspective. A black SUV is stopped at an intersection under an overpass, with its brake lights illuminated. To the left of the SUV, another vehicle is partially visible but mostly obscured by darkness. Traffic signals and road signs are visible in the background, along with buildings and trees lining the streets.\",\n  \"q_day_night\": \"Day\"|\"Night\"|\"Unknown\",\n  \"q_weather\": \"Normal\"|\"Rainy\"|\"Snowy\"|\"Unknown\",\n  \"q_ego_involved\": \"Yes\"|\"No\"|\"Unknown\",\n  \"actors_list\": [\n    {\n      \"id\": \"black_suv\",\n      \"type\": \"car\"\n    },\n    {\n      \"id\": \"partial_vehicle_left\",\n      \"type\": \"car\"\n    }\n  ],\n  \"events_timeline\": [\n    {\n      \"t_start\": 0.0,\n      \"t_end\": 4.9,\n      \"event\": \"A black SUV is stationary at an intersection, with its brake lights activated.\",\n      \"confidence\": 0.95,\n      \"frame_indices\": [\n        0,\n        4\n      ]\n    }\n  ],\n  \"uncertainties\": [\n    \"Partial visibility of the left vehicle makes it difficult to confirm its identity or status.\"\n  ],\n  \"risk_assessment\": {\n    \"level\": \"Low\",\n    \"why\": \"There are no observable collisions, erratic movements, or hazardous behaviors from any vehicles.\",\n    \"confidence\": 0.95\n  }\n}\n```",
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001033",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:39:48.539438+00:00"
+  }
+}

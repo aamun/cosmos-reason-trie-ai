@@ -1,0 +1,62 @@
+{
+  "summary": "The video captures a highway scene with multiple vehicles traveling in both directions. A sedan is seen driving ahead in the left lane, while other cars populate the right lanes. The road features clear lane markings and signage indicating curves ahead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "van"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the highway, including sedans and vans, traveling in both directions.",
+      "confidence": 0.98,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise nature of the vehicles' interactions (collisions, near misses, etc.) is unclear due to limited visibility of their behaviors beyond general presence."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no evident collisions, near misses, or hazardous behaviors observed among the vehicles.",
+    "confidence": 0.98
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000264",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:45:43.681410+00:00"
+  }
+}

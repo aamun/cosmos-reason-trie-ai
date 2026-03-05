@@ -1,0 +1,69 @@
+{
+  "summary": "The footage captures a motorcycle journey through an urban street lined with buildings and parked vehicles. The rider navigates alongside other cars, passing by storefronts and sidewalks. At one point, the motorcycle approaches a marked intersection, but due to inadequate spacing between the motorcycle and the vehicle ahead, there is a close encounter.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "motocycle_1",
+      "type": "motorcycle"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The motorcycle travels along a city street, maintaining a steady pace while observing surrounding traffic.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "The motorcycle encounters a vehicle ahead, resulting in a brief moment of proximity.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.2
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise nature of the vehicle ahead is unclear, making it difficult to definitively classify its type.",
+    "The extent of the motorcycle's deviation from its path is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The primary risk arises from the motorcycle's close encounter with the vehicle ahead, which could lead to a collision if not avoided.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000464",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:40:26.671906+00:00"
+  }
+}

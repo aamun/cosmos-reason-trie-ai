@@ -1,0 +1,55 @@
+{
+  "summary": "The video shows a nighttime scene on a snowy road with limited visibility due to darkness and snowfall. Several vehicles are present, including a truck ahead and cars on the left side of the road. The road appears slick from snow accumulation, and there are no visible lane markings.",
+  "q_day_night": "Night",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a snowy road at night. A truck is seen moving ahead, while several cars are positioned on the left side of the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Limited visibility due to darkness and snowfall",
+    "Presence of snow accumulation on the road"
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the road conditions are恶劣 due to snowfall, there are no immediate signs of collisions or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000086",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:41:41.431402+00:00"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "summary": "The video depicts a traffic scene captured from a dashcam perspective, showing a convoy of vehicles traveling along a narrow road bordered by fences and buildings. The convoy consists of multiple cars, including a prominent silver Kia Optima at the forefront with its brake lights illuminated. The convoy advances steadily, maintaining a safe distance from the vehicles ahead.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_kia_optima",
+      "type": "car"
+    },
+    {
+      "id": "black_car",
+      "type": "car"
+    },
+    {
+      "id": "gray_minivan",
+      "type": "car"
+    },
+    {
+      "id": "dark_sedan",
+      "type": "car"
+    },
+    {
+      "id": "metal_fence_1",
+      "type": "unknown"
+    },
+    {
+      "id": "metal_fence_2",
+      "type": "unknown"
+    },
+    {
+      "id": "building_on_left",
+      "type": "unknown"
+    },
+    {
+      "id": "building_on_right",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A convoy of vehicles, led by a silver Kia Optima, advances steadily along a narrow road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles beyond the convoy are unclear due to limited visibility.",
+    "Precise distances between vehicles cannot be determined."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the convoy.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000683",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:31:29.535992+00:00"
+  }
+}

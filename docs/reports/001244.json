@@ -1,0 +1,54 @@
+{
+  "summary": "A black SUV approaches from the opposite direction and passes closely beside the ego-vehicle, resulting in a brief moment of proximity.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black SUV drives past the ego-vehicle from the opposite direction, narrowly avoiding contact.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise distance between the vehicles during the close pass is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The close approach of the black SUV poses a potential risk of collision due to limited reaction time.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001244",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:35:28.822800+00:00"
+  }
+}

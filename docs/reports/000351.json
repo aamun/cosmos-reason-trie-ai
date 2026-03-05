@@ -1,0 +1,70 @@
+{
+  "summary": "The video captures a rainy day with multiple vehicles on a city street. A white UNIROYAL truck dominates the foreground, positioned centrally in the lane. Adjacent to it, a yellow bus travels alongside. Further along the road, several cars move steadily. The wet pavement reflects light, enhancing visibility slightly despite overcast skies.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 0.0,
+      "event": "A white UNIROYAL truck is prominently displayed in the center of the frame, occupying the main lane.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0
+      ]
+    },
+    {
+      "t_start": 1.4,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including a yellow bus and several cars, travel along the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        1.4,
+        2.8,
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles beyond the initial frames remain unclear.",
+    "Visibility of additional vehicles beyond the immediate vicinity is limited."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "While the road conditions are rainy, there are no apparent collisions, near misses, or erratic driving behaviors evident in the provided frames.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000351",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:17:48.308604+00:00"
+  }
+}

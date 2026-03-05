@@ -1,0 +1,67 @@
+{
+  "summary": "The footage captures a busy urban street scene with multiple vehicles and infrastructure elements like tram tracks and buildings. Vehicles are seen traveling in both directions, with some cars overtaking others. A tram is prominently featured moving alongside the road. Traffic signs and signals regulate the flow of vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "tram_1",
+      "type": "tram"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "building_1",
+      "type": "building"
+    },
+    {
+      "id": "building_2",
+      "type": "building"
+    },
+    {
+      "id": "building_3",
+      "type": "building"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are present on the road, including cars and a tram. Cars are traveling in both directions, while the tram moves alongside the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are unclear due to limited visibility.",
+    "Presence of additional vehicles beyond those shown is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions among the visible vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000018",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:01:59.080720+00:00"
+  }
+}

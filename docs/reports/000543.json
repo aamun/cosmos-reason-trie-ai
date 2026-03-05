@@ -1,0 +1,56 @@
+{
+  "summary": "The video shows a car driving through a suburban neighborhood on a cloudy day. The road is lined with leafless trees and houses. As the car approaches an intersection, another vehicle approaches from the opposite direction, prompting the recording vehicle to stop.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "ego_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "opposite_vehicle",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The ego-vehicle drives straight down a residential street.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.2,
+      "event": "A white SUV approaches the intersection from the opposite direction.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.2
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Whether the ego-vehicle actually stops due to the approaching SUV is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Medium",
+    "why": "The ego-vehicle comes to a stop when confronted by an opposing vehicle, which could lead to a potential collision if both vehicles fail to yield properly.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000543",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:15:34.874577+00:00"
+  }
+}

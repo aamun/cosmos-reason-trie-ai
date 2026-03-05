@@ -1,0 +1,56 @@
+{
+  "summary": "The video captures nighttime street scenes with vehicles moving along roads illuminated by streetlights. Cars and trucks are seen traveling in both directions, with headlights and taillights creating bright spots against the dark backdrop. The timestamp indicates late evening, and there are no apparent incidents or unusual interactions among the vehicles.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are visible on the road, including cars and trucks, moving in both directions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to the nighttime setting.",
+    "The presence of raindrops on the camera lens is evident but does not necessarily indicate rainfall.",
+    "The identity of the vehicles cannot be fully confirmed due to limited visibility."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous behaviors among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000010",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T02:04:42.275478+00:00"
+  }
+}

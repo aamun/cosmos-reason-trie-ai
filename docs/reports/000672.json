@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a snowy road with several vehicles parked along the roadside. A person is seen walking on the right side of the road. Vehicles are stationary, and there are no apparent incidents or collisions occurring.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "roadside_vehicle_1",
+      "type": "car"
+    },
+    {
+      "id": "roadside_vehicle_2",
+      "type": "car"
+    },
+    {
+      "id": "roadside_vehicle_3",
+      "type": "car"
+    },
+    {
+      "id": "roadside_vehicle_4",
+      "type": "car"
+    },
+    {
+      "id": "person_1",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are parked along the roadside, and a person walks alongside them.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the person walking is unclear due to low resolution."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible incidents or collisions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000672",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:35:16.948091+00:00"
+  }
+}

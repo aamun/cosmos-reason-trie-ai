@@ -1,0 +1,61 @@
+{
+  "summary": "The video captures a traffic scene on a city street during rainy weather, with multiple vehicles stopped at an intersection. A red hatchback is prominently positioned in the foreground, halted behind another vehicle. Across the intersection, a large truck is seen moving slowly, its headlights illuminating the wet road surface. Tall residential buildings flank both sides of the street, and traffic signals regulate the flow of vehicles.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red hatchback is stationary in the foreground, halted behind another vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Across the intersection, a large truck is moving slowly, its headlights illuminating the wet road surface.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The license plate of the red hatchback is partially obscured, making it difficult to read completely.",
+    "Some details of the vehicles' interiors are unclear due to reflections and raindrops."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000188",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:10:57.208659+00:00"
+  }
+}

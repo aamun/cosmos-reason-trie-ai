@@ -1,0 +1,48 @@
+{
+  "summary": "A dump truck traveling alongside the road suddenly veers sharply to the left, colliding violently with an unseen obstacle or another vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "dump_truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Dump truck travels along the road and abruptly veers sharply to the left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The reason for the dump truck's sudden veering is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "Dump truck veers sharply to the left, indicating a loss of control.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000786",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:56:53.320018+00:00"
+  }
+}

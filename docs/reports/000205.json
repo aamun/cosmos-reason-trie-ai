@@ -1,0 +1,57 @@
+{
+  "summary": "The video captures a traffic scene where a red hatchback is stopped behind an orange dump truck on a multi-laned road lined with trees. The hatchback's brake lights illuminate as it waits, indicating congestion. Suddenly, the dump truck begins to overturn, causing the hatchback to collide violently with its cargo area. The crash results in significant damage to both vehicles, with debris scattering across the road.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A red hatchback is halted behind an orange dump truck on a multi-laned road. Brake lights are on, signaling congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The dump truck suddenly overturns, leading to a violent collision with the hatchback. Debris flies across the road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact nature of the crash beyond the overturn and collision remains unclear.",
+    "Extent of damage to the hatchback post-crash is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The overturn of the dump truck results in a catastrophic crash involving the hatchback, causing severe destruction and endangering occupants.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000205",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:05:29.430767+00:00"
+  }
+}

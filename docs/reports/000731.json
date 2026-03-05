@@ -1,0 +1,63 @@
+{
+  "summary": "The video captures nighttime street scenes viewed from inside a vehicle, showing multiple cars traveling along a multi-laned road under artificial lighting. Vehicles are seen moving steadily, with headlights illuminating the roadway. Traffic signals regulate the flow of vehicles, and signage such as pedestrian crossings and prohibitory signs are visible.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "traffic_light_1",
+      "type": "traffic_light"
+    },
+    {
+      "id": "traffic_light_2",
+      "type": "traffic_light"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling along a multi-laned road at night. Cars maintain their lanes while obeying traffic signals.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited visibility.",
+    "Traffic signal status beyond the initial green/red/yellow transition is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, reckless maneuvers, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000731",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:15:01.358972+00:00"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "summary": "The video shows a city street with multiple lanes and various vehicles moving along it. A police officer stands near a barricade on the left side of the road, directing traffic. Several cars are present, including a black sedan that appears to be stopped or slowing down. Pedestrians can be seen walking on sidewalks and crossing the street.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "police_officer_1",
+      "type": "police officer"
+    },
+    {
+      "id": "black_sedan",
+      "type": "car"
+    },
+    {
+      "id": "white_car",
+      "type": "car"
+    },
+    {
+      "id": "van",
+      "type": "car"
+    },
+    {
+      "id": "cyclist",
+      "type": "cyclist"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "building_1",
+      "type": "unknown"
+    },
+    {
+      "id": "building_2",
+      "type": "unknown"
+    },
+    {
+      "id": "building_3",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a multi-laned urban road under overcast skies.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact location of the police officer relative to the barricade is unclear.",
+    "Speed of the black sedan is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, erratic movements, or disruptions in traffic flow.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001108",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T20:16:40.184748+00:00"
+  }
+}

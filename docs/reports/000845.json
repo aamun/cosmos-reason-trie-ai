@@ -1,0 +1,14 @@
+{
+  "error": "Model output was not valid JSON, and JSON extraction failed.",
+  "raw_output": "```json\n{\n  \"summary\": \"The video shows a vehicle traveling on a two-lane road during rainy conditions. The sky appears overcast, and the road surface is wet, reflecting light from nearby vehicles. A truck is seen ahead in the same lane as the recording vehicle, with its headlights illuminated. There are no visible incidents such as collisions, accidents, or erratic driving behaviors.\",\n  \"q_day_night\": \"Day\"|\"Night\"|\"Unknown\",\n  \"q_weather\": \"Normal\"|\"Rainy\"|\"Snowy\"|\"Unknown\",\n  \"q_ego_involved\": \"No\",\n  \"actors_list\": [\n    {\n      \"id\": \"recording_vehicle\",\n      \"type\": \"car\"\n    },\n    {\n      \"id\": \"truck_1\",\n      \"type\": \"truck\"\n    }\n  ],\n  \"events_timeline\": [\n    {\n      \"t_start\": 0.0,\n      \"t_end\": 4.9,\n      \"event\": \"A truck travels ahead in the same lane as the recording vehicle, with its headlights on.\",\n      \"confidence\": 0.98,\n      \"frame_indices\": [\n        0,\n        4\n      ]\n    }\n  ],\n  \"uncertainties\": [\n    \"The presence of rain is evident due to the wet road and reflections, but there is no direct indication of precipitation falling.\"\n  ],\n  \"risk_assessment\": {\n    \"level\": \"Low\",\n    \"why\": \"There are no visible incidents such as collisions, accidents, or erratic driving behaviors.\",\n    \"confidence\": 0.98\n  }\n}\n```",
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000845",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:36:18.862064+00:00"
+  }
+}

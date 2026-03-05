@@ -1,0 +1,57 @@
+{
+  "summary": "A vehicle traveling on a snowy road experiences a sudden turn to the left, causing it to collide violently with another vehicle moving in the opposite direction.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Car_1 travels along the snowy road.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "Car_1 executes an abrupt left turn.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The precise speed of Car_1 before the turn is unclear.",
+    "The exact nature of Car_2’s reaction during the collision is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The abrupt left turn of Car_1 results in a violent collision with Car_2, indicating a high-risk situation.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000642",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:44:43.228271+00:00"
+  }
+}

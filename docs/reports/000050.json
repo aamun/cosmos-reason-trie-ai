@@ -1,0 +1,67 @@
+{
+  "summary": "Multiple vehicles are stopped in traffic at night, with brake lights illuminated, indicating congestion.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "truck"
+    },
+    {
+      "id": "van_2",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are halted in traffic, with brake lights illuminated, suggesting congestion.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Weather conditions are unclear due to lack of rain/snow visuals.",
+    "Presence of pedestrians or other road users is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic congestion with brake lights on indicates potential for delays but does not show overt hazards like collisions or reckless driving.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000050",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:51:59.261499+00:00"
+  }
+}

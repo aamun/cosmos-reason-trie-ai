@@ -1,0 +1,14 @@
+{
+  "error": "Model output was not valid JSON, and JSON extraction failed.",
+  "raw_output": "```json\n{\n  \"summary\": \"The video shows a vehicle traveling along a rural road with sparse vegetation and clear skies. The timestamp indicates late evening, and the road appears to be unpaved with some dirt patches.\",\n  \"q_day_night\": \"Day\"|\"Night\"|\"Unknown\",\n  \"q_weather\": \"Normal\"|\"Rainy\"|\"Snowy\"|\"Unknown\",\n  \"q_ego_involved\": \"No\",\n  \"actors_list\": [\n    {\n      \"id\": \"car_1\",\n      \"type\": \"car\"\n    },\n    {\n      \"id\": \"truck_1\",\n      \"type\": \"truck\"\n    }\n  ],\n  \"events_timeline\": [\n    {\n      \"t_start\": 0.0,\n      \"t_end\": 4.9,\n      \"event\": \"A white truck approaches from the opposite direction and passes by the ego-vehicle without any interaction.\",\n      \"confidence\": 0.95,\n      \"frame_indices\": [\n        0,\n        4\n      ]\n    }\n  ],\n  \"uncertainties\": [\n    \"The timestamp may not accurately reflect the time of day.\"\n  ],\n  \"risk_assessment\": {\n    \"level\": \"Low\",\n    \"why\": \"There are no collisions, near misses, or hazardous interactions observed between vehicles or pedestrians.\",\n    \"confidence\": 0.95\n  }\n}\n```",
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001227",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:40:43.192760+00:00"
+  }
+}

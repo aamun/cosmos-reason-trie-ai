@@ -1,0 +1,82 @@
+{
+  "summary": "The video captures a nighttime urban street scene with multiple vehicles and pedestrians. The road appears wet, possibly due to recent rainfall, and there is snow堆积 on sidewalks. Vehicles are moving along the road, including cars and buses, while pedestrians can be seen walking on the sidewalk. Streetlights illuminate the area, creating reflections on the wet pavement.",
+  "q_day_night": "Night",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "AZDOBE GS63H",
+      "type": "car"
+    },
+    {
+      "id": "BUS",
+      "type": "bus"
+    },
+    {
+      "id": "TRUCK",
+      "type": "truck"
+    },
+    {
+      "id": "CAR_1",
+      "type": "car"
+    },
+    {
+      "id": "CAR_2",
+      "type": "car"
+    },
+    {
+      "id": "CAR_3",
+      "type": "car"
+    },
+    {
+      "id": "PEDESTRIAN_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "PEDESTRIAN_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "PEDESTRIAN_3",
+      "type": "pedestrian"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles, including cars and buses, are traveling along the road. Snow piles are visible on sidewalks, indicating cold weather conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined.",
+    "Presence of snow piles is inferred but not directly observable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000625",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:49:54.411253+00:00"
+  }
+}

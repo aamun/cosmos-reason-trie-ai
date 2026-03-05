@@ -1,0 +1,27 @@
+{
+  "summary": "The video comprises two frames showing a split-screen view. On the left side, there is an interior shot of a vehicle with a person seated in the passenger seat wearing winter clothing. The right side displays a dashboard camera view of a rural road with sparse vegetation and buildings. There are no visible incidents or abnormalities in either frame.",
+  "q_day_night": "Day",
+  "q_weather": "Unknown",
+  "q_ego_involved": "Unknown",
+  "actors_list": [],
+  "events_timeline": [],
+  "uncertainties": [
+    "Weather conditions are unclear due to the lack of precipitation or snowfall in the frames.",
+    "Winter clothing worn by the passenger suggests cold weather, but this does not definitively indicate snowfall."
+  ],
+  "risk_assessment": {
+    "level": "Unknown",
+    "why": "Insufficient information regarding weather conditions prevents a definitive assessment of risks.",
+    "confidence": 0.0
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000112",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:34:33.590116+00:00"
+  }
+}

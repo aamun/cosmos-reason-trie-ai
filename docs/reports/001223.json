@@ -1,0 +1,138 @@
+{
+  "summary": "The video captures a busy urban street intersection with multiple lanes and crosswalks. Vehicles are moving through the intersection while pedestrians cross the road. A cyclist is seen riding across the crosswalk alongside the pedestrians.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    },
+    {
+      "id": "car_7",
+      "type": "car"
+    },
+    {
+      "id": "cyclist_1",
+      "type": "bicycle"
+    },
+    {
+      "id": "pedestrian_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_2",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_3",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_4",
+      "type": "pedestrian"
+    },
+    {
+      "id": "pedestrian_5",
+      "type": "pedestrian"
+    },
+    {
+      "id": "building_1",
+      "type": "unknown"
+    },
+    {
+      "id": "building_2",
+      "type": "unknown"
+    },
+    {
+      "id": "building_3",
+      "type": "unknown"
+    },
+    {
+      "id": "building_4",
+      "type": "unknown"
+    },
+    {
+      "id": "building_5",
+      "type": "unknown"
+    },
+    {
+      "id": "building_6",
+      "type": "unknown"
+    },
+    {
+      "id": "building_7",
+      "type": "unknown"
+    },
+    {
+      "id": "building_8",
+      "type": "unknown"
+    },
+    {
+      "id": "building_9",
+      "type": "unknown"
+    },
+    {
+      "id": "building_10",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling through the intersection, including cars and a bicycle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The cyclist's path overlaps with the pedestrians crossing the road, but there is no indication of a collision.",
+    "The exact nature of the cyclist’s route relative to the vehicles is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions or hazardous interactions between vehicles or bicycles and pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001223",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:41:58.283616+00:00"
+  }
+}

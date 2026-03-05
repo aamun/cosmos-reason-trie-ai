@@ -1,0 +1,59 @@
+{
+  "summary": "The video captures a street scene with multiple pedestrians walking alongside vehicles. A man carrying a bag walks across the road, while a family consisting of adults and children crosses the sidewalk. Cars are parked along the roadside, and a sedan drives past the camera. The environment appears overcast, suggesting cloudy weather conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "family_group",
+      "type": "unknown"
+    },
+    {
+      "id": "man_with_bag",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple pedestrians, including a family group and an individual carrying a bag, walk along the sidewalk.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all pedestrians relative to the road are unclear.",
+    "Speeds of the vehicles are not measurable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no visible collisions, near misses, or hazardous interactions between vehicles or pedestrians.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000265",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:45:26.325193+00:00"
+  }
+}

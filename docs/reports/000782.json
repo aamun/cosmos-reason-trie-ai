@@ -1,0 +1,73 @@
+{
+  "summary": "The dashcam footage depicts nighttime driving conditions on a multi-laned road illuminated by streetlights. A white van is traveling ahead in the same lane as the dashcam vehicle. Suddenly, an SUV crashes into the dashcam vehicle from the opposite direction, causing the SUV to veer sharply across the median.",
+  "q_day_night": "Night",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "van_2",
+      "type": "van"
+    },
+    {
+      "id": "suv_1",
+      "type": "suv"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A white van travels ahead in the same lane as the dashcam vehicle.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "An SUV crashes into the dashcam vehicle from the opposite direction, causing the SUV to veer sharply across the median.",
+      "confidence": 0.99,
+      "frame_indices": [
+        3,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the SUV crashing into the dashcam vehicle is unclear.",
+    "The reason for the SUV's sudden crash is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The SUV crashes into the dashcam vehicle, resulting in a sharp deviation across the median.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000782",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:58:21.220586+00:00"
+  }
+}

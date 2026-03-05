@@ -1,0 +1,86 @@
+{
+  "summary": "The vehicle approaches an intersection with traffic signals and signage, including prohibitory signs and a warning sign for railway crossings. Vehicles are seen moving across the intersection, and there is a bus parked along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "road_sign_1",
+      "type": "traffic_sign"
+    },
+    {
+      "id": "road_sign_2",
+      "type": "traffic_sign"
+    },
+    {
+      "id": "road_sign_3",
+      "type": "traffic_sign"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The vehicle approaches an intersection with traffic signals and signage, including prohibitory signs and a warning sign for railway crossings.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the vehicles in the background is unclear due to distance and motion blur.",
+    "Some traffic signs are partially obscured or unreadable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, near misses, or hazardous interactions between vehicles or pedestrians. The primary concern is the presence of traffic signals and signage, which require attention but do not constitute an immediate threat.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000257",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:47:56.520211+00:00"
+  }
+}

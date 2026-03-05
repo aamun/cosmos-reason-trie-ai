@@ -1,0 +1,65 @@
+{
+  "summary": "A convoy of vehicles travels along a highway, comprising multiple trucks and cars. The convoy advances steadily, with the lead vehicle maintaining a consistent pace. As the convoy progresses, the trucks exhibit slight deviations in their trajectories, suggesting minor navigational adjustments.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "truck_1",
+      "type": "truck"
+    },
+    {
+      "id": "truck_2",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a highway, including trucks and cars.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Deviation in trajectory of trucks may indicate minor navigation adjustments."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minor deviations in trajectory suggest minor navigational adjustments rather than a severe incident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000451",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:44:20.060586+00:00"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "summary": "The footage captures nighttime driving conditions on a multi-laned urban street illuminated by streetlights. Vehicles are traveling in both directions, with their headlights and taillights visible against the dark backdrop. Traffic signals regulate the flow of vehicles, and police cars with flashing lights can be seen parked along the roadside.",
+  "q_day_night": "Night",
+  "q_weather": "Unknown",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "police_car_1",
+      "type": "truck"
+    },
+    {
+      "id": "police_car_2",
+      "type": "truck"
+    },
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "car_4",
+      "type": "car"
+    },
+    {
+      "id": "car_5",
+      "type": "car"
+    },
+    {
+      "id": "car_6",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are moving along the road, including police cars with flashing lights.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles relative to each other are unclear due to limited visibility.",
+    "Presence of pedestrians or additional vehicles beyond those shown is uncertain."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the presence of law enforcement vehicles, which may indicate potential regulatory compliance issues or violations requiring intervention.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000536",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T23:17:34.296162+00:00"
+  }
+}

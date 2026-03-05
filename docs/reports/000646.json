@@ -1,0 +1,58 @@
+{
+  "summary": "The video shows a snowy road with multiple vehicles traveling in the same direction. Snow covers the ground extensively, reducing traction. Vehicles maintain a safe distance from each other while driving.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars are seen traveling along a snowy road.",
+      "confidence": 0.99,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the vehicles cannot be determined due to snow-covered roads.",
+    "Distance between vehicles may vary depending on road conditions."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to consistent vehicle spacing and adherence to safe driving practices despite adverse weather conditions.",
+    "confidence": 0.99
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000646",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:43:39.385053+00:00"
+  }
+}

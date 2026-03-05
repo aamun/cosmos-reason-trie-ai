@@ -1,0 +1,55 @@
+{
+  "summary": "The video captures a snowy urban street with multiple vehicles traveling in both directions. Snow covers the ground, and bare trees line the sidewalks. Vehicles are seen moving steadily along the road, including cars and trucks. The timestamp indicates late afternoon or early evening.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles are traveling on a snowy urban street, maintaining steady speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles cannot be determined due to limited frame resolution.",
+    "Presence of pedestrians is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The primary concern is the snowy conditions which may affect traction and braking distances. However, the vehicles appear to maintain reasonable speeds and spacing, minimizing collision risks.",
+    "confidence": 0.9
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001475",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:23:12.987785+00:00"
+  }
+}

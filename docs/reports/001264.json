@@ -1,0 +1,46 @@
+{
+  "summary": "The video shows a vehicle traveling on a two-lane road surrounded by trees. A black SUV is seen ahead, with its brake lights illuminated, indicating it may be slowing down or stopping. The road markings suggest a directional arrow, guiding traffic flow.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A black SUV is traveling ahead, with its brake lights illuminated, suggesting it may be slowing down or stopping.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The brake lights of the SUV are illuminated, but it is unclear if this indicates braking or just being stopped."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or hazardous behavior from the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001264",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:29:34.776959+00:00"
+  }
+}

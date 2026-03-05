@@ -1,0 +1,69 @@
+{
+  "summary": "The video captures a first-person perspective from a motorcycle rider navigating through an urban street intersection. The rider maneuvers around several vehicles, including a red hatchback and a white SUV, while maintaining awareness of their surroundings. As the motorcycle progresses, it encounters a sudden obstacle, resulting in a loss of control and a crash.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "motorcycle_rider",
+      "type": "motorcycle"
+    },
+    {
+      "id": "red_hatchback",
+      "type": "car"
+    },
+    {
+      "id": "white_suv",
+      "type": "car"
+    },
+    {
+      "id": "black_minivan",
+      "type": "car"
+    },
+    {
+      "id": "silver_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "The motorcycle rider navigates through the intersection, passing by multiple vehicles including a red hatchback and a white SUV.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "The motorcycle experiences a sudden loss of control, leading to a crash upon impact with an unseen object.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the unseen object causing the crash is unknown.",
+    "The extent of the crash aftermath is unknown."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The motorcycle suffers a loss of control and crashes, indicating a critical incident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000792",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:55:05.251524+00:00"
+  }
+}

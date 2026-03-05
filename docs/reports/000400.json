@@ -1,0 +1,62 @@
+{
+  "summary": "The video shows a snowy day with multiple vehicles traveling on a two-lane road. Snow covers the ground and accumulates on the roadside barriers. Vehicles maintain their headlights on due to poor visibility caused by snowfall.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple vehicles travel along a snowy road, maintaining cautious speeds.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4,
+        7,
+        14,
+        21,
+        28,
+        35,
+        42,
+        49
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions and velocities of all vehicles are unclear due to snowfall.",
+    "Visibility limitations caused by snowfall obscure finer details."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk of collisions or accidents due to consistent vehicle behavior and cautious driving.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000400",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:01:10.677378+00:00"
+  }
+}

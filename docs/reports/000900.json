@@ -1,0 +1,63 @@
+{
+  "summary": "Multiple vehicles are stopped in traffic congestion on a multi-laned road under partly cloudy skies. Cars, vans, and buses are tightly packed, with minimal space between them. Vehicles appear stationary, suggesting a halt in traffic flow.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "van_1",
+      "type": "van"
+    },
+    {
+      "id": "bus_1",
+      "type": "bus"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Cars and vans are tightly packed in traffic congestion, with no apparent movement or collisions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact positions of all vehicles are unclear due to limited visibility.",
+    "Minimal space between vehicles may indicate potential risks."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Traffic congestion with minimal space between vehicles suggests a low-risk scenario.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000900",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:19:29.550585+00:00"
+  }
+}

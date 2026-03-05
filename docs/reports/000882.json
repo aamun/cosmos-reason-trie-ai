@@ -1,0 +1,47 @@
+{
+  "summary": "A police officer runs alongside the road carrying bags, collides with the vehicle's front bumper, and falls to the ground.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "police_officer_1",
+      "type": "pedestrian"
+    },
+    {
+      "id": "ego_vehicle",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Police officer runs alongside the road carrying bags, collides with the vehicle's front bumper, and falls to the ground.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The identity of the officer is unclear due to the angle and motion blur.",
+    "The officer's intent during the run is unclear."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The officer suffers a fall upon impact, indicating a potential loss of control or collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000882",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:24:44.200005+00:00"
+  }
+}

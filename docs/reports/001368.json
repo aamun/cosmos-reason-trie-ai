@@ -1,0 +1,47 @@
+{
+  "summary": "The dashcam footage captures a highway scene with multiple vehicles traveling in both directions. A truck labeled \"KAMAZ\" overtakes the dashcam vehicle from the right side, passing closely alongside it. The truck maintains a steady pace while driving past the dashcam vehicle.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "dashcam_vehicle",
+      "type": "car"
+    },
+    {
+      "id": "kamaz_truck",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A Kamaz truck overtakes the dashcam vehicle from the right side, passing closely alongside it.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The exact speed of the Kamaz truck relative to the dashcam vehicle is unclear.",
+    "The dashcam vehicle's reaction time to the truck passing closely is unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There is no indication of a collision or significant disruption in the traffic flow. The Kamaz truck maintains a steady pace and passes safely.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001368",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T18:55:57.086671+00:00"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "summary": "The video shows a rural road with cattle on the left side and vehicles traveling in both directions. Traffic includes a red truck heading towards the camera and several cars moving away from it. The road features warning signs for potential hazards.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Traffic consists of vehicles traveling in both directions, including a red truck approaching from the opposite direction and multiple cars moving away.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Presence of cattle on the roadside may pose risks but does not constitute an incident."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "The scene depicts normal traffic flow without any apparent collisions, accidents, or hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "001189",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T19:51:28.794074+00:00"
+  }
+}

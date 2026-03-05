@@ -1,0 +1,51 @@
+{
+  "summary": "The video shows a snowy landscape with two horses pulling a sled along a narrow path. The sled moves slowly through deep snow, creating disturbances as it passes. The horses appear calm and focused on their task.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "horse_1",
+      "type": "horse"
+    },
+    {
+      "id": "horse_2",
+      "type": "horse"
+    },
+    {
+      "id": "sled",
+      "type": "unknown"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Two horses are pulling a sled through deep snow, moving slowly and steadily.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "The sled's identity is unclear due to its obscured nature.",
+    "The horses' motivations for pulling the sled are unknown."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no signs of collisions, reckless driving, or other hazardous behaviors.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000223",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T00:59:15.893543+00:00"
+  }
+}

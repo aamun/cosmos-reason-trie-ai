@@ -1,0 +1,42 @@
+{
+  "summary": "The video shows a vehicle traveling along a city street with tall buildings on both sides. Snow is piled up along the roadside, indicating winter conditions. The sky is partly cloudy, and the sun shines brightly, causing glare on the windshield. Vehicles are moving ahead, including a silver SUV directly in front.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "silver_suv",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A silver SUV travels ahead in the same lane as the ego-vehicle.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Glare from the sun may obscure visibility for the ego-vehicle driver."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no collisions, near misses, or hazardous interactions evident in the video. The primary concern is the glare from the sun, which could impair visibility but does not constitute a traffic incident.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000056",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:50:19.505453+00:00"
+  }
+}

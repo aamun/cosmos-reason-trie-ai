@@ -1,0 +1,59 @@
+{
+  "summary": "The video shows a first-person view from a vehicle traveling on a multi-lane highway under overcast skies. The road appears wet, suggesting recent rainfall. Several vehicles are present ahead, including sedans and SUVs, moving at varying speeds. Trees line both sides of the highway, and signage is visible along the roadside.",
+  "q_day_night": "Day",
+  "q_weather": "Rainy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "sedan"
+    },
+    {
+      "id": "car_2",
+      "type": "sedan"
+    },
+    {
+      "id": "car_3",
+      "type": "sedan"
+    },
+    {
+      "id": "car_4",
+      "type": "sedan"
+    },
+    {
+      "id": "car_5",
+      "type": "sedan"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple sedans are seen driving ahead on the highway, maintaining consistent spacing and speed.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed readings may vary slightly between frames due to potential differences in measurement intervals.",
+    "Minor fluctuations in vehicle positions could indicate minor adjustments in speed or lane changes."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "There are no apparent collisions, reckless maneuvers, or hazardous interactions among the vehicles.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000149",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-05T01:23:17.668620+00:00"
+  }
+}

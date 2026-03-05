@@ -1,0 +1,50 @@
+{
+  "summary": "The video shows a snowy urban road with multiple vehicles traveling in both directions. Vehicles maintain moderate speeds while navigating the slippery conditions.",
+  "q_day_night": "Day",
+  "q_weather": "Snowy",
+  "q_ego_involved": "No",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "car_2",
+      "type": "car"
+    },
+    {
+      "id": "car_3",
+      "type": "car"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "Multiple cars travel along a snowy urban road, maintaining cautious speeds due to icy conditions.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Speed of vehicles is inferred but not directly measurable."
+  ],
+  "risk_assessment": {
+    "level": "Low",
+    "why": "Minimal risk due to consistent vehicle behavior and adherence to snowy conditions.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000675",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:34:26.051384+00:00"
+  }
+}

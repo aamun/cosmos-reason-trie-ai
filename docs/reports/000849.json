@@ -1,0 +1,84 @@
+{
+  "summary": "The video shows a rural road with a two-lane setup. Initially, there are no vehicles present. At approximately 3 seconds, a horse appears on the left side of the road, galloping towards the center. Shortly after, a black SUV crashes into the horse, causing the horse to fall onto its side. The SUV comes to a halt after the crash.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "horse_1",
+      "type": "unknown"
+    },
+    {
+      "id": "black_suv",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 3.5,
+      "event": "A horse gallops across the road from left to right.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "A black SUV crashes into the horse, resulting in the horse falling to the ground.",
+      "confidence": 0.95,
+      "frame_indices": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the horse and SUV during the crash is unclear.",
+    "Details about the aftermath of the crash (e.g., injuries) are not visible."
+  ],
+  "risk_assessment": {
+    "level": "High",
+    "why": "The presence of a horse colliding with a vehicle poses a significant risk to both the horse and the vehicle involved.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000849",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T21:35:12.001157+00:00"
+  }
+}

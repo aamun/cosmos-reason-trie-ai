@@ -1,0 +1,67 @@
+{
+  "summary": "The footage captures a vehicle traveling along a multi-laned highway under overcast skies. The vehicle maintains a steady pace while navigating through the lanes. A tanker truck is seen ahead, occupying the rightmost lane. Suddenly, the tanker truck veers sharply to the left, colliding violently with the recording vehicle, causing it to overturn dramatically.",
+  "q_day_night": "Day",
+  "q_weather": "Normal",
+  "q_ego_involved": "Yes",
+  "actors_list": [
+    {
+      "id": "car_1",
+      "type": "car"
+    },
+    {
+      "id": "truck_1",
+      "type": "truck"
+    }
+  ],
+  "events_timeline": [
+    {
+      "t_start": 0.0,
+      "t_end": 4.9,
+      "event": "A tanker truck travels steadily on the highway.",
+      "confidence": 0.95,
+      "frame_indices": [
+        0,
+        4.9
+      ]
+    },
+    {
+      "t_start": 3.5,
+      "t_end": 4.9,
+      "event": "The tanker truck abruptly shifts direction, veering sharply to the left.",
+      "confidence": 0.95,
+      "frame_indices": [
+        3.5,
+        4.9
+      ]
+    },
+    {
+      "t_start": 4.2,
+      "t_end": 4.9,
+      "event": "The tanker truck crashes into the recording vehicle, resulting in a catastrophic overturn.",
+      "confidence": 0.95,
+      "frame_indices": [
+        4.2,
+        4.9
+      ]
+    }
+  ],
+  "uncertainties": [
+    "Exact speed of the tanker truck before the crash is unknown.",
+    "Reason for the tanker truck's sudden maneuver is unclear."
+  ],
+  "risk_assessment": {
+    "level": "Critical",
+    "why": "The tanker truck's abrupt and violent shift to the left resulted in a catastrophic overturn of the recording vehicle, indicating a severe collision.",
+    "confidence": 0.95
+  },
+  "metadata": {
+    "model": "nvidia/Cosmos-Reason2-2B",
+    "video_id": "000737",
+    "frame_sampling": {
+      "strategy": "uniform",
+      "count": 8,
+      "fps": 10.0
+    },
+    "generated_at": "2026-03-04T22:13:06.516964+00:00"
+  }
+}
