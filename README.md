@@ -46,7 +46,7 @@ The ATIRE consists of five stages.
 4. Structured Evidence Report
 5. VQA Evaluation
 
-## 2.1. Solution Diagram
+## 2.1. Solution Architecture Diagram
 ```mermaid
 flowchart TD
 
@@ -72,16 +72,12 @@ L --> M[Metrics Output]
 M --> N[Accuracy<br>Unknown Rate<br>Consistency Metrics]
 ```
 
-## 2.2. Solution Architecture
+## 2.2. Solution Pipeline
 
-[Architecture diagram]
-
-## 2.3. Solution Pipeline
-
-### 2.3.1. Video Ingestion
+### 2.2.1. Video Ingestion
 Traffic videos are loaded and decoded from a dashcam or dataset sources such as CarCrashDataset.
 
-### 2.3.2. Frame Sampling
+### 2.2.2. Frame Sampling
 
 Frames are uniformly sampled to reduce compute while preserving temporal context.
 
@@ -94,7 +90,7 @@ frame_sampling:
   fps: 10
 ```
 
-### 2.3.3. Vision-Language Reasoning
+### 2.2.3. Vision-Language Reasoning
 
 Frames are sent to Cosmos Reason 2, which performs scene reasoning using a structured prompt.
 
@@ -107,7 +103,7 @@ The model is instructed to:
 - avoid hallucinations
 - remain conservative when uncertain
 
-### 2.3.4. Structured Evidence Report
+### 2.2.4. Structured Evidence Report
 
 The model produces a JSON report grounded in visual evidence.
 
@@ -147,7 +143,7 @@ Each report includes:
 - risk assessment
 - uncertainty notes
 
-### 2.3.5 Evaluation
+### 2.2.5 Evaluation
 
 ATIRE is evaluated using CarCrashDataset Crash-1500.
 
@@ -170,7 +166,7 @@ python src/trie_ai/eval_vqa_ccd.py \
     --strict_mcq
 ```
 
-## 2.4. Key Contributions
+## 2.3. Key Contributions
 
 ATIRE demonstrates how physical AI reasoning models can transform traffic video into structured intelligence.
 
@@ -182,7 +178,7 @@ Key features:
 - Conservative uncertainty handling
 - Evaluation with real-world traffic dataset
 
-## 2.5. Limitations
+## 2.4. Limitations
 
 * Dashcam perspective limits full scene visibility
 * Ego vehicle involvement detection is challenging
